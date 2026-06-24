@@ -1,0 +1,266 @@
+{
+  "subject": "physics",
+  "grade": 8,
+  "chapterId": "phy-g8-ch03",
+  "questions": [
+    {
+      "id": "phy-g8-ch03-q001",
+      "type": "choice",
+      "stem": "如图所示，一束光线射向平面镜，入射角为 30°，则反射角为（  ）",
+      "options": [
+        { "label": "A", "text": "30°" },
+        { "label": "B", "text": "60°" },
+        { "label": "C", "text": "90°" },
+        { "label": "D", "text": "120°" }
+      ],
+      "answer": "A",
+      "difficulty": 2,
+      "topicId": "phy-g8-ch03-t02",
+      "tags": ["基础题"],
+      "figure": {
+        "type": "optics",
+        "elements": [
+          { "type": "plane_mirror", "position": [0, 0], "angle": 0, "length": 200 }
+        ],
+        "rays": [
+          { "origin": [-70, -80], "direction": { "x": 70, "y": 80 }, "label": "入射光线" },
+          { "origin": [0, 0], "direction": { "x": 70, "y": -80 }, "label": "反射光线" }
+        ],
+        "showNormal": true,
+        "angleArcs": [
+          { "startAngle": -140, "endAngle": -90, "label": "", "color": "#dc2626" },
+          { "startAngle": -90, "endAngle": -40, "label": "", "color": "#2563eb" }
+        ]
+      },
+      "solution": {
+        "answer": "A",
+        "steps": [
+          { "description": "反射定律：反射角等于入射角" },
+          { "description": "入射角为 30°，所以反射角也为 30°" }
+        ],
+        "keyKnowledge": "光的反射定律"
+      }
+    },
+    {
+      "id": "phy-g8-ch03-q002",
+      "type": "choice",
+      "stem": "如图所示，光线从空气斜射入水中，折射角与入射角的关系是（  ）",
+      "options": [
+        { "label": "A", "text": "折射角大于入射角" },
+        { "label": "B", "text": "折射角小于入射角" },
+        { "label": "C", "text": "折射角等于入射角" },
+        { "label": "D", "text": "无法确定" }
+      ],
+      "answer": "B",
+      "difficulty": 2,
+      "topicId": "phy-g8-ch03-t04",
+      "tags": ["基础题", "易错题"],
+      "figure": {
+        "type": "optics",
+        "elements": [
+          { "type": "water_surface", "position": [0, 0], "width": 200 }
+        ],
+        "rays": [
+          { "origin": [-65, -80], "direction": { "x": 65, "y": 80 }, "label": "入射光线" },
+          { "origin": [0, 0], "direction": { "x": 65, "y": -80 }, "label": "反射光线" },
+          { "origin": [0, 0], "direction": { "x": 40, "y": 65 }, "label": "折射光线" }
+        ],
+        "showNormal": true,
+        "angleArcs": [
+          { "startAngle": -140, "endAngle": -90, "label": "", "color": "#dc2626" },
+          { "startAngle": -90, "endAngle": -40, "label": "", "color": "#2563eb" },
+          { "startAngle": 58, "endAngle": 90, "label": "", "color": "#059669" }
+        ]
+      },
+      "solution": {
+        "answer": "B",
+        "steps": [
+          { "description": "光从空气斜射入水中，折射光线向法线偏折" },
+          { "description": "所以折射角小于入射角" }
+        ],
+        "keyKnowledge": "光的折射规律"
+      },
+      "trapPoints": [
+        {
+          "description": "误认为折射角大于入射角",
+          "correctApproach": "光从光疏介质进入光密介质，折射角小于入射角",
+          "commonMistake": "混淆空气→水和水→空气的折射关系"
+        }
+      ]
+    },
+    {
+      "id": "phy-g8-ch03-q003",
+      "type": "choice",
+      "stem": "如图所示，平面镜成像的特点是（  ）",
+      "options": [
+        { "label": "A", "text": "正立、等大的虚像" },
+        { "label": "B", "text": "正立、放大的虚像" },
+        { "label": "C", "text": "倒立、等大的实像" },
+        { "label": "D", "text": "倒立、缩小的实像" }
+      ],
+      "answer": "A",
+      "difficulty": 2,
+      "topicId": "phy-g8-ch03-t03",
+      "tags": ["基础题"],
+      "solution": {
+        "answer": "A",
+        "steps": [
+          { "description": "平面镜成像特点：像与物关于镜面对称" },
+          { "description": "像是正立的、等大的、虚像" },
+          { "description": "像到镜面的距离等于物到镜面的距离" }
+        ],
+        "keyKnowledge": "平面镜成像特点"
+      }
+    },
+    {
+      "id": "phy-g8-ch03-q004",
+      "type": "fill",
+      "stem": "一束光从空气斜射入玻璃，入射角为 45°，折射角为 30°。若入射角增大到 60°，则折射角为多少度？",
+      "segments": ["折射角为 ", "___1___", " 。"],
+      "blanks": [{ "index": 1, "answer": "约 35.3°" }],
+      "difficulty": 3,
+      "topicId": "phy-g8-ch03-t04",
+      "tags": ["提高题"],
+      "solution": {
+        "answer": "约 35.3°",
+        "steps": [
+          { "description": "由折射定律：$n_1 \\sin\\theta_1 = n_2 \\sin\\theta_2$" },
+          { "description": "空气 $n_1 = 1$，玻璃 $n_2 \\approx 1.5$" },
+          { "description": "$\\sin 60° = 1.5 \\times \\sin\\theta_2$" },
+          { "description": "$\\sin\\theta_2 = \\dfrac{\\sin 60°}{1.5} = \\dfrac{0.866}{1.5} = 0.577$" },
+          { "description": "$\\theta_2 = \\arcsin(0.577) \\approx 35.3°$" }
+        ],
+        "keyKnowledge": "折射定律（斯涅尔定律）"
+      }
+    },
+    {
+      "id": "phy-g8-ch03-q005",
+      "type": "choice",
+      "stem": "如图所示，凸透镜的焦距为10cm，物体放在凸透镜前25cm处。则凸透镜所成的像是（  ）",
+      "options": [
+        { "label": "A", "text": "正立、放大的虚像" },
+        { "label": "B", "text": "倒立、缩小的实像" },
+        { "label": "C", "text": "倒立、等大的实像" },
+        { "label": "D", "text": "倒立、放大的实像" }
+      ],
+      "answer": "B",
+      "difficulty": 2,
+      "topicId": "phy-g8-ch03-t04",
+      "tags": ["基础题", "中考真题"],
+      "source": { "type": "zhongkao", "year": 2023, "province": "广东", "questionNumber": "第5题" },
+      "figure": {
+        "type": "optics",
+        "elements": [
+          { "type": "convex_lens", "position": [0, 0], "focalLength": 10, "height": 80 }
+        ],
+        "rays": [
+          { "origin": [-100, -30], "direction": { "x": 100, "y": 30 }, "label": "入射光线" },
+          { "origin": [0, 0], "direction": { "x": 40, "y": 12 }, "label": "折射光线" }
+        ],
+        "showNormal": false,
+        "annotations": [
+          { "position": [-100, -40], "text": "物体" },
+          { "position": [40, 20], "text": "像" }
+        ]
+      },
+      "solution": {
+        "answer": "B",
+        "steps": [
+          { "description": "凸透镜焦距 $f = 10\\text{cm}$" },
+          { "description": "物距 $u = 25\\text{cm}$" },
+          { "description": "因为 $u = 25 > 2f = 20$" },
+          { "description": "根据凸透镜成像规律：$u > 2f$ 时，成倒立、缩小的实像" },
+          { "description": "像距范围：$f < v < 2f$，即 $10 < v < 20$" }
+        ],
+        "keyKnowledge": "凸透镜成像规律"
+      },
+      "trapPoints": [
+        {
+          "description": "混淆物距与像距的关系",
+          "correctApproach": "先判断物距与焦距的关系，再套用成像规律",
+          "commonMistake": "误认为物距大就是放大像"
+        }
+      ]
+    },
+    {
+      "id": "phy-g8-ch03-q006",
+      "type": "choice",
+      "stem": "在探究凸透镜成像规律的实验中，当蜡烛在凸透镜的一倍焦距以内时，光屏上（  ）",
+      "options": [
+        { "label": "A", "text": "能成倒立、缩小的实像" },
+        { "label": "B", "text": "能成倒立、放大的实像" },
+        { "label": "C", "text": "能成正立、放大的虚像" },
+        { "label": "D", "text": "光屏上无法成像" }
+      ],
+      "answer": "D",
+      "difficulty": 2,
+      "topicId": "phy-g8-ch03-t04",
+      "tags": ["基础题", "易错题"],
+      "solution": {
+        "answer": "D",
+        "steps": [
+          { "description": "物距 $u < f$ 时，成正立、放大的虚像" },
+          { "description": "虚像不能呈现在光屏上" },
+          { "description": "所以光屏上无法成像" }
+        ],
+        "keyKnowledge": "虚像不能用光屏承接"
+      },
+      "trapPoints": [
+        {
+          "description": "误认为虚像能显示在光屏上",
+          "correctApproach": "实像能用光屏承接，虚像不能",
+          "commonMistake": "混淆实像和虚像的承接方式"
+        }
+      ]
+    },
+    {
+      "id": "phy-g8-ch03-q007",
+      "type": "choice",
+      "stem": "凸透镜成像时，若将物体从远处向凸透镜靠近（物距大于焦距），则像的变化情况是（  ）",
+      "options": [
+        { "label": "A", "text": "像逐渐变小" },
+        { "label": "B", "text": "像逐渐变大" },
+        { "label": "C", "text": "像先变大后变小" },
+        { "label": "D", "text": "像的大小不变" }
+      ],
+      "answer": "B",
+      "difficulty": 3,
+      "topicId": "phy-g8-ch03-t04",
+      "tags": ["提高题"],
+      "solution": {
+        "answer": "B",
+        "steps": [
+          { "description": "物距减小（物体靠近透镜）" },
+          { "description": "像距增大，像也变大" },
+          { "description": "规律：物近像远像变大" }
+        ],
+        "keyKnowledge": "凸透镜动态成像规律"
+      }
+    },
+    {
+      "id": "phy-g8-ch03-q008",
+      "type": "choice",
+      "stem": "用凸透镜观察地图，想看到放大的像，应该将凸透镜（  ）",
+      "options": [
+        { "label": "A", "text": "靠近地图，距离小于焦距" },
+        { "label": "B", "text": "靠近地图，距离在1倍到2倍焦距之间" },
+        { "label": "C", "text": "远离地图，距离大于2倍焦距" },
+        { "label": "D", "text": "无论什么距离都能看到放大像" }
+      ],
+      "answer": "A",
+      "difficulty": 2,
+      "topicId": "phy-g8-ch03-t04",
+      "tags": ["基础题"],
+      "solution": {
+        "answer": "A",
+        "steps": [
+          { "description": "凸透镜当放大镜使用时" },
+          { "description": "物距必须小于焦距（$u < f$）" },
+          { "description": "此时成正立、放大的虚像" },
+          { "description": "所以应将凸透镜靠近地图，距离小于焦距" }
+        ],
+        "keyKnowledge": "放大镜的使用原理"
+      }
+    }
+  ]
+}

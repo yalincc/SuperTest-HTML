@@ -1,0 +1,112 @@
+{
+  "subject": "math",
+  "subjectName": "数学",
+  "icon": "📐",
+  "color": "#10b981",
+  "grades": [
+    {
+      "grade": 7,
+      "gradeLabel": "七年级",
+      "chapters": [
+        {
+          "id": "math-g7-ch01",
+          "title": "有理数",
+          "topics": [
+            { "id": "math-g7-ch01-t01", "title": "正数和负数" },
+            { "id": "math-g7-ch01-t02", "title": "有理数的分类" },
+            { "id": "math-g7-ch01-t03", "title": "数轴" },
+            { "id": "math-g7-ch01-t04", "title": "相反数" },
+            { "id": "math-g7-ch01-t05", "title": "绝对值" },
+            { "id": "math-g7-ch01-t06", "title": "有理数的加减法" },
+            { "id": "math-g7-ch01-t07", "title": "有理数的乘除法" },
+            { "id": "math-g7-ch01-t08", "title": "有理数的乘方" }
+          ]
+        },
+        {
+          "id": "math-g7-ch02",
+          "title": "整式的加减",
+          "topics": [
+            { "id": "math-g7-ch02-t01", "title": "单项式与多项式" },
+            { "id": "math-g7-ch02-t02", "title": "合并同类项" },
+            { "id": "math-g7-ch02-t03", "title": "去括号" }
+          ]
+        },
+        {
+          "id": "math-g7-ch03",
+          "title": "一元一次方程",
+          "topics": [
+            { "id": "math-g7-ch03-t01", "title": "等式的性质" },
+            { "id": "math-g7-ch03-t02", "title": "解一元一次方程" },
+            { "id": "math-g7-ch03-t03", "title": "实际问题与方程" }
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 8,
+      "gradeLabel": "八年级",
+      "chapters": [
+        {
+          "id": "math-g8-ch01",
+          "title": "一次函数",
+          "topics": [
+            { "id": "math-g8-ch01-t01", "title": "变量与函数" },
+            { "id": "math-g8-ch01-t02", "title": "正比例函数" },
+            { "id": "math-g8-ch01-t03", "title": "一次函数的图象" },
+            { "id": "math-g8-ch01-t04", "title": "一次函数的性质" }
+          ]
+        },
+        {
+          "id": "math-g8-ch02",
+          "title": "全等三角形",
+          "topics": [
+            { "id": "math-g8-ch02-t01", "title": "全等三角形的判定" },
+            { "id": "math-g8-ch02-t02", "title": "全等三角形的性质" }
+          ]
+        },
+        {
+          "id": "math-g8-ch03",
+          "title": "四边形",
+          "topics": [
+            { "id": "math-g8-ch03-t01", "title": "平行四边形" },
+            { "id": "math-g8-ch03-t02", "title": "矩形与正方形" },
+            { "id": "math-g8-ch03-t03", "title": "梯形" }
+          ]
+        },
+        {
+          "id": "math-g8-ch04",
+          "title": "旋转",
+          "topics": [
+            { "id": "math-g8-ch04-t01", "title": "旋转的性质" },
+            { "id": "math-g8-ch04-t02", "title": "中心对称" },
+            { "id": "math-g8-ch04-t03", "title": "旋转作图" }
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 9,
+      "gradeLabel": "九年级",
+      "chapters": [
+        {
+          "id": "math-g9-ch01",
+          "title": "二次函数",
+          "topics": [
+            { "id": "math-g9-ch01-t01", "title": "二次函数的图象" },
+            { "id": "math-g9-ch01-t02", "title": "二次函数的性质" },
+            { "id": "math-g9-ch01-t03", "title": "二次函数与方程" },
+            { "id": "math-g9-ch01-t04", "title": "实际问题与二次函数" }
+          ]
+        },
+        {
+          "id": "math-g9-ch02",
+          "title": "圆",
+          "topics": [
+            { "id": "math-g9-ch02-t01", "title": "圆的基本性质" },
+            { "id": "math-g9-ch02-t02", "title": "圆与直线的位置关系" }
+          ]
+        }
+      ]
+    }
+  ]
+}

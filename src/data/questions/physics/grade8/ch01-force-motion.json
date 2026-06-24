@@ -1,0 +1,558 @@
+{
+  "subject": "physics",
+  "grade": 8,
+  "chapterId": "phy-g8-ch01",
+  "questions": [
+    {
+      "id": "phy-g8-ch01-q001",
+      "type": "choice",
+      "stem": "下列关于力的说法中，正确的是（  ）",
+      "options": [
+        { "label": "A", "text": "力是维持物体运动的原因" },
+        { "label": "B", "text": "物体只有受力才能运动" },
+        { "label": "C", "text": "力是改变物体运动状态的原因" },
+        { "label": "D", "text": "物体不受力时一定静止" }
+      ],
+      "answer": "C",
+      "difficulty": 2,
+      "topicId": "phy-g8-ch01-t02",
+      "tags": ["中考真题", "易错题", "高频考点"],
+      "source": { "type": "zhongkao", "year": 2023, "province": "广东", "questionNumber": "第3题" },
+      "solution": {
+        "answer": "C",
+        "steps": [
+          { "description": "牛顿第一定律：物体在不受外力时，保持匀速直线运动或静止状态" },
+          { "description": "力不是维持运动的原因，而是改变运动状态的原因" },
+          { "description": "A、B 是亚里士多德的错误观点，D 忽略了匀速直线运动的情况" }
+        ],
+        "keyKnowledge": "牛顿第一定律的理解"
+      },
+      "trapPoints": [
+        {
+          "description": "误认为力是维持运动的原因",
+          "correctApproach": "力是改变运动状态的原因，不受力时物体做匀速直线运动或保持静止",
+          "commonMistake": "受日常经验影响，认为物体不受力就会停下来"
+        }
+      ]
+    },
+    {
+      "id": "phy-g8-ch01-q002",
+      "type": "choice",
+      "stem": "一个重 50 N 的物体静止在水平桌面上，下列说法正确的是（  ）",
+      "options": [
+        { "label": "A", "text": "物体对桌面的压力就是物体的重力" },
+        { "label": "B", "text": "桌面对物体的支持力与物体的重力是一对平衡力" },
+        { "label": "C", "text": "物体对桌面的压力与桌面对物体的支持力是一对平衡力" },
+        { "label": "D", "text": "桌面对物体的支持力大于物体的重力" }
+      ],
+      "answer": "B",
+      "difficulty": 3,
+      "topicId": "phy-g8-ch01-t03",
+      "tags": ["中考真题", "易错题", "高频考点"],
+      "source": { "type": "zhongkao", "year": 2022, "province": "江苏", "questionNumber": "第8题" },
+      "solution": {
+        "answer": "B",
+        "steps": [
+          { "description": "物体静止，处于平衡状态，合力为零" },
+          { "description": "竖直方向上受重力和支持力，这两个力大小相等、方向相反、作用在同一物体上，是一对平衡力" },
+          { "description": "A 错误：压力和支持力是作用力与反作用力，不是同一个力" },
+          { "description": "C 错误：压力与支持力是相互作用力，不是平衡力（作用在不同物体上）" }
+        ],
+        "keyKnowledge": "二力平衡与相互作用力的区别"
+      },
+      "trapPoints": [
+        {
+          "description": "平衡力与相互作用力的区分",
+          "correctApproach": "平衡力作用在同一物体上；相互作用力作用在两个物体上",
+          "commonMistake": "把压力和支持力当作平衡力，忽略了它们作用在不同物体上"
+        }
+      ]
+    },
+    {
+      "id": "phy-g8-ch01-q003",
+      "type": "choice",
+      "stem": "下列实例中，属于增大摩擦的是（  ）",
+      "options": [
+        { "label": "A", "text": "给自行车链条加润滑油" },
+        { "label": "B", "text": "在行李箱底部安装轮子" },
+        { "label": "C", "text": "汽车轮胎表面刻有花纹" },
+        { "label": "D", "text": "磁悬浮列车利用磁力悬浮" }
+      ],
+      "answer": "C",
+      "difficulty": 2,
+      "topicId": "phy-g8-ch01-t04",
+      "tags": ["中考真题"],
+      "source": { "type": "zhongkao", "year": 2023, "province": "山东", "questionNumber": "第5题" },
+      "solution": {
+        "answer": "C",
+        "steps": [
+          { "description": "A：加润滑油使接触面分离，减小摩擦" },
+          { "description": "B：变滑动为滚动，减小摩擦" },
+          { "description": "C：增大接触面粗糙程度，增大摩擦" },
+          { "description": "D：使接触面分离，减小摩擦" }
+        ],
+        "keyKnowledge": "增大和减小摩擦的方法"
+      }
+    },
+    {
+      "id": "phy-g8-ch01-q004",
+      "type": "choice",
+      "stem": "下列运动中，物体的运动状态发生改变的是（  ）",
+      "options": [
+        { "label": "A", "text": "匀速直线运动" },
+        { "label": "B", "text": "静止" },
+        { "label": "C", "text": "匀速圆周运动" },
+        { "label": "D", "text": "弹簧被压缩" }
+      ],
+      "answer": "C",
+      "difficulty": 2,
+      "topicId": "phy-g8-ch01-t02",
+      "tags": ["基础题"],
+      "solution": {
+        "answer": "C",
+        "steps": [
+          { "description": "运动状态改变包括：速度大小改变或运动方向改变" },
+          { "description": "A：速度大小和方向都不变，运动状态不变" },
+          { "description": "B：静止，运动状态不变" },
+          { "description": "C：运动方向不断改变，运动状态改变" },
+          { "description": "D：弹簧形变，不是物体的运动状态" }
+        ],
+        "keyKnowledge": "运动状态的改变"
+      }
+    },
+    {
+      "id": "phy-g8-ch01-q005",
+      "type": "choice",
+      "stem": "用 10 N 的水平拉力拉一个重 20 N 的物体在水平地面上做匀速直线运动，物体受到的摩擦力为（  ）",
+      "options": [
+        { "label": "A", "text": "$10\\text{N}$" },
+        { "label": "B", "text": "$20\\text{N}$" },
+        { "label": "C", "text": "$30\\text{N}$" },
+        { "label": "D", "text": "$0\\text{N}$" }
+      ],
+      "answer": "A",
+      "difficulty": 2,
+      "topicId": "phy-g8-ch01-t04",
+      "tags": ["基础题"],
+      "solution": {
+        "answer": "A",
+        "steps": [
+          { "description": "物体做匀速直线运动，处于平衡状态" },
+          { "description": "水平方向：拉力与摩擦力平衡" },
+          { "description": "所以 $f = F = 10\\text{N}$" }
+        ],
+        "keyKnowledge": "二力平衡"
+      }
+    },
+    {
+      "id": "phy-g8-ch01-q006",
+      "type": "choice",
+      "stem": "下列物体受到平衡力作用的是（  ）",
+      "options": [
+        { "label": "A", "text": "正在加速上升的火箭" },
+        { "label": "B", "text": "在圆形轨道上运行的人造卫星" },
+        { "label": "C", "text": "匀速下降的跳伞运动员" },
+        { "label": "D", "text": "减速进站的火车" }
+      ],
+      "answer": "C",
+      "difficulty": 2,
+      "topicId": "phy-g8-ch01-t03",
+      "tags": ["基础题"],
+      "solution": {
+        "answer": "C",
+        "steps": [
+          { "description": "平衡力作用下物体处于平衡状态（静止或匀速直线运动）" },
+          { "description": "A：加速上升，速度在变，非平衡状态" },
+          { "description": "B：圆周运动，方向在变，非平衡状态" },
+          { "description": "C：匀速下降，速度不变，平衡状态" },
+          { "description": "D：减速，速度在变，非平衡状态" }
+        ],
+        "keyKnowledge": "平衡状态的判断"
+      }
+    },
+    {
+      "id": "phy-g8-ch01-q007",
+      "type": "choice",
+      "stem": "一本书放在水平桌面上，下列力中是一对平衡力的是（  ）",
+      "options": [
+        { "label": "A", "text": "书的重力与书对桌面的压力" },
+        { "label": "B", "text": "书的重力与桌面对书的支持力" },
+        { "label": "C", "text": "书对桌面的压力与桌面对书的支持力" },
+        { "label": "D", "text": "书对桌面的压力与桌面对书的摩擦力" }
+      ],
+      "answer": "B",
+      "difficulty": 2,
+      "topicId": "phy-g8-ch01-t03",
+      "tags": ["基础题"],
+      "solution": {
+        "answer": "B",
+        "steps": [
+          { "description": "平衡力条件：同体、等大、反向、共线" },
+          { "description": "A：作用在不同物体上（书和桌面）" },
+          { "description": "B：都作用在书上，大小相等，方向相反，共线" },
+          { "description": "C：作用力与反作用力，作用在不同物体上" },
+          { "description": "D：方向不相反（压力向下，摩擦力水平）" }
+        ],
+        "keyKnowledge": "二力平衡的条件"
+      }
+    },
+    {
+      "id": "phy-g8-ch01-q008",
+      "type": "choice",
+      "stem": "如图所示，一个重为 $G$ 的物体静止在水平桌面上，画出物体的受力示意图。下列正确的是（  ）",
+      "options": [
+        { "label": "A", "text": "只受重力" },
+        { "label": "B", "text": "受重力和支持力" },
+        { "label": "C", "text": "受重力、支持力和压力" },
+        { "label": "D", "text": "受重力和支持力，二力平衡" }
+      ],
+      "answer": "D",
+      "difficulty": 2,
+      "topicId": "phy-g8-ch01-t03",
+      "tags": ["基础题", "易错题"],
+      "figure": {
+        "type": "force",
+        "scene": { "type": "horizontal_surface" },
+        "bodies": [
+          { "id": "obj", "type": "block", "center": [0, 0], "width": 2, "height": 1, "label": "物体" }
+        ],
+        "forces": [
+          { "id": "G", "type": "gravity", "label": "G", "origin": [0, 0], "vector": { "x": 0, "y": -2.5 } },
+          { "id": "N", "type": "normal", "label": "N", "origin": [0, 0], "vector": { "x": 0, "y": 2.5 } }
+        ],
+        "showResultant": false
+      },
+      "solution": {
+        "answer": "D",
+        "steps": [
+          { "description": "物体受重力 $G$，方向竖直向下" },
+          { "description": "桌面对物体有支持力 $N$，方向竖直向上" },
+          { "description": "物体静止，处于平衡状态，$G = N$，二力平衡" },
+          { "description": "压力是物体施加给桌面的力，不是物体受到的力" }
+        ],
+        "keyKnowledge": "受力分析、二力平衡条件"
+      },
+      "trapPoints": [
+        {
+          "description": "混淆压力和支持力",
+          "correctApproach": "压力是物体施加给接触面的力，支持力是接触面施加给物体的力",
+          "commonMistake": "把物体对桌面的压力也画在物体上"
+        }
+      ]
+    },
+    {
+      "id": "phy-g8-ch01-q009",
+      "type": "choice",
+      "stem": "如图，用 $F = 10\\text{N}$ 的水平力推一个重 $G = 20\\text{N}$ 的物体沿水平面向右匀速运动，物体受到的摩擦力大小为（  ）",
+      "options": [
+        { "label": "A", "text": "$10\\text{N}$" },
+        { "label": "B", "text": "$20\\text{N}$" },
+        { "label": "C", "text": "$30\\text{N}$" },
+        { "label": "D", "text": "$0\\text{N}$" }
+      ],
+      "answer": "A",
+      "difficulty": 2,
+      "topicId": "phy-g8-ch01-t04",
+      "tags": ["基础题"],
+      "figure": {
+        "type": "force",
+        "scene": { "type": "horizontal_surface" },
+        "bodies": [
+          { "id": "obj", "type": "block", "center": [0, 0], "width": 2, "height": 1, "label": "物体" }
+        ],
+        "forces": [
+          { "id": "G", "type": "gravity", "label": "G", "origin": [0, 0], "vector": { "x": 0, "y": -2 } },
+          { "id": "N", "type": "normal", "label": "N", "origin": [0, 0], "vector": { "x": 0, "y": 2 } },
+          { "id": "F", "type": "applied", "label": "F", "origin": [0, 0], "vector": { "x": 2, "y": 0 } },
+          { "id": "f", "type": "friction", "label": "f", "origin": [0, 0], "vector": { "x": -2, "y": 0 } }
+        ],
+        "showResultant": false
+      },
+      "solution": {
+        "answer": "A",
+        "steps": [
+          { "description": "物体做匀速直线运动，处于平衡状态" },
+          { "description": "水平方向：推力 $F$ 与摩擦力 $f$ 平衡" },
+          { "description": "所以 $f = F = 10\\text{N}$" }
+        ],
+        "keyKnowledge": "二力平衡、匀速运动条件"
+      }
+    },
+    {
+      "id": "phy-g8-ch01-q010",
+      "type": "fill",
+      "stem": "如图，两个力 $F_1 = 3\\text{N}$（水平向右）和 $F_2 = 4\\text{N}$（竖直向上）同时作用在一个物体上，求合力的大小。",
+      "segments": ["合力大小为 ", "___1___", " 。"],
+      "blanks": [{ "index": 1, "answer": "$5\\text{N}$" }],
+      "difficulty": 3,
+      "topicId": "phy-g8-ch01-t01",
+      "tags": ["提高题"],
+      "figure": {
+        "type": "force",
+        "bodies": [
+          { "id": "obj", "type": "point", "center": [0, 0], "label": "O" }
+        ],
+        "forces": [
+          { "id": "F1", "type": "applied", "label": "F₁", "origin": [0, 0], "vector": { "x": 3, "y": 0 } },
+          { "id": "F2", "type": "applied", "label": "F₂", "origin": [0, 0], "vector": { "x": 0, "y": 3 } }
+        ],
+        "showResultant": true
+      },
+      "solution": {
+        "answer": "$F_{合} = 5\\text{N}$",
+        "steps": [
+          { "description": "$F_1$ 和 $F_2$ 互相垂直" },
+          { "description": "由勾股定理：$F_{合} = \\sqrt{F_1^2 + F_2^2}$" },
+          { "description": "$= \\sqrt{3^2 + 4^2} = \\sqrt{9 + 16} = \\sqrt{25} = 5\\text{N}$" }
+        ],
+        "keyKnowledge": "力的合成——勾股定理"
+      }
+    },
+    {
+      "id": "phy-g8-ch01-q011",
+      "type": "choice",
+      "stem": "如图，一个重 $G = 600\\text{N}$ 的人站在电梯中，当电梯匀速上升时，人受到的支持力为（  ）",
+      "options": [
+        { "label": "A", "text": "大于 $600\\text{N}$" },
+        { "label": "B", "text": "小于 $600\\text{N}$" },
+        { "label": "C", "text": "等于 $600\\text{N}$" },
+        { "label": "D", "text": "无法确定" }
+      ],
+      "answer": "C",
+      "difficulty": 2,
+      "topicId": "phy-g8-ch01-t03",
+      "tags": ["基础题", "易错题"],
+      "figure": {
+        "type": "force",
+        "bodies": [
+          { "id": "person", "type": "block", "center": [0, 0], "width": 1.5, "height": 2, "label": "人" }
+        ],
+        "forces": [
+          { "id": "G", "type": "gravity", "label": "G", "origin": [0, 0], "vector": { "x": 0, "y": -3 } },
+          { "id": "N", "type": "normal", "label": "N", "origin": [0, 0], "vector": { "x": 0, "y": 3 } }
+        ],
+        "showResultant": false
+      },
+      "solution": {
+        "answer": "C",
+        "steps": [
+          { "description": "电梯匀速上升，人处于平衡状态" },
+          { "description": "竖直方向：支持力 $N$ 与重力 $G$ 平衡" },
+          { "description": "所以 $N = G = 600\\text{N}$" }
+        ],
+        "keyKnowledge": "平衡状态与二力平衡"
+      },
+      "trapPoints": [
+        {
+          "description": "误认为上升时支持力大于重力",
+          "correctApproach": "匀速运动 = 平衡状态，合力为零",
+          "commonMistake": "受\"上坡需要更大动力\"的影响，认为上升时支持力要更大"
+        }
+      ]
+    },
+    {
+      "id": "phy-g8-ch01-q012",
+      "type": "choice",
+      "stem": "如图，将一个重 $G = 10\\text{N}$ 的物体用绳子挂在天花板上静止，绳子的拉力为（  ）",
+      "options": [
+        { "label": "A", "text": "$10\\text{N}$，方向竖直向上" },
+        { "label": "B", "text": "$10\\text{N}$，方向竖直向下" },
+        { "label": "C", "text": "$5\\text{N}$，方向竖直向上" },
+        { "label": "D", "text": "$20\\text{N}$，方向竖直向上" }
+      ],
+      "answer": "A",
+      "difficulty": 2,
+      "topicId": "phy-g8-ch01-t03",
+      "tags": ["基础题"],
+      "figure": {
+        "type": "force",
+        "scene": { "type": "hanging" },
+        "bodies": [
+          { "id": "obj", "type": "block", "center": [0, 0], "width": 1, "height": 1, "label": "物体" }
+        ],
+        "forces": [
+          { "id": "G", "type": "gravity", "label": "G", "origin": [0, 0], "vector": { "x": 0, "y": -2 } },
+          { "id": "T", "type": "tension", "label": "T", "origin": [0, 0], "vector": { "x": 0, "y": 2 } }
+        ],
+        "showResultant": false
+      },
+      "solution": {
+        "answer": "A",
+        "steps": [
+          { "description": "物体静止，处于平衡状态" },
+          { "description": "竖直方向：拉力 $T$ 与重力 $G$ 平衡" },
+          { "description": "所以 $T = G = 10\\text{N}$，方向竖直向上" }
+        ],
+        "keyKnowledge": "二力平衡"
+      }
+    },
+    {
+      "id": "phy-g8-ch01-q013",
+      "type": "choice",
+      "stem": "如图，物体在斜面上匀速下滑，物体受到的摩擦力方向是（  ）",
+      "options": [
+        { "label": "A", "text": "沿斜面向下" },
+        { "label": "B", "text": "沿斜面向上" },
+        { "label": "C", "text": "竖直向下" },
+        { "label": "D", "text": "垂直斜面向下" }
+      ],
+      "answer": "B",
+      "difficulty": 3,
+      "topicId": "phy-g8-ch01-t04",
+      "tags": ["提高题", "易错题"],
+      "figure": {
+        "type": "force",
+        "scene": { "type": "incline", "params": { "angle": 30 } },
+        "bodies": [
+          { "id": "obj", "type": "block", "center": [2, 1.8], "width": 1.5, "height": 0.8, "rotation": 30, "label": "物体" }
+        ],
+        "forces": [
+          { "id": "G", "type": "gravity", "label": "G", "origin": [2, 1.8], "vector": { "x": 0, "y": -2.5 } },
+          { "id": "N", "type": "normal", "label": "N", "origin": [2, 1.8], "vector": { "x": -1.25, "y": 2.17 } },
+          { "id": "f", "type": "friction", "label": "f", "origin": [2, 1.8], "vector": { "x": 2.17, "y": 1.25 } }
+        ],
+        "showResultant": false
+      },
+      "solution": {
+        "answer": "B",
+        "steps": [
+          { "description": "物体沿斜面下滑，运动方向沿斜面向下" },
+          { "description": "摩擦力方向与相对运动方向相反" },
+          { "description": "所以摩擦力方向沿斜面向上" }
+        ],
+        "keyKnowledge": "摩擦力方向与相对运动方向相反"
+      },
+      "trapPoints": [
+        {
+          "description": "误认为摩擦力方向与运动方向相同",
+          "correctApproach": "滑动摩擦力总是阻碍相对运动，方向与相对运动方向相反",
+          "commonMistake": "混淆\"运动方向\"和\"相对运动方向\""
+        }
+      ]
+    },
+    {
+      "id": "phy-g8-ch01-q014",
+      "type": "fill",
+      "stem": "如图，一个重 $G = 50\\text{N}$ 的物体在水平地面上，受到 $F = 20\\text{N}$ 的水平向右的推力，物体做匀速直线运动。若将推力增大到 $30\\text{N}$，物体受到的摩擦力为多少？",
+      "segments": ["摩擦力为 ", "___1___", " 。"],
+      "blanks": [{ "index": 1, "answer": "$20\\text{N}$" }],
+      "difficulty": 3,
+      "topicId": "phy-g8-ch01-t04",
+      "tags": ["提高题", "易错题"],
+      "figure": {
+        "type": "force",
+        "scene": { "type": "horizontal_surface" },
+        "bodies": [
+          { "id": "obj", "type": "block", "center": [0, 0], "width": 2, "height": 1, "label": "物体" }
+        ],
+        "forces": [
+          { "id": "G", "type": "gravity", "label": "G", "origin": [0, 0], "vector": { "x": 0, "y": -2 } },
+          { "id": "N", "type": "normal", "label": "N", "origin": [0, 0], "vector": { "x": 0, "y": 2 } },
+          { "id": "F", "type": "applied", "label": "F", "origin": [0, 0], "vector": { "x": 3, "y": 0 } },
+          { "id": "f", "type": "friction", "label": "f", "origin": [0, 0], "vector": { "x": -2, "y": 0 } }
+        ],
+        "showResultant": false
+      },
+      "solution": {
+        "answer": "$f = 20\\text{N}$",
+        "steps": [
+          { "description": "匀速运动时，摩擦力 $f = F = 20\\text{N}$" },
+          { "description": "滑动摩擦力大小只与压力和接触面粗糙程度有关" },
+          { "description": "推力增大到 $30\\text{N}$，但压力和粗糙程度不变" },
+          { "description": "所以摩擦力仍为 $20\\text{N}$（物体将加速运动）" }
+        ],
+        "keyKnowledge": "滑动摩擦力的影响因素"
+      },
+      "trapPoints": [
+        {
+          "description": "误认为推力增大摩擦力也增大",
+          "correctApproach": "滑动摩擦力只与压力和接触面粗糙程度有关，与推力无关",
+          "commonMistake": "认为 $f = F$，推力增大摩擦力也增大"
+        }
+      ]
+    },
+    {
+      "id": "phy-g8-ch01-q015",
+      "type": "choice",
+      "stem": "如图，用 $F = 20\\text{N}$ 的力将一个重 $G = 30\\text{N}$ 的物体按在竖直墙壁上静止，物体受到的摩擦力为（  ）",
+      "options": [
+        { "label": "A", "text": "$20\\text{N}$，方向竖直向上" },
+        { "label": "B", "text": "$30\\text{N}$，方向竖直向上" },
+        { "label": "C", "text": "$20\\text{N}$，方向竖直向下" },
+        { "label": "D", "text": "$50\\text{N}$，方向竖直向上" }
+      ],
+      "answer": "B",
+      "difficulty": 3,
+      "topicId": "phy-g8-ch01-t04",
+      "tags": ["提高题", "易错题"],
+      "figure": {
+        "type": "force",
+        "bodies": [
+          { "id": "obj", "type": "block", "center": [0, 0], "width": 1.5, "height": 1.5, "label": "物体" }
+        ],
+        "forces": [
+          { "id": "G", "type": "gravity", "label": "G", "origin": [0, 0], "vector": { "x": 0, "y": -2 } },
+          { "id": "f", "type": "friction", "label": "f", "origin": [0, 0], "vector": { "x": 0, "y": 2 } },
+          { "id": "F", "type": "applied", "label": "F", "origin": [0, 0], "vector": { "x": 2, "y": 0 } },
+          { "id": "N", "type": "normal", "label": "N", "origin": [0, 0], "vector": { "x": -2, "y": 0 } }
+        ],
+        "showResultant": false
+      },
+      "solution": {
+        "answer": "B",
+        "steps": [
+          { "description": "物体静止，处于平衡状态" },
+          { "description": "竖直方向：摩擦力 $f$ 与重力 $G$ 平衡" },
+          { "description": "所以 $f = G = 30\\text{N}$，方向竖直向上" },
+          { "description": "注意：摩擦力与压力 $F$ 无关，只与重力平衡" }
+        ],
+        "keyKnowledge": "静摩擦力与平衡条件"
+      },
+      "trapPoints": [
+        {
+          "description": "误认为摩擦力等于压力",
+          "correctApproach": "静摩擦力与重力平衡，与水平压力无关",
+          "commonMistake": "认为 $f = F = 20\\text{N}$"
+        }
+      ]
+    },
+    {
+      "id": "phy-g8-ch01-q016",
+      "type": "choice",
+      "stem": "如图，物体在水平面上受到 $F_1 = 10\\text{N}$（水平向右）和 $F_2 = 6\\text{N}$（水平向左）两个力的作用，物体做匀速直线运动。则物体受到的摩擦力为（  ）",
+      "options": [
+        { "label": "A", "text": "$4\\text{N}$，方向水平向左" },
+        { "label": "B", "text": "$4\\text{N}$，方向水平向右" },
+        { "label": "C", "text": "$16\\text{N}$，方向水平向左" },
+        { "label": "D", "text": "$6\\text{N}$，方向水平向右" }
+      ],
+      "answer": "A",
+      "difficulty": 3,
+      "topicId": "phy-g8-ch01-t04",
+      "tags": ["提高题"],
+      "figure": {
+        "type": "force",
+        "scene": { "type": "horizontal_surface" },
+        "bodies": [
+          { "id": "obj", "type": "block", "center": [0, 0], "width": 2, "height": 1, "label": "物体" }
+        ],
+        "forces": [
+          { "id": "F1", "type": "applied", "label": "F₁", "origin": [0, 0], "vector": { "x": 2, "y": 0 } },
+          { "id": "F2", "type": "applied", "label": "F₂", "origin": [0, 0], "vector": { "x": -1.2, "y": 0 } },
+          { "id": "f", "type": "friction", "label": "f", "origin": [0, 0], "vector": { "x": -0.8, "y": 0 } }
+        ],
+        "showResultant": false
+      },
+      "solution": {
+        "answer": "A",
+        "steps": [
+          { "description": "物体匀速运动，水平方向合力为零" },
+          { "description": "$F_1 = F_2 + f$" },
+          { "description": "$f = F_1 - F_2 = 10 - 6 = 4\\text{N}$" },
+          { "description": "摩擦力方向与运动方向相反，即水平向左" }
+        ],
+        "keyKnowledge": "二力平衡与摩擦力方向"
+      }
+    }
+  ]
+}

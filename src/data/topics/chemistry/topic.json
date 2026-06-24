@@ -1,0 +1,42 @@
+{
+  "subject": "chemistry",
+  "subjectName": "化学",
+  "icon": "⚗️",
+  "color": "#e8600c",
+  "grades": [
+    {
+      "grade": 9,
+      "gradeLabel": "九年级",
+      "chapters": [
+        {
+          "id": "chem-g9-ch01",
+          "title": "物质构成的奥秘",
+          "topics": [
+            { "id": "chem-g9-ch01-t01", "title": "分子和原子" },
+            { "id": "chem-g9-ch01-t02", "title": "原子的结构" },
+            { "id": "chem-g9-ch01-t03", "title": "元素" },
+            { "id": "chem-g9-ch01-t04", "title": "离子" }
+          ]
+        },
+        {
+          "id": "chem-g9-ch02",
+          "title": "化学方程式",
+          "topics": [
+            { "id": "chem-g9-ch02-t01", "title": "质量守恒定律" },
+            { "id": "chem-g9-ch02-t02", "title": "化学方程式的书写" },
+            { "id": "chem-g9-ch02-t03", "title": "化学方程式的计算" }
+          ]
+        },
+        {
+          "id": "chem-g9-ch03",
+          "title": "酸碱盐",
+          "topics": [
+            { "id": "chem-g9-ch03-t01", "title": "常见的酸和碱" },
+            { "id": "chem-g9-ch03-t02", "title": "酸和碱的反应" },
+            { "id": "chem-g9-ch03-t03", "title": "常见的盐" }
+          ]
+        }
+      ]
+    }
+  ]
+}

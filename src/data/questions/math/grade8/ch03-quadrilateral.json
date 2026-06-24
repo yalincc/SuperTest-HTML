@@ -1,0 +1,261 @@
+{
+  "subject": "math",
+  "grade": 8,
+  "chapterId": "math-g8-ch03",
+  "questions": [
+    {
+      "id": "math-g8-ch03-q001",
+      "type": "choice",
+      "stem": "如图，在平行四边形ABCD中，对角线AC与BD交于点O。下列结论正确的是（  ）",
+      "options": [
+        { "label": "A", "text": "$OA = OB$" },
+        { "label": "B", "text": "$OA = OC$" },
+        { "label": "C", "text": "$OB = OD$" },
+        { "label": "D", "text": "B 和 C 同时正确" }
+      ],
+      "answer": "D",
+      "difficulty": 2,
+      "topicId": "math-g8-ch03-t01",
+      "tags": ["基础题"],
+      "figure": {
+        "type": "construction",
+        "padding": 1.2,
+        "construction": [
+          { "op": "point", "id": "B", "at": [0, 0] },
+          { "op": "point", "id": "C", "at": [6, 0] },
+          { "op": "point_by_polar", "id": "A", "from": "B", "angle": 60, "distance": 4 },
+          { "op": "point_relative", "id": "D", "from": "A", "dx": 6, "dy": 0 },
+          { "op": "polygon", "points": ["A", "B", "C", "D"] },
+          { "op": "intersection", "id": "O", "line1": ["A", "C"], "line2": ["B", "D"] },
+          { "op": "segment", "from": "A", "to": "C", "style": "dashed" },
+          { "op": "segment", "from": "B", "to": "D", "style": "dashed" },
+          { "op": "tick_mark", "segment": ["O", "A"], "count": 1 },
+          { "op": "tick_mark", "segment": ["O", "C"], "count": 1 },
+          { "op": "tick_mark", "segment": ["O", "B"], "count": 2 },
+          { "op": "tick_mark", "segment": ["O", "D"], "count": 2 }
+        ]
+      },
+      "solution": {
+        "answer": "D",
+        "steps": [
+          { "description": "平行四边形的对角线互相平分" },
+          { "description": "所以 $OA = OC$，$OB = OD$" },
+          { "description": "B 和 C 同时正确，选 D" }
+        ],
+        "keyKnowledge": "平行四边形对角线互相平分"
+      }
+    },
+    {
+      "id": "math-g8-ch03-q002",
+      "type": "choice",
+      "stem": "如图，矩形ABCD中，AB=6，BC=8。则对角线AC的长度为（  ）",
+      "options": [
+        { "label": "A", "text": "$8$" },
+        { "label": "B", "text": "$10$" },
+        { "label": "C", "text": "$12$" },
+        { "label": "D", "text": "$14$" }
+      ],
+      "answer": "B",
+      "difficulty": 2,
+      "topicId": "math-g8-ch03-t02",
+      "tags": ["基础题"],
+      "figure": {
+        "type": "construction",
+        "padding": 1.2,
+        "construction": [
+          { "op": "point", "id": "A", "at": [0, 6] },
+          { "op": "point", "id": "B", "at": [0, 0] },
+          { "op": "point", "id": "C", "at": [8, 0] },
+          { "op": "point", "id": "D", "at": [8, 6] },
+          { "op": "polygon", "points": ["A", "B", "C", "D"] },
+          { "op": "segment", "from": "A", "to": "C", "style": "dashed", "label": "AC" },
+          { "op": "angle_mark", "vertex": "A", "p1": "D", "p2": "B", "right": true },
+          { "op": "angle_mark", "vertex": "B", "p1": "A", "p2": "C", "right": true },
+          { "op": "angle_mark", "vertex": "C", "p1": "B", "p2": "D", "right": true },
+          { "op": "angle_mark", "vertex": "D", "p1": "C", "p2": "A", "right": true },
+          { "op": "label", "at": [-0.6, 3], "text": "6" },
+          { "op": "label", "at": [4, -0.6], "text": "8" }
+        ]
+      },
+      "solution": {
+        "answer": "B",
+        "steps": [
+          { "description": "矩形的四个角都是直角" },
+          { "description": "在 Rt△ABC 中：$AC = \\sqrt{AB^2 + BC^2} = \\sqrt{36 + 64} = \\sqrt{100} = 10$" }
+        ],
+        "keyKnowledge": "矩形性质、勾股定理"
+      }
+    },
+    {
+      "id": "math-g8-ch03-q003",
+      "type": "choice",
+      "stem": "如图，正方形ABCD的边长为4，E是BC的中点。则AE的长度为（  ）",
+      "options": [
+        { "label": "A", "text": "$2\\sqrt{5}$" },
+        { "label": "B", "text": "$4\\sqrt{2}$" },
+        { "label": "C", "text": "$5$" },
+        { "label": "D", "text": "$6$" }
+      ],
+      "answer": "A",
+      "difficulty": 2,
+      "topicId": "math-g8-ch03-t02",
+      "tags": ["基础题"],
+      "figure": {
+        "type": "construction",
+        "padding": 1.2,
+        "construction": [
+          { "op": "point", "id": "A", "at": [0, 4] },
+          { "op": "point", "id": "B", "at": [0, 0] },
+          { "op": "point", "id": "C", "at": [4, 0] },
+          { "op": "point", "id": "D", "at": [4, 4] },
+          { "op": "polygon", "points": ["A", "B", "C", "D"] },
+          { "op": "midpoint", "id": "E", "of": ["B", "C"] },
+          { "op": "segment", "from": "A", "to": "E", "style": "dashed", "label": "AE" },
+          { "op": "angle_mark", "vertex": "A", "p1": "D", "p2": "B", "right": true },
+          { "op": "angle_mark", "vertex": "B", "p1": "A", "p2": "C", "right": true },
+          { "op": "angle_mark", "vertex": "C", "p1": "B", "p2": "D", "right": true },
+          { "op": "angle_mark", "vertex": "D", "p1": "C", "p2": "A", "right": true },
+          { "op": "tick_mark", "segment": ["A", "B"], "count": 1 },
+          { "op": "tick_mark", "segment": ["B", "C"], "count": 1 },
+          { "op": "tick_mark", "segment": ["C", "D"], "count": 1 },
+          { "op": "tick_mark", "segment": ["D", "A"], "count": 1 },
+          { "op": "tick_mark", "segment": ["B", "E"], "count": 2 },
+          { "op": "tick_mark", "segment": ["E", "C"], "count": 2 }
+        ]
+      },
+      "solution": {
+        "answer": "A",
+        "steps": [
+          { "description": "$E$ 是 $BC$ 中点，$BE = \\dfrac{BC}{2} = 2$" },
+          { "description": "在 Rt△ABE 中：$AE = \\sqrt{AB^2 + BE^2} = \\sqrt{16 + 4} = \\sqrt{20} = 2\\sqrt{5}$" }
+        ],
+        "keyKnowledge": "正方形性质、勾股定理"
+      }
+    },
+    {
+      "id": "math-g8-ch03-q004",
+      "type": "choice",
+      "stem": "如图，梯形ABCD中，AD∥BC，AD=4，BC=8，高为3。则梯形ABCD的面积为（  ）",
+      "options": [
+        { "label": "A", "text": "$12$" },
+        { "label": "B", "text": "$18$" },
+        { "label": "C", "text": "$24$" },
+        { "label": "D", "text": "$36$" }
+      ],
+      "answer": "B",
+      "difficulty": 2,
+      "topicId": "math-g8-ch03-t03",
+      "tags": ["基础题"],
+      "figure": {
+        "type": "construction",
+        "padding": 1.2,
+        "construction": [
+          { "op": "point", "id": "B", "at": [0, 0] },
+          { "op": "point", "id": "C", "at": [8, 0] },
+          { "op": "point", "id": "A", "at": [2, 3] },
+          { "op": "point", "id": "D", "at": [6, 3] },
+          { "op": "polygon", "points": ["A", "B", "C", "D"] },
+          { "op": "foot", "id": "H", "point": "A", "line": ["B", "C"] },
+          { "op": "segment", "from": "A", "to": "H", "style": "dashed", "label": "h" },
+          { "op": "angle_mark", "vertex": "H", "p1": "A", "p2": "C", "right": true },
+          { "op": "label", "at": [4, 3.6], "text": "AD = 4" },
+          { "op": "label", "at": [4, -0.6], "text": "BC = 8" }
+        ]
+      },
+      "solution": {
+        "answer": "B",
+        "steps": [
+          { "description": "梯形面积公式：$S = \\dfrac{(上底 + 下底) \\times 高}{2}$" },
+          { "description": "$S = \\dfrac{(AD + BC) \\times h}{2} = \\dfrac{(4 + 8) \\times 3}{2} = \\dfrac{36}{2} = 18$" }
+        ],
+        "keyKnowledge": "梯形面积公式"
+      }
+    },
+    {
+      "id": "math-g8-ch03-q005",
+      "type": "choice",
+      "stem": "如图，菱形ABCD中，对角线AC与BD交于点O，AC=6，BD=8。则菱形的边长为（  ）",
+      "options": [
+        { "label": "A", "text": "$4$" },
+        { "label": "B", "text": "$5$" },
+        { "label": "C", "text": "$\\sqrt{7}$" },
+        { "label": "D", "text": "$\\sqrt{13}$" }
+      ],
+      "answer": "B",
+      "difficulty": 2,
+      "topicId": "math-g8-ch03-t01",
+      "tags": ["基础题"],
+      "figure": {
+        "type": "construction",
+        "padding": 1.2,
+        "construction": [
+          { "op": "point", "id": "B", "at": [0, 0] },
+          { "op": "point", "id": "C", "at": [5, 0] },
+          { "op": "point", "id": "A", "at": [2.5, 3.5] },
+          { "op": "point", "id": "D", "at": [7.5, 3.5] },
+          { "op": "polygon", "points": ["A", "B", "C", "D"] },
+          { "op": "intersection", "id": "O", "line1": ["A", "C"], "line2": ["B", "D"] },
+          { "op": "segment", "from": "A", "to": "C", "style": "dashed" },
+          { "op": "segment", "from": "B", "to": "D", "style": "dashed" },
+          { "op": "tick_mark", "segment": ["A", "B"], "count": 1 },
+          { "op": "tick_mark", "segment": ["B", "C"], "count": 1 },
+          { "op": "tick_mark", "segment": ["C", "D"], "count": 1 },
+          { "op": "tick_mark", "segment": ["D", "A"], "count": 1 },
+          { "op": "angle_mark", "vertex": "O", "p1": "A", "p2": "B", "right": true }
+        ]
+      },
+      "solution": {
+        "answer": "B",
+        "steps": [
+          { "description": "菱形的对角线互相垂直平分" },
+          { "description": "$OA = \\dfrac{AC}{2} = 3$，$OB = \\dfrac{BD}{2} = 4$" },
+          { "description": "在 Rt△AOB 中：$AB = \\sqrt{OA^2 + OB^2} = \\sqrt{9 + 16} = 5$" }
+        ],
+        "keyKnowledge": "菱形对角线互相垂直平分、勾股定理"
+      }
+    },
+    {
+      "id": "math-g8-ch03-q006",
+      "type": "choice",
+      "stem": "如图，等腰梯形ABCD中，AD∥BC，AD=4，BC=10，腰AB=5。则梯形的面积为（  ）",
+      "options": [
+        { "label": "A", "text": "$24$" },
+        { "label": "B", "text": "$28$" },
+        { "label": "C", "text": "$30$" },
+        { "label": "D", "text": "$35$" }
+      ],
+      "answer": "A",
+      "difficulty": 3,
+      "topicId": "math-g8-ch03-t03",
+      "tags": ["提高题"],
+      "figure": {
+        "type": "construction",
+        "padding": 1.2,
+        "construction": [
+          { "op": "point", "id": "B", "at": [0, 0] },
+          { "op": "point", "id": "C", "at": [10, 0] },
+          { "op": "point", "id": "A", "at": [3, 4] },
+          { "op": "point", "id": "D", "at": [7, 4] },
+          { "op": "polygon", "points": ["A", "B", "C", "D"] },
+          { "op": "tick_mark", "segment": ["A", "B"], "count": 1 },
+          { "op": "tick_mark", "segment": ["C", "D"], "count": 1 },
+          { "op": "foot", "id": "H", "point": "A", "line": ["B", "C"] },
+          { "op": "segment", "from": "A", "to": "H", "style": "dashed", "label": "h" },
+          { "op": "angle_mark", "vertex": "H", "p1": "A", "p2": "C", "right": true },
+          { "op": "label", "at": [5, 4.6], "text": "AD = 4" },
+          { "op": "label", "at": [5, -0.6], "text": "BC = 10" }
+        ]
+      },
+      "solution": {
+        "answer": "A",
+        "steps": [
+          { "description": "等腰梯形：$AB = CD = 5$" },
+          { "description": "过 A 作 AH⊥BC 于 H，$BH = \\dfrac{BC - AD}{2} = \\dfrac{10 - 4}{2} = 3$" },
+          { "description": "在 Rt△ABH 中：$AH = \\sqrt{AB^2 - BH^2} = \\sqrt{25 - 9} = 4$" },
+          { "description": "面积 $S = \\dfrac{(AD + BC) \\times AH}{2} = \\dfrac{(4 + 10) \\times 4}{2} = 28$" }
+        ],
+        "keyKnowledge": "等腰梯形性质、勾股定理"
+      }
+    }
+  ]
+}

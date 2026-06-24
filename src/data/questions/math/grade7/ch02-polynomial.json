@@ -1,0 +1,304 @@
+{
+  "subject": "math",
+  "grade": 7,
+  "chapterId": "math-g7-ch02",
+  "questions": [
+    {
+      "id": "math-g7-ch02-q001",
+      "type": "choice",
+      "stem": "下列各式中，是单项式的是（  ）",
+      "options": [
+        { "label": "A", "text": "$x + 1$" },
+        { "label": "B", "text": "$\\dfrac{1}{x}$" },
+        { "label": "C", "text": "$-3a^2b$" },
+        { "label": "D", "text": "$x - y$" }
+      ],
+      "answer": "C",
+      "difficulty": 1,
+      "topicId": "math-g7-ch02-t01",
+      "tags": ["基础题"],
+      "solution": {
+        "answer": "C",
+        "steps": [
+          { "description": "单项式：数字与字母的乘积，不含加减运算" },
+          { "description": "A 是 $x+1$，含加法，是多项式" },
+          { "description": "B 是 $\\dfrac{1}{x}$，分母含字母，不是整式" },
+          { "description": "C 是 $-3a^2b$，数字与字母的乘积，是单项式" },
+          { "description": "D 是 $x-y$，含减法，是多项式" }
+        ],
+        "keyKnowledge": "单项式的定义"
+      }
+    },
+    {
+      "id": "math-g7-ch02-q002",
+      "type": "choice",
+      "stem": "单项式 $-\\dfrac{2}{3}a^2b$ 的系数和次数分别是（  ）",
+      "options": [
+        { "label": "A", "text": "$-\\dfrac{2}{3}$，2" },
+        { "label": "B", "text": "$-\\dfrac{2}{3}$，3" },
+        { "label": "C", "text": "$2$，3" },
+        { "label": "D", "text": "$2$，2" }
+      ],
+      "answer": "B",
+      "difficulty": 2,
+      "topicId": "math-g7-ch02-t01",
+      "tags": ["基础题"],
+      "solution": {
+        "answer": "B",
+        "steps": [
+          { "description": "系数：单项式中的数字因数，为 $-\\dfrac{2}{3}$" },
+          { "description": "次数：所有字母指数的和，$a$ 的指数是 2，$b$ 的指数是 1" },
+          { "description": "次数 $= 2 + 1 = 3$" }
+        ],
+        "keyKnowledge": "单项式的系数和次数"
+      }
+    },
+    {
+      "id": "math-g7-ch02-q003",
+      "type": "choice",
+      "stem": "多项式 $3x^2 - 2x + 1$ 的项数和次数分别是（  ）",
+      "options": [
+        { "label": "A", "text": "2 项，2 次" },
+        { "label": "B", "text": "3 项，2 次" },
+        { "label": "C", "text": "3 项，3 次" },
+        { "label": "D", "text": "2 项，3 次" }
+      ],
+      "answer": "B",
+      "difficulty": 2,
+      "topicId": "math-g7-ch02-t01",
+      "tags": ["基础题"],
+      "solution": {
+        "answer": "B",
+        "steps": [
+          { "description": "多项式的项：$3x^2$、$-2x$、$1$，共 3 项" },
+          { "description": "最高次项是 $3x^2$，次数为 2" },
+          { "description": "所以是 3 项 2 次多项式" }
+        ],
+        "keyKnowledge": "多项式的项数和次数"
+      }
+    },
+    {
+      "id": "math-g7-ch02-q004",
+      "type": "choice",
+      "stem": "下列各式中，与 $3a^2b$ 是同类项的是（  ）",
+      "options": [
+        { "label": "A", "text": "$3ab^2$" },
+        { "label": "B", "text": "$-2a^2b$" },
+        { "label": "C", "text": "$3a^2$" },
+        { "label": "D", "text": "$2b^2a$" }
+      ],
+      "answer": "B",
+      "difficulty": 2,
+      "topicId": "math-g7-ch02-t02",
+      "tags": ["基础题"],
+      "solution": {
+        "answer": "B",
+        "steps": [
+          { "description": "同类项：所含字母相同，且相同字母的指数也相同" },
+          { "description": "$3a^2b$：字母 $a$ 指数 2，字母 $b$ 指数 1" },
+          { "description": "A：$a$ 指数 1，$b$ 指数 2，不是同类项" },
+          { "description": "B：$a$ 指数 2，$b$ 指数 1，是同类项" },
+          { "description": "C：只含字母 $a$，不是同类项" },
+          { "description": "D：$a$ 指数 1，$b$ 指数 2，不是同类项" }
+        ],
+        "keyKnowledge": "同类项的定义"
+      }
+    },
+    {
+      "id": "math-g7-ch02-q005",
+      "type": "choice",
+      "stem": "计算 $3a + 2a$ 的结果是（  ）",
+      "options": [
+        { "label": "A", "text": "$5a^2$" },
+        { "label": "B", "text": "$6a^2$" },
+        { "label": "C", "text": "$5a$" },
+        { "label": "D", "text": "$a$" }
+      ],
+      "answer": "C",
+      "difficulty": 1,
+      "topicId": "math-g7-ch02-t02",
+      "tags": ["基础题", "易错题"],
+      "solution": {
+        "answer": "C",
+        "steps": [
+          { "description": "$3a$ 和 $2a$ 是同类项" },
+          { "description": "合并同类项：系数相加，字母和指数不变" },
+          { "description": "$3a + 2a = (3+2)a = 5a$" }
+        ],
+        "keyKnowledge": "合并同类项法则"
+      },
+      "trapPoints": [
+        {
+          "description": "容易误将字母指数也相加",
+          "correctApproach": "合并同类项时，系数相加，字母和指数保持不变",
+          "commonMistake": "误算为 $5a^2$，将指数也相加了"
+        }
+      ]
+    },
+    {
+      "id": "math-g7-ch02-q006",
+      "type": "choice",
+      "stem": "化简 $5x^2 - 3x^2 + 2x - x$ 的结果是（  ）",
+      "options": [
+        { "label": "A", "text": "$2x^2 + x$" },
+        { "label": "B", "text": "$2x^2 + 2x$" },
+        { "label": "C", "text": "$8x^2 - 4x$" },
+        { "label": "D", "text": "$2x^2 - 4x$" }
+      ],
+      "answer": "A",
+      "difficulty": 2,
+      "topicId": "math-g7-ch02-t02",
+      "tags": ["基础题"],
+      "solution": {
+        "answer": "A",
+        "steps": [
+          { "description": "合并同类项：$5x^2 - 3x^2 = 2x^2$" },
+          { "description": "合并同类项：$2x - x = x$" },
+          { "description": "结果为 $2x^2 + x$" }
+        ],
+        "keyKnowledge": "多项式的化简"
+      }
+    },
+    {
+      "id": "math-g7-ch02-q007",
+      "type": "choice",
+      "stem": "化简 $-(2a - 3b) + (a + b)$ 的结果是（  ）",
+      "options": [
+        { "label": "A", "text": "$-a + 4b$" },
+        { "label": "B", "text": "$-a - 2b$" },
+        { "label": "C", "text": "$a + 4b$" },
+        { "label": "D", "text": "$a - 2b$" }
+      ],
+      "answer": "A",
+      "difficulty": 2,
+      "topicId": "math-g7-ch02-t03",
+      "tags": ["基础题", "易错题"],
+      "solution": {
+        "answer": "A",
+        "steps": [
+          { "description": "去括号：$-(2a-3b) = -2a + 3b$" },
+          { "description": "去括号：$+(a+b) = a + b$" },
+          { "description": "合并：$-2a + 3b + a + b = -a + 4b$" }
+        ],
+        "keyKnowledge": "去括号法则"
+      },
+      "trapPoints": [
+        {
+          "description": "括号前是负号时，括号内各项都要变号",
+          "correctApproach": "$-(2a-3b) = -2a + 3b$，每项都要取相反数",
+          "commonMistake": "只给第一项变号，写成 $-2a - 3b$"
+        }
+      ]
+    },
+    {
+      "id": "math-g7-ch02-q008",
+      "type": "fill",
+      "stem": "若单项式 $-3x^2y^n$ 与 $5x^my^3$ 是同类项，求 $m + n$ 的值。",
+      "segments": ["$m + n = $", "___1___", " 。"],
+      "blanks": [{ "index": 1, "answer": "5" }],
+      "difficulty": 2,
+      "topicId": "math-g7-ch02-t02",
+      "tags": ["基础题"],
+      "solution": {
+        "answer": "$m + n = 5$",
+        "steps": [
+          { "description": "同类项：相同字母的指数相同" },
+          { "description": "$x$ 的指数：$m = 2$" },
+          { "description": "$y$ 的指数：$n = 3$" },
+          { "description": "$m + n = 2 + 3 = 5$" }
+        ],
+        "keyKnowledge": "同类项的定义"
+      }
+    },
+    {
+      "id": "math-g7-ch02-q009",
+      "type": "fill",
+      "stem": "化简 $4(x - y) - 2(x + 3y)$ 的结果。",
+      "segments": ["结果为 ", "___1___", " 。"],
+      "blanks": [{ "index": 1, "answer": "$2x - 10y$" }],
+      "difficulty": 3,
+      "topicId": "math-g7-ch02-t03",
+      "tags": ["提高题"],
+      "solution": {
+        "answer": "$2x - 10y$",
+        "steps": [
+          { "description": "去括号：$4(x-y) = 4x - 4y$" },
+          { "description": "去括号：$-2(x+3y) = -2x - 6y$" },
+          { "description": "合并：$4x - 4y - 2x - 6y = 2x - 10y$" }
+        ],
+        "keyKnowledge": "乘法分配律与去括号"
+      }
+    },
+    {
+      "id": "math-g7-ch02-q010",
+      "type": "choice",
+      "stem": "若 $A = 3x^2 - 2x + 1$，$B = x^2 + x - 3$，则 $A - B$ 的结果是（  ）",
+      "options": [
+        { "label": "A", "text": "$2x^2 - 3x + 4$" },
+        { "label": "B", "text": "$2x^2 - x - 2$" },
+        { "label": "C", "text": "$4x^2 - x - 2$" },
+        { "label": "D", "text": "$2x^2 - 3x - 2$" }
+      ],
+      "answer": "A",
+      "difficulty": 3,
+      "topicId": "math-g7-ch02-t03",
+      "tags": ["提高题"],
+      "solution": {
+        "answer": "A",
+        "steps": [
+          { "description": "$A - B = (3x^2 - 2x + 1) - (x^2 + x - 3)$" },
+          { "description": "去括号：$= 3x^2 - 2x + 1 - x^2 - x + 3$" },
+          { "description": "合并同类项：$= 2x^2 - 3x + 4$" }
+        ],
+        "keyKnowledge": "多项式的加减运算"
+      }
+    },
+    {
+      "id": "math-g7-ch02-q011",
+      "type": "choice",
+      "stem": "已知 $a - b = 3$，$b - c = 2$，则 $a - c$ 的值为（  ）",
+      "options": [
+        { "label": "A", "text": "$1$" },
+        { "label": "B", "text": "$5$" },
+        { "label": "C", "text": "$6$" },
+        { "label": "D", "text": "$-1$" }
+      ],
+      "answer": "B",
+      "difficulty": 3,
+      "topicId": "math-g7-ch02-t02",
+      "tags": ["提高题"],
+      "solution": {
+        "answer": "B",
+        "steps": [
+          { "description": "$a - c = (a - b) + (b - c)$" },
+          { "description": "$= 3 + 2 = 5$" }
+        ],
+        "keyKnowledge": "整体代入思想"
+      }
+    },
+    {
+      "id": "math-g7-ch02-q012",
+      "type": "choice",
+      "stem": "若 $a + b = 5$，$ab = 3$，则 $(a - 2) + (b - 3)$ 的值为（  ）",
+      "options": [
+        { "label": "A", "text": "$0$" },
+        { "label": "B", "text": "$1$" },
+        { "label": "C", "text": "$2$" },
+        { "label": "D", "text": "$5$" }
+      ],
+      "answer": "A",
+      "difficulty": 3,
+      "topicId": "math-g7-ch02-t02",
+      "tags": ["提高题"],
+      "solution": {
+        "answer": "A",
+        "steps": [
+          { "description": "$(a-2) + (b-3) = a + b - 2 - 3 = a + b - 5$" },
+          { "description": "将 $a + b = 5$ 代入" },
+          { "description": "$= 5 - 5 = 0$" }
+        ],
+        "keyKnowledge": "整体代入思想"
+      }
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "subject": "physics",
+  "grade": 9,
+  "chapterId": "phy-g9-ch01",
+  "questions": [
+    {
+      "id": "phy-g9-ch01-q007",
+      "type": "choice",
+      "stem": "如图所示的电路中，闭合开关后，灯泡 L₁ 和 L₂ 的连接方式是（  ）",
+      "options": [
+        { "label": "A", "text": "串联" },
+        { "label": "B", "text": "并联" },
+        { "label": "C", "text": "既有串联又有并联" },
+        { "label": "D", "text": "无法判断" }
+      ],
+      "answer": "A",
+      "difficulty": 2,
+      "topicId": "phy-g9-ch01-t02",
+      "tags": ["基础题"],
+      "figure": {
+        "type": "circuit",
+        "components": [
+          { "id": "battery", "type": "battery", "position": [-120, 0], "direction": "vertical", "label": "电源", "value": "3V" },
+          { "id": "switch", "type": "switch", "position": [-40, -50], "direction": "horizontal", "label": "S", "closed": false },
+          { "id": "L1", "type": "bulb", "position": [40, -50], "label": "L₁" },
+          { "id": "L2", "type": "bulb", "position": [120, 0], "label": "L₂" }
+        ],
+        "wires": [
+          { "from": [-120, -10], "to": [-120, -50] },
+          { "from": [-120, -50], "to": [-60, -50] },
+          { "from": [-20, -50], "to": [20, -50] },
+          { "from": [60, -50], "to": [120, -50] },
+          { "from": [120, -50], "to": [120, -10] },
+          { "from": [120, 10], "to": [120, 50] },
+          { "from": [120, 50], "to": [-120, 50] },
+          { "from": [-120, 50], "to": [-120, 10] }
+        ],
+        "title": ""
+      },
+      "solution": {
+        "answer": "A",
+        "steps": [
+          { "description": "电流从电源正极出发" },
+          { "description": "依次经过开关 S → 灯 L₁ → 灯 L₂" },
+          { "description": "最后回到电源负极" },
+          { "description": "只有一条路径，所以是串联" }
+        ],
+        "keyKnowledge": "串联电路的定义"
+      }
+    },
+    {
+      "id": "phy-g9-ch01-q008",
+      "type": "choice",
+      "stem": "如图所示的电路中，闭合开关后，灯泡 L₁ 和 L₂ 的连接方式是（  ）",
+      "options": [
+        { "label": "A", "text": "串联" },
+        { "label": "B", "text": "并联" },
+        { "label": "C", "text": "既有串联又有并联" },
+        { "label": "D", "text": "无法判断" }
+      ],
+      "answer": "B",
+      "difficulty": 2,
+      "topicId": "phy-g9-ch01-t02",
+      "tags": ["基础题"],
+      "figure": {
+        "type": "circuit",
+        "components": [
+          { "id": "battery", "type": "battery", "position": [-120, 0], "direction": "vertical", "label": "电源", "value": "3V" },
+          { "id": "switch", "type": "switch", "position": [-60, -50], "direction": "horizontal", "label": "S", "closed": false },
+          { "id": "L1", "type": "bulb", "position": [40, -50], "label": "L₁" },
+          { "id": "L2", "type": "bulb", "position": [40, 50], "label": "L₂" }
+        ],
+        "wires": [
+          { "from": [-120, -10], "to": [-120, -50] },
+          { "from": [-120, -50], "to": [-80, -50] },
+          { "from": [-40, -50], "to": [-20, -50] },
+          { "from": [60, -50], "to": [80, -50] },
+          { "from": [80, -50], "to": [80, 0] },
+          { "from": [80, 0], "to": [80, 50] },
+          { "from": [80, 50], "to": [60, 50] },
+          { "from": [20, 50], "to": [-80, 50] },
+          { "from": [-80, 50], "to": [-80, 0] },
+          { "from": [-80, 0], "to": [-80, -50] },
+          { "from": [-120, 10], "to": [-120, 50] },
+          { "from": [-120, 50], "to": [-80, 50] }
+        ],
+        "junctions": [
+          { "position": [-80, -50] },
+          { "position": [80, -50] },
+          { "position": [-80, 50] },
+          { "position": [80, 50] }
+        ],
+        "title": ""
+      },
+      "solution": {
+        "answer": "B",
+        "steps": [
+          { "description": "电流从电源正极出发" },
+          { "description": "在节点处分为两路：一路经过 L₁，一路经过 L₂" },
+          { "description": "两路汇合后回到电源负极" },
+          { "description": "有两条路径，所以是并联" }
+        ],
+        "keyKnowledge": "并联电路的定义"
+      }
+    },
+    {
+      "id": "phy-g9-ch01-q009",
+      "type": "choice",
+      "stem": "在如图所示的电路中，电流表测的是哪部分的电流？",
+      "options": [
+        { "label": "A", "text": "L₁ 的电流" },
+        { "label": "B", "text": "L₂ 的电流" },
+        { "label": "C", "text": "干路电流" },
+        { "label": "D", "text": "无法判断" }
+      ],
+      "answer": "C",
+      "difficulty": 3,
+      "topicId": "phy-g9-ch01-t02",
+      "tags": ["提高题"],
+      "figure": {
+        "type": "circuit",
+        "components": [
+          { "id": "battery", "type": "battery", "position": [-120, 0], "direction": "vertical", "label": "电源", "value": "3V" },
+          { "id": "switch", "type": "switch", "position": [-60, -50], "direction": "horizontal", "label": "S", "closed": false },
+          { "id": "ammeter", "type": "ammeter", "position": [0, -50], "label": "A" },
+          { "id": "L1", "type": "bulb", "position": [60, -50], "label": "L₁" },
+          { "id": "L2", "type": "bulb", "position": [60, 50], "label": "L₂" }
+        ],
+        "wires": [
+          { "from": [-120, -10], "to": [-120, -50] },
+          { "from": [-120, -50], "to": [-80, -50] },
+          { "from": [-40, -50], "to": [-20, -50] },
+          { "from": [20, -50], "to": [40, -50] },
+          { "from": [80, -50], "to": [120, -50] },
+          { "from": [120, -50], "to": [120, 0] },
+          { "from": [120, 0], "to": [120, 50] },
+          { "from": [120, 50], "to": [80, 50] },
+          { "from": [40, 50], "to": [-120, 50] },
+          { "from": [-120, 50], "to": [-120, 10] }
+        ],
+        "title": ""
+      },
+      "solution": {
+        "answer": "C",
+        "steps": [
+          { "description": "电流表串联在干路上" },
+          { "description": "电流表在分支点之前" },
+          { "description": "所以测的是干路总电流" }
+        ],
+        "keyKnowledge": "电流表的使用"
+      }
+    }
+  ]
+}

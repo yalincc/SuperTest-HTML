@@ -1,0 +1,151 @@
+{
+  "subject": "chemistry",
+  "grade": 9,
+  "chapterId": "chem-g9-ch03",
+  "questions": [
+    {
+      "id": "chem-g9-ch03-q001",
+      "type": "choice",
+      "stem": "下列物质中，属于酸的是（  ）",
+      "options": [
+        { "label": "A", "text": "$\\text{NaOH}$" },
+        { "label": "B", "text": "$\\text{H}_2\\text{SO}_4$" },
+        { "label": "C", "text": "$\\text{NaCl}$" },
+        { "label": "D", "text": "$\\text{CaO}$" }
+      ],
+      "answer": "B",
+      "difficulty": 1,
+      "topicId": "chem-g9-ch03-t01",
+      "tags": ["基础题"],
+      "solution": {
+        "answer": "B",
+        "steps": [
+          { "description": "酸：电离时产生的阳离子全部是 $\\text{H}^+$ 的化合物" },
+          { "description": "A 是碱，C 是盐，D 是氧化物，B 硫酸是酸" }
+        ],
+        "keyKnowledge": "酸碱盐的分类"
+      }
+    },
+    {
+      "id": "chem-g9-ch03-q002",
+      "type": "choice",
+      "stem": "下列物质的溶液能使紫色石蕊试液变红的是（  ）",
+      "options": [
+        { "label": "A", "text": "$\\text{NaOH}$" },
+        { "label": "B", "text": "$\\text{NaCl}$" },
+        { "label": "C", "text": "$\\text{HCl}$" },
+        { "label": "D", "text": "$\\text{Ca(OH)}_2$" }
+      ],
+      "answer": "C",
+      "difficulty": 1,
+      "topicId": "chem-g9-ch03-t01",
+      "tags": ["基础题", "中考真题"],
+      "solution": {
+        "answer": "C",
+        "steps": [
+          { "description": "酸性溶液使紫色石蕊变红，碱性溶液使其变蓝" },
+          { "description": "HCl 是酸，溶液呈酸性，使石蕊变红" },
+          { "description": "NaOH、Ca(OH)₂ 呈碱性，NaCl 呈中性" }
+        ],
+        "keyKnowledge": "酸碱指示剂"
+      }
+    },
+    {
+      "id": "chem-g9-ch03-q003",
+      "type": "choice",
+      "stem": "下列反应中，属于中和反应的是（  ）",
+      "options": [
+        { "label": "A", "text": "$\\text{Fe} + \\text{H}_2\\text{SO}_4 = \\text{FeSO}_4 + \\text{H}_2 \\uparrow$" },
+        { "label": "B", "text": "$\\text{NaOH} + \\text{HCl} = \\text{NaCl} + \\text{H}_2\\text{O}$" },
+        { "label": "C", "text": "$\\text{Na}_2\\text{CO}_3 + 2\\text{HCl} = 2\\text{NaCl} + \\text{H}_2\\text{O} + \\text{CO}_2 \\uparrow$" },
+        { "label": "D", "text": "$\\text{CO}_2 + \\text{Ca(OH)}_2 = \\text{CaCO}_3 \\downarrow + \\text{H}_2\\text{O}$" }
+      ],
+      "answer": "B",
+      "difficulty": 2,
+      "topicId": "chem-g9-ch03-t02",
+      "tags": ["中考真题", "高频考点"],
+      "source": { "type": "zhongkao", "year": 2023, "province": "广东", "questionNumber": "第6题" },
+      "solution": {
+        "answer": "B",
+        "steps": [
+          { "description": "中和反应：酸 + 碱 → 盐 + 水" },
+          { "description": "A 是金属与酸反应，C 是盐与酸反应，D 是氧化物与碱反应" },
+          { "description": "B 是 NaOH（碱）+ HCl（酸）→ NaCl（盐）+ H₂O，属于中和反应" }
+        ],
+        "keyKnowledge": "中和反应的定义"
+      },
+      "trapPoints": [
+        {
+          "description": "不是所有生成盐和水的反应都是中和反应",
+          "correctApproach": "中和反应必须是酸与碱之间的反应",
+          "commonMistake": "把 C（碳酸钠与盐酸）也当作中和反应"
+        }
+      ]
+    },
+    {
+      "id": "chem-g9-ch03-q004",
+      "type": "fill",
+      "stem": "稀盐酸和氢氧化钠溶液反应的化学方程式为 ______，该反应的基本类型属于 ______ 反应。",
+      "segments": ["稀盐酸和氢氧化钠溶液反应的化学方程式为 ", "，该反应的基本类型属于 ", " 反应。"],
+      "blanks": [
+        { "index": 0, "answer": "NaOH + HCl = NaCl + H₂O", "alternatives": ["NaOH+HCl=NaCl+H2O", "HCl + NaOH = NaCl + H₂O", "HCl+NaOH=NaCl+H2O"] },
+        { "index": 1, "answer": "复分解", "alternatives": ["复分解", "中和"] }
+      ],
+      "difficulty": 2,
+      "topicId": "chem-g9-ch03-t02",
+      "tags": ["高频考点"],
+      "solution": {
+        "answer": "$\\text{NaOH} + \\text{HCl} = \\text{NaCl} + \\text{H}_2\\text{O}$；复分解反应（或中和反应）",
+        "steps": [
+          { "description": "酸 + 碱 → 盐 + 水" },
+          { "description": "中和反应属于复分解反应的一种" }
+        ],
+        "keyKnowledge": "中和反应方程式"
+      }
+    },
+    {
+      "id": "chem-g9-ch03-q005",
+      "type": "fill",
+      "stem": "碳酸钠的化学式为 ______，俗称 ______。向碳酸钠溶液中滴加稀盐酸，观察到的现象是 ______。",
+      "segments": ["碳酸钠的化学式为 ", "，俗称 ", "。向碳酸钠溶液中滴加稀盐酸，观察到的现象是 ", "。"],
+      "blanks": [
+        { "index": 0, "answer": "Na₂CO₃", "alternatives": ["Na2CO3", "Na₂CO₃"] },
+        { "index": 1, "answer": "纯碱", "alternatives": ["纯碱", "苏打", "纯碱（苏打）"] },
+        { "index": 2, "answer": "有气泡产生", "alternatives": ["产生气泡", "有气泡冒出"] }
+      ],
+      "difficulty": 2,
+      "topicId": "chem-g9-ch03-t03",
+      "tags": ["中考真题"],
+      "solution": {
+        "answer": "Na₂CO₃；纯碱（苏打）；有气泡产生",
+        "steps": [
+          { "description": "碳酸钠化学式 Na₂CO₃，俗称纯碱或苏打" },
+          { "description": "与盐酸反应生成 CO₂ 气体", "expression": "\\text{Na}_2\\text{CO}_3 + 2\\text{HCl} = 2\\text{NaCl} + \\text{H}_2\\text{O} + \\text{CO}_2 \\uparrow" }
+        ],
+        "keyKnowledge": "常见的盐"
+      }
+    },
+    {
+      "id": "chem-g9-ch03-q006",
+      "type": "calculation",
+      "stem": "某同学取 20 g 稀盐酸，逐滴滴入未知浓度的 NaOH 溶液中，恰好完全反应时消耗了 10 g NaOH 溶液。\n\n反应方程式：$\\text{NaOH} + \\text{HCl} = \\text{NaCl} + \\text{H}_2\\text{O}$\n\n（1）求反应后溶液中溶质的质量。\n（2）求反应后溶液的质量。",
+      "subQuestions": [
+        { "label": "(1)", "stem": "求反应后溶液中溶质的质量。", "answer": "需要知道 NaOH 溶液的浓度才能计算" },
+        { "label": "(2)", "stem": "求反应后溶液的质量。", "answer": "30 g" }
+      ],
+      "difficulty": 3,
+      "topicId": "chem-g9-ch03-t02",
+      "tags": ["中考真题", "综合题"],
+      "solution": {
+        "answer": "（1）取决于 NaOH 浓度；（2）反应后溶液质量为 30 g",
+        "steps": [
+          { "description": "（2）根据质量守恒定律，反应后溶液质量 = 反应物总质量（无气体生成或逸出）" },
+          { "description": "反应后溶液质量", "expression": "m = 20 + 10 = 30 \\, \\text{g}" },
+          { "description": "（1）需要 NaOH 溶液浓度才能进一步计算溶质质量" }
+        ],
+        "keyKnowledge": "中和反应 + 溶液质量守恒"
+      },
+      "scorePoints": ["判断质量守恒（1分）", "溶液质量计算（2分）", "分析溶质需要条件（1分）"]
+    }
+  ]
+}

@@ -1,0 +1,433 @@
+{
+  "subject": "math",
+  "grade": 7,
+  "chapterId": "math-g7-ch01",
+  "questions": [
+    {
+      "id": "math-g7-ch01-q001",
+      "type": "choice",
+      "stem": "下列各数中，是负数的是（  ）",
+      "options": [
+        { "label": "A", "text": "$-(-3)$" },
+        { "label": "B", "text": "$|-3|$" },
+        { "label": "C", "text": "$-|{-3}|$" },
+        { "label": "D", "text": "$(-3)^2$" }
+      ],
+      "answer": "C",
+      "difficulty": 2,
+      "topicId": "math-g7-ch01-t01",
+      "tags": ["中考真题", "易错题"],
+      "source": { "type": "zhongkao", "year": 2023, "province": "广东", "questionNumber": "第1题" },
+      "solution": {
+        "answer": "C",
+        "steps": [
+          { "description": "化简各选项", "expression": "A: -(-3)=3,\\quad B: |-3|=3,\\quad C: -|-3|=-3,\\quad D: (-3)^2=9" },
+          { "description": "判断正负性：只有 C 的结果为负数" }
+        ],
+        "keyKnowledge": "绝对值、相反数、有理数的乘方"
+      },
+      "trapPoints": [
+        {
+          "description": "$-|-3|$ 容易与 $|-3|$ 混淆",
+          "correctApproach": "先算绝对值 $|-3|=3$，再取相反数得 $-3$",
+          "commonMistake": "误认为 $-|-3|=3$，忽略了外层的负号"
+        }
+      ],
+      "ttsText": "下列各数中，是负数的是。A选项，负的负3。B选项，负3的绝对值。C选项，负的负3的绝对值。D选项，负3的平方。"
+    },
+    {
+      "id": "math-g7-ch01-q002",
+      "type": "choice",
+      "stem": "在数轴上，与原点距离为 $3$ 的点所表示的数是（  ）",
+      "options": [
+        { "label": "A", "text": "$3$" },
+        { "label": "B", "text": "$-3$" },
+        { "label": "C", "text": "$\\pm 3$" },
+        { "label": "D", "text": "不能确定" }
+      ],
+      "answer": "C",
+      "difficulty": 1,
+      "topicId": "math-g7-ch01-t03",
+      "tags": ["基础题", "高频考点"],
+      "solution": {
+        "answer": "C",
+        "steps": [
+          { "description": "数轴上与原点距离为 3 的点有两个", "expression": "x = 3 \\text{ 或 } x = -3" },
+          { "description": "所以该点表示的数为 $\\pm 3$" }
+        ],
+        "keyKnowledge": "数轴上的点与实数的对应关系"
+      }
+    },
+    {
+      "id": "math-g7-ch01-q003",
+      "type": "choice",
+      "stem": "若 $|a| = -a$，则 $a$ 一定是（  ）",
+      "options": [
+        { "label": "A", "text": "正数" },
+        { "label": "B", "text": "负数" },
+        { "label": "C", "text": "非正数" },
+        { "label": "D", "text": "非负数" }
+      ],
+      "answer": "C",
+      "difficulty": 3,
+      "topicId": "math-g7-ch01-t05",
+      "tags": ["中考真题", "易错题", "高频考点"],
+      "source": { "type": "zhongkao", "year": 2022, "questionNumber": "第3题" },
+      "solution": {
+        "answer": "C",
+        "steps": [
+          { "description": "绝对值的性质：$|a| \\geq 0$，所以 $-a \\geq 0$" },
+          { "description": "因此 $a \\leq 0$，即 $a$ 是非正数（包括负数和0）" }
+        ],
+        "keyKnowledge": "绝对值的性质"
+      },
+      "trapPoints": [
+        {
+          "description": "容易忽略 $a=0$ 的情况",
+          "correctApproach": "$|0| = 0 = -0$ 也满足条件，所以 $a$ 可以是 0",
+          "commonMistake": "只考虑负数，选了B，漏掉了 $a=0$"
+        }
+      ]
+    },
+    {
+      "id": "math-g7-ch01-q004",
+      "type": "choice",
+      "stem": "计算 $(-2)^3 \\div (-2)^2$ 的结果是（  ）",
+      "options": [
+        { "label": "A", "text": "$-2$" },
+        { "label": "B", "text": "$2$" },
+        { "label": "C", "text": "$-4$" },
+        { "label": "D", "text": "$4$" }
+      ],
+      "answer": "A",
+      "difficulty": 2,
+      "topicId": "math-g7-ch01-t08",
+      "tags": ["中考真题"],
+      "solution": {
+        "answer": "A",
+        "steps": [
+          { "description": "分别计算", "expression": "(-2)^3 = -8,\\quad (-2)^2 = 4" },
+          { "description": "做除法", "expression": "(-8) \\div 4 = -2" }
+        ],
+        "keyKnowledge": "有理数的乘方与除法"
+      }
+    },
+    {
+      "id": "math-g7-ch01-q005",
+      "type": "choice",
+      "stem": "下列说法正确的是（  ）",
+      "options": [
+        { "label": "A", "text": "有理数分为正数和负数" },
+        { "label": "B", "text": "$0$ 既不是正数也不是负数" },
+        { "label": "C", "text": "整数就是自然数" },
+        { "label": "D", "text": "分数就是小数" }
+      ],
+      "answer": "B",
+      "difficulty": 1,
+      "topicId": "math-g7-ch01-t02",
+      "tags": ["基础题", "易错题"],
+      "solution": {
+        "answer": "B",
+        "steps": [
+          { "description": "A 错误：有理数包括正数、负数和零" },
+          { "description": "B 正确：0 既不是正数也不是负数" },
+          { "description": "C 错误：整数包括正整数、负整数和0，自然数只是非负整数" },
+          { "description": "D 错误：分数可以化为有限小数或无限循环小数，但无限不循环小数不是分数" }
+        ],
+        "keyKnowledge": "有理数的分类"
+      }
+    },
+    {
+      "id": "math-g7-ch01-q006",
+      "type": "choice",
+      "stem": "若 $a+b<0$ 且 $ab>0$，则（  ）",
+      "options": [
+        { "label": "A", "text": "$a>0, b>0$" },
+        { "label": "B", "text": "$a<0, b<0$" },
+        { "label": "C", "text": "$a>0, b<0$" },
+        { "label": "D", "text": "$a<0, b>0$" }
+      ],
+      "answer": "B",
+      "difficulty": 3,
+      "topicId": "math-g7-ch01-t07",
+      "tags": ["中考真题", "高频考点"],
+      "source": { "type": "zhongkao", "year": 2024, "province": "北京", "questionNumber": "第5题" },
+      "solution": {
+        "answer": "B",
+        "steps": [
+          { "description": "由 $ab > 0$ 知 $a, b$ 同号（同为正或同为负）" },
+          { "description": "由 $a+b < 0$ 知 $a, b$ 之和为负" },
+          { "description": "两个正数之和不可能为负，所以 $a < 0, b < 0$" }
+        ],
+        "keyKnowledge": "有理数乘法与加法的符号法则"
+      }
+    },
+    {
+      "id": "math-g7-ch01-q007",
+      "type": "true_false",
+      "stem": "两个负数相加，结果一定是负数。",
+      "answer": true,
+      "difficulty": 1,
+      "topicId": "math-g7-ch01-t06",
+      "tags": ["基础题"],
+      "solution": {
+        "answer": "正确",
+        "steps": [
+          { "description": "两个负数相加，符号不变，绝对值相加", "expression": "(-a)+(-b)=-(a+b)<0" },
+          { "description": "所以结果一定是负数" }
+        ],
+        "keyKnowledge": "有理数加法法则"
+      }
+    },
+    {
+      "id": "math-g7-ch01-q008",
+      "type": "true_false",
+      "stem": "$(-1)^{2023} = -1$",
+      "answer": true,
+      "difficulty": 1,
+      "topicId": "math-g7-ch01-t08",
+      "tags": ["基础题", "高频考点"],
+      "solution": {
+        "answer": "正确",
+        "steps": [
+          { "description": "负数的奇数次幂为负数", "expression": "(-1)^{2023} = -1 \\quad (2023 \\text{ 是奇数})" }
+        ],
+        "keyKnowledge": "有理数的乘方规律"
+      }
+    },
+    {
+      "id": "math-g7-ch01-q009",
+      "type": "true_false",
+      "stem": "一个数的绝对值一定大于零。",
+      "answer": false,
+      "difficulty": 2,
+      "topicId": "math-g7-ch01-t05",
+      "tags": ["易错题"],
+      "solution": {
+        "answer": "错误",
+        "steps": [
+          { "description": "绝对值的性质：$|a| \\geq 0$" },
+          { "description": "当 $a=0$ 时，$|0|=0$，并不大于零" },
+          { "description": "应该说：一个数的绝对值一定**不小于**零（即非负数）" }
+        ],
+        "keyKnowledge": "绝对值的性质"
+      },
+      "trapPoints": [
+        {
+          "description": "\"大于零\"和\"不小于零\"的区别",
+          "correctApproach": "绝对值是非负数，即 $|a| \\geq 0$，包含等于0的情况",
+          "commonMistake": "忽略了 $|0|=0$ 的特殊情况"
+        }
+      ]
+    },
+    {
+      "id": "math-g7-ch01-q010",
+      "type": "true_false",
+      "stem": "互为相反数的两个数之和为 $0$。",
+      "answer": true,
+      "difficulty": 1,
+      "topicId": "math-g7-ch01-t04",
+      "tags": ["基础题"],
+      "solution": {
+        "answer": "正确",
+        "steps": [
+          { "description": "设 $a$ 的相反数为 $-a$" },
+          { "description": "两数之和", "expression": "a + (-a) = 0" }
+        ],
+        "keyKnowledge": "相反数的定义"
+      }
+    },
+    {
+      "id": "math-g7-ch01-q011",
+      "type": "fill",
+      "stem": "计算填空",
+      "segments": ["$(-3) + (+5) = $", "___1___", "；$(-7) - (-3) = $", "___2___"],
+      "blanks": [
+        { "index": 1, "answer": "2" },
+        { "index": 2, "answer": "-4" }
+      ],
+      "difficulty": 1,
+      "topicId": "math-g7-ch01-t06",
+      "tags": ["基础题"],
+      "solution": {
+        "answer": "$2$；$-4$",
+        "steps": [
+          { "description": "第一空：异号相加，取绝对值大的符号", "expression": "(-3)+(+5) = +(5-3) = 2" },
+          { "description": "第二空：减去一个负数等于加上它的相反数", "expression": "(-7)-(-3) = (-7)+3 = -4" }
+        ],
+        "keyKnowledge": "有理数加减法"
+      }
+    },
+    {
+      "id": "math-g7-ch01-q012",
+      "type": "fill",
+      "stem": "数轴上与表示 $-2$ 的点距离为 $5$ 的点所表示的数是",
+      "segments": ["___1___"],
+      "blanks": [
+        { "index": 1, "answer": "3或-7", "alternatives": ["3或-7", "-7或3", "3，-7", "-7，3", "3,-7", "-7,3"] }
+      ],
+      "difficulty": 2,
+      "topicId": "math-g7-ch01-t03",
+      "tags": ["中考真题", "易错题"],
+      "source": { "type": "zhongkao", "year": 2023, "province": "江苏" },
+      "solution": {
+        "answer": "$3$ 或 $-7$",
+        "steps": [
+          { "description": "设该点表示的数为 $x$，则 $|x-(-2)| = 5$" },
+          { "description": "即 $|x+2| = 5$" },
+          { "description": "解方程", "expression": "x+2=5 \\Rightarrow x=3 \\quad \\text{或} \\quad x+2=-5 \\Rightarrow x=-7" }
+        ],
+        "keyKnowledge": "数轴上两点之间的距离"
+      },
+      "trapPoints": [
+        {
+          "description": "容易遗漏一个答案",
+          "correctApproach": "距离为5的点有两个方向：向左和向右，分别求出",
+          "commonMistake": "只求出一个答案，忘记考虑两个方向"
+        }
+      ]
+    },
+    {
+      "id": "math-g7-ch01-q013",
+      "type": "fill",
+      "stem": "比较大小",
+      "segments": ["$-\\dfrac{3}{4}$", "___1___", "$-\\dfrac{4}{5}$", "（填 $>$、$<$ 或 $=$）"],
+      "blanks": [
+        { "index": 1, "answer": ">", "alternatives": [">"] }
+      ],
+      "difficulty": 2,
+      "topicId": "math-g7-ch01-t05",
+      "tags": ["中考真题", "高频考点"],
+      "solution": {
+        "answer": "$-\\dfrac{3}{4} > -\\dfrac{4}{5}$",
+        "steps": [
+          { "description": "两个负数比较大小，绝对值大的反而小" },
+          { "description": "比较绝对值", "expression": "\\left|-\\frac{3}{4}\\right| = \\frac{3}{4} = 0.75,\\quad \\left|-\\frac{4}{5}\\right| = \\frac{4}{5} = 0.8" },
+          { "description": "因为 $0.75 < 0.8$，所以 $-\\dfrac{3}{4} > -\\dfrac{4}{5}$" }
+        ],
+        "keyKnowledge": "负数大小比较"
+      }
+    },
+    {
+      "id": "math-g7-ch01-q014",
+      "type": "choice",
+      "stem": "下列运算正确的是（  ）",
+      "options": [
+        { "label": "A", "text": "$-3 \\times (-2) = -6$" },
+        { "label": "B", "text": "$(-1)^2 = -1$" },
+        { "label": "C", "text": "$0 - (-5) = 5$" },
+        { "label": "D", "text": "$-8 \\div 2 = 4$" }
+      ],
+      "answer": "C",
+      "difficulty": 2,
+      "topicId": "math-g7-ch01-t07",
+      "tags": ["中考真题"],
+      "solution": {
+        "answer": "C",
+        "steps": [
+          { "description": "A 错误：负负得正，$-3 \\times (-2) = 6$" },
+          { "description": "B 错误：$(-1)^2 = 1$" },
+          { "description": "C 正确：$0 - (-5) = 0 + 5 = 5$" },
+          { "description": "D 错误：$-8 \\div 2 = -4$" }
+        ],
+        "keyKnowledge": "有理数运算的符号法则"
+      }
+    },
+    {
+      "id": "math-g7-ch01-q015",
+      "type": "choice",
+      "stem": "已知 $a, b$ 在数轴上的位置如图所示，且 $a$ 在原点左边、$b$ 在原点右边，$|a| > |b|$，则下列结论正确的是（  ）",
+      "options": [
+        { "label": "A", "text": "$a + b > 0$" },
+        { "label": "B", "text": "$a + b < 0$" },
+        { "label": "C", "text": "$a - b > 0$" },
+        { "label": "D", "text": "$ab > 0$" }
+      ],
+      "answer": "B",
+      "difficulty": 3,
+      "topicId": "math-g7-ch01-t06",
+      "tags": ["中考真题", "高频考点"],
+      "source": { "type": "zhongkao", "year": 2024, "questionNumber": "第6题" },
+      "solution": {
+        "answer": "B",
+        "steps": [
+          { "description": "由题意：$a < 0, b > 0$，且 $|a| > |b|$" },
+          { "description": "A：$a+b$：异号相加，取绝对值大的符号，$|a|>|b|$，所以 $a+b < 0$" },
+          { "description": "B 正确 ✓" },
+          { "description": "C：$a - b = a + (-b)$，两负数之和 $< 0$，错误" },
+          { "description": "D：$a \\cdot b$，一正一负之积 $< 0$，错误" }
+        ],
+        "keyKnowledge": "数轴、绝对值、有理数运算"
+      }
+    },
+    {
+      "id": "math-g7-ch01-q016",
+      "type": "true_false",
+      "stem": "任何有理数都有相反数。",
+      "answer": true,
+      "difficulty": 1,
+      "topicId": "math-g7-ch01-t04",
+      "tags": ["基础题"],
+      "solution": {
+        "answer": "正确",
+        "steps": [
+          { "description": "对任意有理数 $a$，$-a$ 就是它的相反数" },
+          { "description": "0 的相反数是 0，正数的相反数是负数，负数的相反数是正数" }
+        ],
+        "keyKnowledge": "相反数的定义"
+      }
+    },
+    {
+      "id": "math-g7-ch01-q017",
+      "type": "fill",
+      "stem": "计算",
+      "segments": ["$(-1)^{100} + (-1)^{101} = $", "___1___"],
+      "blanks": [
+        { "index": 1, "answer": "0" }
+      ],
+      "difficulty": 2,
+      "topicId": "math-g7-ch01-t08",
+      "tags": ["中考真题", "高频考点"],
+      "solution": {
+        "answer": "$0$",
+        "steps": [
+          { "description": "偶数次幂", "expression": "(-1)^{100} = 1" },
+          { "description": "奇数次幂", "expression": "(-1)^{101} = -1" },
+          { "description": "求和", "expression": "1 + (-1) = 0" }
+        ],
+        "keyKnowledge": "有理数乘方的规律"
+      }
+    },
+    {
+      "id": "math-g7-ch01-q018",
+      "type": "choice",
+      "stem": "绝对值等于本身的数是（  ）",
+      "options": [
+        { "label": "A", "text": "正数" },
+        { "label": "B", "text": "负数" },
+        { "label": "C", "text": "非负数" },
+        { "label": "D", "text": "任何有理数" }
+      ],
+      "answer": "C",
+      "difficulty": 2,
+      "topicId": "math-g7-ch01-t05",
+      "tags": ["易错题", "高频考点"],
+      "solution": {
+        "answer": "C",
+        "steps": [
+          { "description": "当 $a \\geq 0$ 时，$|a| = a$" },
+          { "description": "当 $a < 0$ 时，$|a| = -a \\neq a$" },
+          { "description": "所以满足 $|a| = a$ 的数是非负数（正数和0）" }
+        ],
+        "keyKnowledge": "绝对值的定义"
+      },
+      "trapPoints": [
+        {
+          "description": "容易漏选 0",
+          "correctApproach": "$|0| = 0$，0 也满足条件",
+          "commonMistake": "只选正数，漏掉了 $a=0$"
+        }
+      ]
+    }
+  ]
+}

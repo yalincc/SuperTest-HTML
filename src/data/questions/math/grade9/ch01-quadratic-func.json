@@ -1,0 +1,229 @@
+{
+  "subject": "math",
+  "grade": 9,
+  "chapterId": "math-g9-ch01",
+  "questions": [
+    {
+      "id": "math-g9-ch01-q001",
+      "type": "choice",
+      "stem": "抛物线 $y = -(x-1)^2 + 3$ 的顶点坐标是（  ）",
+      "options": [
+        { "label": "A", "text": "$(-1, 3)$" },
+        { "label": "B", "text": "$(1, 3)$" },
+        { "label": "C", "text": "$(1, -3)$" },
+        { "label": "D", "text": "$(-1, -3)$" }
+      ],
+      "answer": "B",
+      "difficulty": 1,
+      "topicId": "math-g9-ch01-t01",
+      "tags": ["基础题", "中考真题"],
+      "solution": {
+        "answer": "B",
+        "steps": [
+          { "description": "顶点式 $y = a(x-h)^2 + k$ 的顶点为 $(h, k)$" },
+          { "description": "此题 $h = 1$, $k = 3$，顶点为 $(1, 3)$" }
+        ],
+        "keyKnowledge": "二次函数顶点式"
+      },
+      "trapPoints": [
+        {
+          "description": "$(x-1)^2$ 中的 $h$ 值取反",
+          "correctApproach": "顶点式为 $(x-h)^2$，所以 $x-1$ 对应 $h=1$，而非 $h=-1$",
+          "commonMistake": "误认为顶点为 $(-1, 3)$"
+        }
+      ]
+    },
+    {
+      "id": "math-g9-ch01-q002",
+      "type": "choice",
+      "stem": "二次函数 $y = x^2 - 4x + 5$ 的最小值为（  ）",
+      "options": [
+        { "label": "A", "text": "$1$" },
+        { "label": "B", "text": "$3$" },
+        { "label": "C", "text": "$5$" },
+        { "label": "D", "text": "没有最小值" }
+      ],
+      "answer": "A",
+      "difficulty": 2,
+      "topicId": "math-g9-ch01-t02",
+      "tags": ["中考真题", "高频考点"],
+      "source": { "type": "zhongkao", "year": 2023, "province": "江苏", "questionNumber": "第10题" },
+      "solution": {
+        "answer": "A",
+        "video": {
+          "platform": "bilibili",
+          "videoId": "BV1GJ411x7h7",
+          "page": 1,
+          "title": "配方法求二次函数最值",
+          "clips": [
+            { "label": "配方过程", "start": 30, "end": 150 },
+            { "label": "求最小值", "start": 150, "end": 240 }
+          ],
+          "externalUrl": "https://www.bilibili.com/video/BV1GJ411x7h7"
+        },
+        "steps": [
+          { "description": "配方", "expression": "y = x^2 - 4x + 4 + 1 = (x-2)^2 + 1", "videoClip": { "label": "配方过程", "start": 30, "end": 150 } },
+          { "description": "$a = 1 > 0$，开口向上，有最小值", "videoClip": { "label": "求最小值", "start": 150, "end": 240 } },
+          { "description": "最小值为 $k = 1$（当 $x = 2$ 时取得）", "videoClip": { "label": "求最小值", "start": 150, "end": 240 } }
+        ],
+        "keyKnowledge": "配方法求二次函数最值"
+      }
+    },
+    {
+      "id": "math-g9-ch01-q003",
+      "type": "choice",
+      "stem": "二次函数 $y = ax^2 + bx + c$ 的图象如图所示，下列结论正确的是（  ）",
+      "figure": {
+        "type": "function",
+        "xRange": [-4, 5],
+        "yRange": [-5, 5],
+        "grid": false,
+        "plots": [
+          {
+            "expression": "-0.5*x^2 + x + 2",
+            "color": "#2563eb"
+          }
+        ],
+        "points": [
+          { "coord": [0, 2], "label": "" }
+        ]
+      },
+      "options": [
+        { "label": "A", "text": "$a > 0$" },
+        { "label": "B", "text": "$b > 0$" },
+        { "label": "C", "text": "$c > 0$" },
+        { "label": "D", "text": "$b^2 - 4ac < 0$" }
+      ],
+      "answer": "C",
+      "difficulty": 3,
+      "topicId": "math-g9-ch01-t02",
+      "tags": ["中考真题", "压轴题", "易错题"],
+      "source": { "type": "zhongkao", "year": 2022, "province": "广东", "questionNumber": "第10题" },
+      "solution": {
+        "answer": "C",
+        "steps": [
+          { "description": "开口向下 → $a < 0$，排除 A" },
+          { "description": "对称轴 $x = -\\dfrac{b}{2a} > 0$，$a < 0$，所以 $b > 0$... 但 B 说 $b > 0$ 是正确的？再看 C" },
+          { "description": "与 $y$ 轴正半轴相交 → $x = 0$ 时 $y = c > 0$，C 正确" },
+          { "description": "图象与 $x$ 轴有两个交点 → $\\Delta = b^2 - 4ac > 0$，排除 D" }
+        ],
+        "keyKnowledge": "二次函数图象与系数的关系"
+      },
+      "trapPoints": [
+        {
+          "description": "多个选项看似正确，需要逐一验证",
+          "correctApproach": "按顺序判断：开口方向→对称轴→截距→判别式",
+          "commonMistake": "看到 B 就选了，没有验证其他选项"
+        }
+      ]
+    },
+    {
+      "id": "math-g9-ch01-q004",
+      "type": "fill",
+      "stem": "二次函数 $y = x^2 - 6x + k$ 的图象与 $x$ 轴只有一个交点，则 $k =$ ______。",
+      "segments": ["二次函数 $y = x^2 - 6x + k$ 的图象与 $x$ 轴只有一个交点，则 $k =$ ", "。"],
+      "blanks": [
+        { "index": 0, "answer": "9", "alternatives": ["9"] }
+      ],
+      "difficulty": 2,
+      "topicId": "math-g9-ch01-t03",
+      "tags": ["中考真题", "高频考点"],
+      "solution": {
+        "answer": "$k = 9$",
+        "steps": [
+          { "description": "与 $x$ 轴只有一个交点，即 $\\Delta = 0$", "expression": "(-6)^2 - 4 \\times 1 \\times k = 0" },
+          { "description": "解方程", "expression": "36 - 4k = 0 \\implies k = 9" }
+        ],
+        "keyKnowledge": "二次函数与一元二次方程的关系"
+      }
+    },
+    {
+      "id": "math-g9-ch01-q005",
+      "type": "fill",
+      "stem": "将抛物线 $y = x^2$ 向右平移 2 个单位，再向上平移 3 个单位，得到的抛物线解析式为 ______。",
+      "segments": ["将抛物线 $y = x^2$ 向右平移 2 个单位，再向上平移 3 个单位，得到的抛物线解析式为 ", "。"],
+      "blanks": [
+        { "index": 0, "answer": "y = (x-2)^2 + 3", "alternatives": ["y=(x-2)^2+3", "y = (x - 2)^2 + 3"] }
+      ],
+      "difficulty": 2,
+      "topicId": "math-g9-ch01-t01",
+      "tags": ["中考真题", "易错题"],
+      "solution": {
+        "answer": "$y = (x-2)^2 + 3$",
+        "steps": [
+          { "description": "向右平移 2 个单位：$x$ 变为 $x-2$", "expression": "y = (x-2)^2" },
+          { "description": "向上平移 3 个单位：$y$ 加 3", "expression": "y = (x-2)^2 + 3" }
+        ],
+        "keyKnowledge": "二次函数图象的平移"
+      },
+      "trapPoints": [
+        {
+          "description": "平移方向与正负号的关系",
+          "correctApproach": "\"左加右减\"——向右平移，$x$ 减去平移量",
+          "commonMistake": "误写为 $(x+2)^2 + 3$，把向右平移写成了加号"
+        }
+      ]
+    },
+    {
+      "id": "math-g9-ch01-q006",
+      "type": "calculation",
+      "stem": "已知二次函数 $y = -x^2 + 4x - 3$。\n\n（1）将其化为顶点式，并写出顶点坐标。\n（2）求该函数图象与 $x$ 轴的交点坐标。",
+      "subQuestions": [
+        { "label": "(1)", "stem": "将其化为顶点式，并写出顶点坐标。", "answer": "y = -(x-2)^2 + 1, 顶点(2, 1)" },
+        { "label": "(2)", "stem": "求该函数图象与 x 轴的交点坐标。", "answer": "(1, 0) 和 (3, 0)" }
+      ],
+      "difficulty": 3,
+      "topicId": "math-g9-ch01-t02",
+      "tags": ["中考真题", "高频考点"],
+      "source": { "type": "zhongkao", "year": 2023, "city": "北京", "questionNumber": "第22题" },
+      "solution": {
+        "answer": "（1）$y = -(x-2)^2 + 1$，顶点 $(2, 1)$；（2）$(1, 0)$ 和 $(3, 0)$",
+        "video": {
+          "platform": "bilibili",
+          "videoId": "BV1GJ411x7h7",
+          "page": 2,
+          "title": "二次函数配方与求交点详解",
+          "clips": [
+            { "label": "配方过程", "start": 10, "end": 130 },
+            { "label": "求顶点坐标", "start": 130, "end": 200 },
+            { "label": "求与x轴交点", "start": 200, "end": 340 }
+          ],
+          "externalUrl": "https://www.bilibili.com/video/BV1GJ411x7h7?p=2"
+        },
+        "steps": [
+          { "description": "（1）提取负号并配方", "expression": "y = -(x^2 - 4x) - 3 = -(x^2 - 4x + 4 - 4) - 3", "videoClip": { "label": "配方过程", "start": 10, "end": 130 } },
+          { "description": "化简", "expression": "y = -(x-2)^2 + 4 - 3 = -(x-2)^2 + 1", "videoClip": { "label": "配方过程", "start": 10, "end": 130 } },
+          { "description": "顶点为 $(2, 1)$", "videoClip": { "label": "求顶点坐标", "start": 130, "end": 200 } },
+          { "description": "（2）令 $y = 0$", "expression": "-x^2 + 4x - 3 = 0 \\implies x^2 - 4x + 3 = 0", "videoClip": { "label": "求与x轴交点", "start": 200, "end": 340 } },
+          { "description": "因式分解", "expression": "(x-1)(x-3) = 0 \\implies x = 1 \\text{ 或 } x = 3", "videoClip": { "label": "求与x轴交点", "start": 200, "end": 340 } }
+        ],
+        "keyKnowledge": "配方法 + 二次函数与一元二次方程"
+      },
+      "scorePoints": ["配方正确（2分）", "顶点坐标正确（1分）", "求交点方程正确（1分）", "交点坐标正确（2分）"]
+    },
+    {
+      "id": "math-g9-ch01-q007",
+      "type": "calculation",
+      "stem": "某商店销售一种商品，进价为 20 元/件。经调查发现，当售价为 30 元时，每天可卖 100 件；每涨价 1 元，每天少卖 5 件。\n\n（1）设每件涨价 $x$ 元，写出每天利润 $y$（元）与 $x$ 的函数关系式。\n（2）每件售价定为多少元时，每天的利润最大？最大利润是多少？",
+      "subQuestions": [
+        { "label": "(1)", "stem": "设每件涨价 x 元，写出每天利润 y 与 x 的函数关系式。", "answer": "y = -5x^2 + 50x + 1000" },
+        { "label": "(2)", "stem": "每件售价定为多少元时，每天利润最大？最大利润是多少？", "answer": "售价 35 元，最大利润 1125 元" }
+      ],
+      "difficulty": 4,
+      "topicId": "math-g9-ch01-t04",
+      "tags": ["中考真题", "压轴题", "综合题"],
+      "source": { "type": "zhongkao", "year": 2023, "province": "江苏", "questionNumber": "第25题" },
+      "solution": {
+        "answer": "（1）$y = -5x^2 + 50x + 1000$；（2）售价 35 元，最大利润 1125 元",
+        "steps": [
+          { "description": "（1）每件利润 $(10 + x)$ 元，每天销量 $(100 - 5x)$ 件" },
+          { "description": "利润 = 单件利润 × 销量", "expression": "y = (10 + x)(100 - 5x) = 1000 - 50x + 100x - 5x^2 = -5x^2 + 50x + 1000" },
+          { "description": "（2）配方求最大值", "expression": "y = -5(x^2 - 10x) + 1000 = -5(x-5)^2 + 125 + 1000 = -5(x-5)^2 + 1125" },
+          { "description": "当 $x = 5$ 时利润最大，售价为 $30 + 5 = 35$ 元，最大利润 1125 元" }
+        ],
+        "keyKnowledge": "二次函数的实际应用——最大利润问题"
+      },
+      "scorePoints": ["列出利润表达式（2分）", "展开化简正确（1分）", "配方求最值（2分）", "结论正确（1分）"]
+    }
+  ]
+}

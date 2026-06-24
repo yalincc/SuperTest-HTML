@@ -1,0 +1,203 @@
+{
+  "subject": "math",
+  "grade": 9,
+  "chapterId": "math-g9-ch02",
+  "questions": [
+    {
+      "id": "math-g9-ch02-q001",
+      "type": "choice",
+      "stem": "如图，圆O的半径为5，弦AB=6，OC⊥AB于C。则OC的长度为（  ）",
+      "options": [
+        { "label": "A", "text": "$3$" },
+        { "label": "B", "text": "$4$" },
+        { "label": "C", "text": "$\\sqrt{11}$" },
+        { "label": "D", "text": "$5$" }
+      ],
+      "answer": "B",
+      "difficulty": 2,
+      "topicId": "math-g9-ch02-t01",
+      "tags": ["基础题"],
+      "figure": {
+        "type": "construction",
+        "padding": 1.2,
+        "construction": [
+          { "op": "point", "id": "O", "at": [0, 0] },
+          { "op": "point", "id": "A", "at": [-3, -4] },
+          { "op": "point", "id": "B", "at": [3, -4] },
+          { "op": "circle", "id": "circleO", "center": "O", "through": "A" },
+          { "op": "segment", "from": "A", "to": "B", "label": "6" },
+          { "op": "foot", "id": "C", "point": "O", "line": ["A", "B"] },
+          { "op": "segment", "from": "O", "to": "C", "style": "dashed", "label": "OC" },
+          { "op": "segment", "from": "O", "to": "A", "style": "dashed", "label": "r" },
+          { "op": "angle_mark", "vertex": "C", "p1": "O", "p2": "B", "right": true }
+        ]
+      },
+      "solution": {
+        "answer": "B",
+        "steps": [
+          { "description": "因为 OC⊥AB，所以 C 是 AB 的中点（垂径定理）" },
+          { "description": "$AC = \\dfrac{AB}{2} = 3$" },
+          { "description": "在 Rt△OAC 中：$OC = \\sqrt{OA^2 - AC^2} = \\sqrt{25 - 9} = \\sqrt{16} = 4$" }
+        ],
+        "keyKnowledge": "垂径定理、勾股定理"
+      }
+    },
+    {
+      "id": "math-g9-ch02-q002",
+      "type": "choice",
+      "stem": "如图，PA是圆O的切线，A为切点，PO交圆O于B，PA=4，PB=2。则圆O的半径为（  ）",
+      "options": [
+        { "label": "A", "text": "$2$" },
+        { "label": "B", "text": "$3$" },
+        { "label": "C", "text": "$4$" },
+        { "label": "D", "text": "$5$" }
+      ],
+      "answer": "B",
+      "difficulty": 3,
+      "topicId": "math-g9-ch02-t02",
+      "tags": ["提高题"],
+      "figure": {
+        "type": "construction",
+        "padding": 1.2,
+        "construction": [
+          { "op": "point", "id": "O", "at": [0, 0] },
+          { "op": "point", "id": "B", "at": [-3, 0] },
+          { "op": "circle", "id": "circleO", "center": "O", "through": "B" },
+          { "op": "point", "id": "P", "at": [-5, 0] },
+          { "op": "point", "id": "A", "at": [-1.8, 2.4] },
+          { "op": "segment", "from": "P", "to": "A", "label": "4" },
+          { "op": "segment", "from": "P", "to": "O", "style": "solid" },
+          { "op": "segment", "from": "O", "to": "A", "style": "dashed", "label": "r" },
+          { "op": "angle_mark", "vertex": "A", "p1": "P", "p2": "O", "right": true }
+        ]
+      },
+      "solution": {
+        "answer": "B",
+        "steps": [
+          { "description": "设圆O的半径为 $r$，则 $PO = PB + r = 2 + r$" },
+          { "description": "PA 是切线，所以 $OA \\perp PA$" },
+          { "description": "由勾股定理：$PO^2 = PA^2 + OA^2$" },
+          { "description": "$(2+r)^2 = 16 + r^2$" },
+          { "description": "$4 + 4r + r^2 = 16 + r^2$" },
+          { "description": "$4r = 12 \\implies r = 3$" }
+        ],
+        "keyKnowledge": "切线性质、勾股定理"
+      }
+    },
+    {
+      "id": "math-g9-ch02-q003",
+      "type": "fill",
+      "stem": "如图，△ABC的外接圆圆心为O，AB=6，BC=8，AC=10。求外接圆的半径。",
+      "segments": ["外接圆的半径 $R$ = ", "___1___", " 。"],
+      "blanks": [{ "index": 1, "answer": "5" }],
+      "answer": "$5$",
+      "difficulty": 3,
+      "topicId": "math-g9-ch02-t01",
+      "tags": ["提高题"],
+      "figure": {
+        "type": "construction",
+        "padding": 1.5,
+        "construction": [
+          { "op": "point", "id": "B", "at": [0, 0] },
+          { "op": "point", "id": "C", "at": [8, 0] },
+          { "op": "point", "id": "A", "at": [0, 6] },
+          { "op": "triangle", "points": ["A", "B", "C"], "labels": ["A", "B", "C"] },
+          { "op": "circumcenter", "id": "O", "triangle": ["A", "B", "C"] },
+          { "op": "circle", "id": "circumcircle", "center": "O", "through": "A", "style": "dashed" },
+          { "op": "segment", "from": "O", "to": "A", "style": "dashed", "label": "R" },
+          { "op": "angle_mark", "vertex": "B", "p1": "A", "p2": "C", "right": true }
+        ]
+      },
+      "solution": {
+        "answer": "$R = 5$",
+        "steps": [
+          { "description": "因为 $AB^2 + BC^2 = 36 + 64 = 100 = AC^2$" },
+          { "description": "所以△ABC是直角三角形，∠B = 90°" },
+          { "description": "直角三角形的外接圆圆心在斜边中点" },
+          { "description": "外接圆半径 $R = \\dfrac{AC}{2} = \\dfrac{10}{2} = 5$" }
+        ],
+        "keyKnowledge": "直角三角形外接圆、勾股定理逆定理"
+      }
+    },
+    {
+      "id": "math-g9-ch02-q004",
+      "type": "choice",
+      "stem": "如图，△ABC的内切圆圆心为I，切三边于D、E、F。若AB=7，BC=8，AC=9，则BD的长度为（  ）",
+      "options": [
+        { "label": "A", "text": "$3$" },
+        { "label": "B", "text": "$3.5$" },
+        { "label": "C", "text": "$4$" },
+        { "label": "D", "text": "$4.5$" }
+      ],
+      "answer": "A",
+      "difficulty": 3,
+      "topicId": "math-g9-ch02-t01",
+      "tags": ["提高题"],
+      "figure": {
+        "type": "construction",
+        "padding": 1.5,
+        "construction": [
+          { "op": "point", "id": "B", "at": [0, 0] },
+          { "op": "point", "id": "C", "at": [8, 0] },
+          { "op": "point", "id": "A", "at": [2.67, 6.49] },
+          { "op": "triangle", "points": ["A", "B", "C"], "labels": ["A", "B", "C"] },
+          { "op": "incenter", "id": "I", "triangle": ["A", "B", "C"] },
+          { "op": "circle", "id": "incircle", "center": "I", "radius": 2.22, "style": "dashed" },
+          { "op": "segment", "from": "I", "to": "B", "style": "dashed" }
+        ]
+      },
+      "solution": {
+        "answer": "A",
+        "steps": [
+          { "description": "设内切圆切 AB 于 F，切 BC 于 D，切 AC 于 E" },
+          { "description": "由切线长相等：$BF = BD$，$CD = CE$，$AE = AF$" },
+          { "description": "设 $BF = BD = x$，则 $CD = 8-x$，$AF = 7-x$，$AE = 9-(8-x) = 1+x$" },
+          { "description": "由 $AF = AE$：$7-x = 1+x$，解得 $x = 3$" },
+          { "description": "所以 $BD = 3$" }
+        ],
+        "keyKnowledge": "内切圆切线长相等"
+      }
+    },
+    {
+      "id": "math-g9-ch02-q005",
+      "type": "choice",
+      "stem": "如图，A、B、C 三点在圆O上，∠BAC=50°，则圆心角∠BOC的度数为（  ）",
+      "options": [
+        { "label": "A", "text": "$50°$" },
+        { "label": "B", "text": "$80°$" },
+        { "label": "C", "text": "$100°$" },
+        { "label": "D", "text": "$130°$" }
+      ],
+      "answer": "C",
+      "difficulty": 2,
+      "topicId": "math-g9-ch02-t01",
+      "tags": ["基础题"],
+      "figure": {
+        "type": "construction",
+        "padding": 1.5,
+        "construction": [
+          { "op": "point", "id": "O", "at": [0, 0] },
+          { "op": "point", "id": "B", "at": [4.92, -0.87] },
+          { "op": "point", "id": "C", "at": [0, 5] },
+          { "op": "point", "id": "A", "at": [-4.33, -2.5] },
+          { "op": "circle", "id": "circleO", "center": "O", "through": "B" },
+          { "op": "segment", "from": "O", "to": "B", "style": "dashed" },
+          { "op": "segment", "from": "O", "to": "C", "style": "dashed" },
+          { "op": "segment", "from": "A", "to": "B", "style": "solid" },
+          { "op": "segment", "from": "A", "to": "C", "style": "solid" },
+          { "op": "angle_mark", "vertex": "A", "p1": "B", "p2": "C", "label": "50°" },
+          { "op": "angle_mark", "vertex": "O", "p1": "B", "p2": "C", "label": "∠BOC" }
+        ]
+      },
+      "solution": {
+        "answer": "C",
+        "steps": [
+          { "description": "∠BAC 是圆周角，∠BOC 是同弧 BC 所对的圆心角" },
+          { "description": "由圆周角定理：圆心角 = 2 × 圆周角" },
+          { "description": "$∠BOC = 2 \\times ∠BAC = 2 \\times 50° = 100°$" }
+        ],
+        "keyKnowledge": "圆周角定理：同弧所对圆心角是圆周角的2倍"
+      }
+    }
+  ]
+}

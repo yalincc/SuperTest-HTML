@@ -1,0 +1,178 @@
+{
+  "subject": "chemistry",
+  "grade": 9,
+  "chapterId": "chem-g9-ch01",
+  "questions": [
+    {
+      "id": "chem-g9-ch01-q001",
+      "type": "choice",
+      "stem": "下列物质中，由分子构成的是（  ）",
+      "options": [
+        { "label": "A", "text": "铁（Fe）" },
+        { "label": "B", "text": "氯化钠（NaCl）" },
+        { "label": "C", "text": "水（$\\text{H}_2\\text{O}$）" },
+        { "label": "D", "text": "金刚石（C）" }
+      ],
+      "answer": "C",
+      "difficulty": 1,
+      "topicId": "chem-g9-ch01-t01",
+      "tags": ["基础题", "中考真题"],
+      "solution": {
+        "answer": "C",
+        "steps": [
+          { "description": "由分子构成的物质：大多数非金属单质、非金属氧化物、酸、碱（部分）等" },
+          { "description": "A、D 由原子直接构成，B 由离子构成，C 水由水分子构成" }
+        ],
+        "keyKnowledge": "物质的微观构成"
+      }
+    },
+    {
+      "id": "chem-g9-ch01-q002",
+      "type": "choice",
+      "stem": "下列关于原子的说法正确的是（  ）",
+      "options": [
+        { "label": "A", "text": "原子是不可再分的最小粒子" },
+        { "label": "B", "text": "原子核由质子和电子组成" },
+        { "label": "C", "text": "原子中质子数等于核外电子数" },
+        { "label": "D", "text": "所有原子的原子核中都有中子" }
+      ],
+      "answer": "C",
+      "difficulty": 2,
+      "topicId": "chem-g9-ch01-t02",
+      "tags": ["中考真题", "易错题"],
+      "source": { "type": "zhongkao", "year": 2023, "province": "广东", "questionNumber": "第4题" },
+      "solution": {
+        "answer": "C",
+        "steps": [
+          { "description": "A 错误：原子可以再分为原子核和核外电子" },
+          { "description": "B 错误：原子核由质子和中子组成" },
+          { "description": "C 正确：原子不显电性，质子数 = 电子数" },
+          { "description": "D 错误：普通氢原子核中没有中子" }
+        ],
+        "keyKnowledge": "原子的结构"
+      },
+      "trapPoints": [
+        {
+          "description": "\"原子不可再分\"的错误认识",
+          "correctApproach": "在化学变化中原子不可再分，但原子本身由更小的粒子（质子、中子、电子）构成",
+          "commonMistake": "看到\"原子不可再分\"就认为是正确的"
+        }
+      ]
+    },
+    {
+      "id": "chem-g9-ch01-q003",
+      "type": "choice",
+      "stem": "氧元素和碳元素的本质区别是（  ）",
+      "options": [
+        { "label": "A", "text": "中子数不同" },
+        { "label": "B", "text": "质子数不同" },
+        { "label": "C", "text": "电子数不同" },
+        { "label": "D", "text": "相对原子质量不同" }
+      ],
+      "answer": "B",
+      "difficulty": 1,
+      "topicId": "chem-g9-ch01-t03",
+      "tags": ["基础题", "高频考点"],
+      "solution": {
+        "answer": "B",
+        "steps": [
+          { "description": "元素是具有相同质子数（核电荷数）的一类原子的总称" },
+          { "description": "不同元素的本质区别是质子数不同" }
+        ],
+        "keyKnowledge": "元素的定义"
+      }
+    },
+    {
+      "id": "chem-g9-ch01-q004",
+      "type": "choice",
+      "stem": "下列粒子中，化学性质最稳定的是（  ）",
+      "options": [
+        { "label": "A", "text": "$\\text{Na}$" },
+        { "label": "B", "text": "$\\text{Na}^+$" },
+        { "label": "C", "text": "$\\text{Cl}$" },
+        { "label": "D", "text": "$\\text{Ne}$" }
+      ],
+      "answer": "D",
+      "difficulty": 2,
+      "topicId": "chem-g9-ch01-t04",
+      "tags": ["中考真题"],
+      "solution": {
+        "answer": "D",
+        "steps": [
+          { "description": "最外层电子数为 8（He 为 2）时，化学性质稳定" },
+          { "description": "Ne 是稀有气体，最外层 8 个电子，化学性质最稳定" },
+          { "description": "Na 最外层 1 个电子，Cl 最外层 7 个电子，都不稳定" }
+        ],
+        "keyKnowledge": "核外电子排布与化学性质"
+      }
+    },
+    {
+      "id": "chem-g9-ch01-q005",
+      "type": "fill",
+      "stem": "用化学符号表示：2 个水分子 ______；3 个钠离子 ______。",
+      "segments": ["用化学符号表示：2 个水分子 ", "；3 个钠离子 ", "。"],
+      "blanks": [
+        { "index": 0, "answer": "2H₂O", "alternatives": ["2H2O", "2H₂O"] },
+        { "index": 1, "answer": "3Na⁺", "alternatives": ["3Na+", "3Na⁺"] }
+      ],
+      "difficulty": 1,
+      "topicId": "chem-g9-ch01-t04",
+      "tags": ["基础题"],
+      "solution": {
+        "answer": "$2\\text{H}_2\\text{O}$；$3\\text{Na}^+$",
+        "steps": [
+          { "description": "分子前面加数字表示分子个数" },
+          { "description": "离子符号：元素符号右上角标注电荷数和电性" }
+        ],
+        "keyKnowledge": "化学用语的书写"
+      }
+    },
+    {
+      "id": "chem-g9-ch01-q006",
+      "type": "fill",
+      "stem": "某元素的原子序数为 17，则该元素原子的质子数为 ______，核外电子数为 ______，该元素是 ______（填元素符号）。",
+      "segments": ["某元素的原子序数为 17，则该元素原子的质子数为 ", "，核外电子数为 ", "，该元素是 ", "。"],
+      "blanks": [
+        { "index": 0, "answer": "17", "alternatives": ["17"] },
+        { "index": 1, "answer": "17", "alternatives": ["17"] },
+        { "index": 2, "answer": "Cl", "alternatives": ["Cl", "CL"] }
+      ],
+      "difficulty": 2,
+      "topicId": "chem-g9-ch01-t03",
+      "tags": ["高频考点"],
+      "solution": {
+        "answer": "17；17；Cl",
+        "steps": [
+          { "description": "原子序数 = 质子数 = 核外电子数 = 17" },
+          { "description": "原子序数 17 的元素是氯（Cl）" }
+        ],
+        "keyKnowledge": "原子序数与原子结构的关系"
+      }
+    },
+    {
+      "id": "chem-g9-ch01-q007",
+      "type": "true_false",
+      "stem": "判断下列说法是否正确：分子可以再分，原子不可以再分。",
+      "answer": false,
+      "difficulty": 2,
+      "topicId": "chem-g9-ch01-t01",
+      "tags": ["易错题", "高频考点"],
+      "solution": {
+        "answer": "错误",
+        "steps": [
+          { "description": "在化学变化中，分子可以再分为原子，原子不能再分" },
+          { "description": "但原子本身是由原子核（质子+中子）和核外电子构成的" },
+          { "description": "题目没有限定\"在化学变化中\"，所以\"原子不可以再分\"的说法是错误的" }
+        ],
+        "keyKnowledge": "分子与原子的区别"
+      },
+      "trapPoints": [
+        {
+          "description": "缺少\"在化学变化中\"这个前提",
+          "correctApproach": "在化学变化中原子不可再分，但原子由更小的粒子构成",
+          "commonMistake": "直接认为\"原子不可再分\"是正确的"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,304 @@
+{
+  "subject": "math",
+  "grade": 8,
+  "chapterId": "math-g8-ch01",
+  "questions": [
+    {
+      "id": "math-g8-ch01-q001",
+      "type": "choice",
+      "stem": "下列函数中，是一次函数的是（  ）",
+      "options": [
+        { "label": "A", "text": "$y = x^2 + 1$" },
+        { "label": "B", "text": "$y = -2x + 3$" },
+        { "label": "C", "text": "$y = \\dfrac{1}{x}$" },
+        { "label": "D", "text": "$y = \\sqrt{x}$" }
+      ],
+      "answer": "B",
+      "difficulty": 1,
+      "topicId": "math-g8-ch01-t01",
+      "tags": ["基础题"],
+      "solution": {
+        "answer": "B",
+        "steps": [
+          { "description": "一次函数的形式为 $y = kx + b$（$k \\neq 0$）" },
+          { "description": "A 是二次函数，C 是反比例函数，D 是根式函数，只有 B 是一次函数" }
+        ],
+        "keyKnowledge": "一次函数的定义"
+      }
+    },
+    {
+      "id": "math-g8-ch01-q002",
+      "type": "choice",
+      "stem": "一次函数 $y = -x + 2$ 的图象经过（  ）",
+      "options": [
+        { "label": "A", "text": "第一、二、三象限" },
+        { "label": "B", "text": "第一、二、四象限" },
+        { "label": "C", "text": "第一、三、四象限" },
+        { "label": "D", "text": "第二、三、四象限" }
+      ],
+      "answer": "B",
+      "difficulty": 2,
+      "topicId": "math-g8-ch01-t03",
+      "tags": ["中考真题", "高频考点"],
+      "source": { "type": "zhongkao", "year": 2023, "province": "广东", "questionNumber": "第8题" },
+      "solution": {
+        "answer": "B",
+        "steps": [
+          { "description": "$k = -1 < 0$，图象经过第二、四象限" },
+          { "description": "$b = 2 > 0$，$y$ 轴截距为正，图象向上穿过 $y$ 轴正半轴" },
+          { "description": "综合判断：经过第一、二、四象限" }
+        ],
+        "keyKnowledge": "一次函数图象经过的象限判断"
+      },
+      "trapPoints": [
+        {
+          "description": "判断象限时容易忽略截距 $b$ 的影响",
+          "correctApproach": "$k$ 决定增减（经过哪两个象限），$b$ 决定上下平移",
+          "commonMistake": "只看 $k < 0$ 就判断经过二、四象限，忘记 $b > 0$ 还经过第一象限"
+        }
+      ]
+    },
+    {
+      "id": "math-g8-ch01-q003",
+      "type": "choice",
+      "stem": "已知一次函数 $y = kx + b$ 的图象过点 $(1, 3)$ 和 $(0, 1)$，则 $k + b$ 的值为（  ）",
+      "options": [
+        { "label": "A", "text": "$1$" },
+        { "label": "B", "text": "$2$" },
+        { "label": "C", "text": "$3$" },
+        { "label": "D", "text": "$4$" }
+      ],
+      "answer": "C",
+      "difficulty": 2,
+      "topicId": "math-g8-ch01-t02",
+      "tags": ["中考真题"],
+      "source": { "type": "zhongkao", "year": 2022, "city": "上海", "questionNumber": "第6题" },
+      "solution": {
+        "answer": "C",
+        "steps": [
+          { "description": "代入 $(0,1)$：$b = 1$" },
+          { "description": "代入 $(1,3)$：$k + 1 = 3$，所以 $k = 2$" },
+          { "description": "$k + b = 2 + 1 = 3$" }
+        ],
+        "keyKnowledge": "待定系数法求一次函数解析式"
+      }
+    },
+    {
+      "id": "math-g8-ch01-q004",
+      "type": "choice",
+      "stem": "一次函数 $y = 2x - 1$ 与 $x$ 轴的交点坐标为（  ）",
+      "options": [
+        { "label": "A", "text": "$(0, -1)$" },
+        { "label": "B", "text": "$\\left(\\dfrac{1}{2}, 0\\right)$" },
+        { "label": "C", "text": "$(-1, 0)$" },
+        { "label": "D", "text": "$(2, 0)$" }
+      ],
+      "answer": "B",
+      "difficulty": 2,
+      "topicId": "math-g8-ch01-t04",
+      "tags": ["高频考点"],
+      "solution": {
+        "answer": "B",
+        "steps": [
+          { "description": "与 $x$ 轴交点 $y = 0$", "expression": "2x - 1 = 0" },
+          { "description": "解得", "expression": "x = \\frac{1}{2}" },
+          { "description": "交点坐标为 $\\left(\\dfrac{1}{2}, 0\\right)$" }
+        ],
+        "keyKnowledge": "一次函数与坐标轴的交点"
+      }
+    },
+    {
+      "id": "math-g8-ch01-q005",
+      "type": "fill",
+      "stem": "一次函数 $y = 3x + 1$ 中，当 $x = -2$ 时，$y$ 的值为 ______。",
+      "segments": ["一次函数 $y = 3x + 1$ 中，当 $x = -2$ 时，$y$ 的值为 ", "。"],
+      "blanks": [
+        { "index": 0, "answer": "-5", "alternatives": ["-5"] }
+      ],
+      "difficulty": 1,
+      "topicId": "math-g8-ch01-t04",
+      "tags": ["基础题"],
+      "solution": {
+        "answer": "$-5$",
+        "steps": [
+          { "description": "将 $x = -2$ 代入", "expression": "y = 3 \\times (-2) + 1 = -6 + 1 = -5" }
+        ]
+      }
+    },
+    {
+      "id": "math-g8-ch01-q006",
+      "type": "fill",
+      "stem": "若一次函数 $y = kx + 3$ 的图象经过点 $(2, -1)$，则 $k =$ ______。",
+      "segments": ["若一次函数 $y = kx + 3$ 的图象经过点 $(2, -1)$，则 $k =$ ", "。"],
+      "blanks": [
+        { "index": 0, "answer": "-2", "alternatives": ["-2"] }
+      ],
+      "difficulty": 2,
+      "topicId": "math-g8-ch01-t02",
+      "tags": ["中考真题"],
+      "solution": {
+        "answer": "$k = -2$",
+        "steps": [
+          { "description": "代入点 $(2, -1)$", "expression": "-1 = 2k + 3" },
+          { "description": "解方程", "expression": "2k = -4 \\implies k = -2" }
+        ]
+      }
+    },
+    {
+      "id": "math-g8-ch01-q007",
+      "type": "calculation",
+      "stem": "如图，一次函数 $y = kx + b$ 的图象经过 $A(2, 4)$ 和 $B(0, -2)$ 两点。\n\n（1）求该一次函数的解析式。\n（2）求该函数图象与 $x$ 轴的交点坐标。",
+      "figure": {
+        "type": "function",
+        "xRange": [-2, 4],
+        "yRange": [-4, 6],
+        "grid": true,
+        "plots": [
+          {
+            "expression": "3*x - 2",
+            "color": "#2563eb"
+          }
+        ],
+        "points": [
+          { "coord": [2, 4], "label": "A(2,4)" },
+          { "coord": [0, -2], "label": "B(0,-2)" }
+        ]
+      },
+      "subQuestions": [
+        { "label": "(1)", "stem": "求该一次函数的解析式。", "answer": "y = 3x - 2" },
+        { "label": "(2)", "stem": "求该函数图象与 x 轴的交点坐标。", "answer": "(2/3, 0)" }
+      ],
+      "difficulty": 3,
+      "topicId": "math-g8-ch01-t02",
+      "tags": ["中考真题", "高频考点"],
+      "source": { "type": "zhongkao", "year": 2023, "province": "浙江", "questionNumber": "第19题" },
+      "solution": {
+        "answer": "（1）$y = 3x - 2$；（2）$\\left(\\dfrac{2}{3}, 0\\right)$",
+        "steps": [
+          { "description": "（1）代入 $B(0,-2)$，得 $b = -2$" },
+          { "description": "代入 $A(2,4)$", "expression": "4 = 2k - 2 \\implies k = 3" },
+          { "description": "解析式为 $y = 3x - 2$" },
+          { "description": "（2）令 $y = 0$", "expression": "3x - 2 = 0 \\implies x = \\frac{2}{3}" },
+          { "description": "交点坐标为 $\\left(\\dfrac{2}{3}, 0\\right)$" }
+        ],
+        "keyKnowledge": "待定系数法 + 与坐标轴交点"
+      },
+      "scorePoints": ["代入两点坐标（1分）", "求出 k 和 b（2分）", "写出解析式（1分）", "求交点坐标（2分）"]
+    },
+    {
+      "id": "math-g8-ch01-q008",
+      "type": "calculation",
+      "stem": "某出租车起步价为 8 元（含 3 km），超过 3 km 后每 km 收费 2 元。\n\n（1）写出车费 $y$（元）与行驶距离 $x$（km）之间的函数关系式（$x > 3$）。\n（2）若乘客坐了 10 km，应付多少车费？",
+      "subQuestions": [
+        { "label": "(1)", "stem": "写出车费 y 与行驶距离 x 之间的函数关系式（x > 3）。", "answer": "y = 2x + 2" },
+        { "label": "(2)", "stem": "若乘客坐了 10 km，应付多少车费？", "answer": "22 元" }
+      ],
+      "difficulty": 3,
+      "topicId": "math-g8-ch01-t04",
+      "tags": ["中考真题", "综合题"],
+      "solution": {
+        "answer": "（1）$y = 2(x - 3) + 8 = 2x + 2$（$x > 3$）；（2）22 元",
+        "steps": [
+          { "description": "（1）超过 3 km 部分为 $(x-3)$ km，每 km 2 元" },
+          { "description": "列出关系式", "expression": "y = 8 + 2(x - 3) = 2x + 2" },
+          { "description": "（2）代入 $x = 10$", "expression": "y = 2 \\times 10 + 2 = 22" }
+        ],
+        "keyKnowledge": "一次函数的实际应用"
+      },
+      "scorePoints": ["建立函数关系（2分）", "化简正确（1分）", "代入计算正确（1分）"]
+    },
+    {
+      "id": "math-g8-ch01-q009",
+      "type": "choice",
+      "stem": "一次函数 $y = -2x + 4$ 的图象经过的象限是（  ）",
+      "options": [
+        { "label": "A", "text": "一、二、三" },
+        { "label": "B", "text": "一、二、四" },
+        { "label": "C", "text": "一、三、四" },
+        { "label": "D", "text": "二、三、四" }
+      ],
+      "answer": "B",
+      "difficulty": 2,
+      "topicId": "math-g8-ch01-t03",
+      "tags": ["基础题"],
+      "solution": {
+        "answer": "B",
+        "steps": [
+          { "description": "$k = -2 < 0$，图象从左上到右下" },
+          { "description": "$b = 4 > 0$，与 $y$ 轴交于正半轴" },
+          { "description": "所以图象经过第一、二、四象限" }
+        ],
+        "keyKnowledge": "一次函数图象与 $k$、$b$ 的关系"
+      }
+    },
+    {
+      "id": "math-g8-ch01-q010",
+      "type": "choice",
+      "stem": "若一次函数 $y = kx + b$ 的图象经过点 $(1, 3)$ 和 $(-1, 1)$，则 $k$ 和 $b$ 的值分别是（  ）",
+      "options": [
+        { "label": "A", "text": "$k = 1$，$b = 2$" },
+        { "label": "B", "text": "$k = 2$，$b = 1$" },
+        { "label": "C", "text": "$k = -1$，$b = 4$" },
+        { "label": "D", "text": "$k = 1$，$b = 1$" }
+      ],
+      "answer": "A",
+      "difficulty": 2,
+      "topicId": "math-g8-ch01-t04",
+      "tags": ["基础题"],
+      "solution": {
+        "answer": "A",
+        "steps": [
+          { "description": "代入点 $(1, 3)$：$k + b = 3$" },
+          { "description": "代入点 $(-1, 1)$：$-k + b = 1$" },
+          { "description": "两式相加：$2b = 4$，$b = 2$" },
+          { "description": "代入得：$k = 1$" }
+        ],
+        "keyKnowledge": "待定系数法求一次函数解析式"
+      }
+    },
+    {
+      "id": "math-g8-ch01-q011",
+      "type": "fill",
+      "stem": "已知一次函数 $y = 2x - 1$，当 $x$ 为何值时，$y > 3$？",
+      "segments": ["$x > $", "___1___", " 。"],
+      "blanks": [{ "index": 1, "answer": "2" }],
+      "difficulty": 2,
+      "topicId": "math-g8-ch01-t04",
+      "tags": ["基础题"],
+      "solution": {
+        "answer": "$x > 2$",
+        "steps": [
+          { "description": "令 $y > 3$：$2x - 1 > 3$" },
+          { "description": "解不等式：$2x > 4$" },
+          { "description": "$x > 2$" }
+        ],
+        "keyKnowledge": "一次函数与不等式"
+      }
+    },
+    {
+      "id": "math-g8-ch01-q012",
+      "type": "choice",
+      "stem": "两条直线 $y = 2x + 1$ 与 $y = -x + 4$ 的交点坐标为（  ）",
+      "options": [
+        { "label": "A", "text": "$(1, 3)$" },
+        { "label": "B", "text": "$(2, 5)$" },
+        { "label": "C", "text": "$(3, 7)$" },
+        { "label": "D", "text": "$(0, 1)$" }
+      ],
+      "answer": "A",
+      "difficulty": 3,
+      "topicId": "math-g8-ch01-t04",
+      "tags": ["提高题"],
+      "solution": {
+        "answer": "A",
+        "steps": [
+          { "description": "联立方程组：$\\begin{cases} y = 2x + 1 \\\\ y = -x + 4 \\end{cases}$" },
+          { "description": "令 $2x + 1 = -x + 4$" },
+          { "description": "解得 $x = 1$，代入得 $y = 3$" },
+          { "description": "交点为 $(1, 3)$" }
+        ],
+        "keyKnowledge": "一次函数交点与方程组的关系"
+      }
+    }
+  ]
+}

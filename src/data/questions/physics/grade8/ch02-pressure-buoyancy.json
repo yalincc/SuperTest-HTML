@@ -1,0 +1,312 @@
+{
+  "subject": "physics",
+  "grade": 8,
+  "chapterId": "phy-g8-ch02",
+  "questions": [
+    {
+      "id": "phy-g8-ch02-q001",
+      "type": "choice",
+      "stem": "下列做法中，为了减小压强的是（  ）",
+      "options": [
+        { "label": "A", "text": "菜刀的刀刃磨得很薄" },
+        { "label": "B", "text": "坦克的履带做得很宽" },
+        { "label": "C", "text": "注射器的针头做得很尖" },
+        { "label": "D", "text": "啄木鸟有尖锐的喙" }
+      ],
+      "answer": "B",
+      "difficulty": 1,
+      "topicId": "phy-g8-ch02-t01",
+      "tags": ["基础题", "中考真题"],
+      "solution": {
+        "answer": "B",
+        "steps": [
+          { "description": "压强 $p = \\dfrac{F}{S}$，减小压强可以增大受力面积" },
+          { "description": "坦克履带宽大 → 增大受力面积 → 减小压强" },
+          { "description": "A、C、D 都是减小受力面积来增大压强" }
+        ],
+        "keyKnowledge": "压强的定义与改变方法"
+      }
+    },
+    {
+      "id": "phy-g8-ch02-q002",
+      "type": "choice",
+      "stem": "一个重 600 N 的人双脚站立在水平地面上，每只脚与地面的接触面积为 $200 \\, \\text{cm}^2$，则人对地面的压强为（  ）",
+      "options": [
+        { "label": "A", "text": "$1.5 \\times 10^4 \\, \\text{Pa}$" },
+        { "label": "B", "text": "$3 \\times 10^4 \\, \\text{Pa}$" },
+        { "label": "C", "text": "$150 \\, \\text{Pa}$" },
+        { "label": "D", "text": "$300 \\, \\text{Pa}$" }
+      ],
+      "answer": "A",
+      "difficulty": 2,
+      "topicId": "phy-g8-ch02-t01",
+      "tags": ["中考真题", "易错题"],
+      "source": { "type": "zhongkao", "year": 2023, "city": "北京", "questionNumber": "第7题" },
+      "figure": {
+        "type": "force",
+        "scene": { "type": "horizontal_surface" },
+        "bodies": [
+          { "id": "person", "type": "block", "center": [0, 0], "width": 1.5, "height": 2.5, "label": "人" }
+        ],
+        "forces": [
+          { "id": "G", "type": "gravity", "label": "G", "origin": [0, 0], "vector": { "x": 0, "y": -3 } },
+          { "id": "N", "type": "normal", "label": "N", "origin": [0, 0], "vector": { "x": 0, "y": 3 } }
+        ],
+        "showResultant": false
+      },
+      "solution": {
+        "answer": "A",
+        "steps": [
+          { "description": "两只脚的总面积", "expression": "S = 2 \\times 200 \\, \\text{cm}^2 = 400 \\, \\text{cm}^2 = 0.04 \\, \\text{m}^2" },
+          { "description": "计算压强", "expression": "p = \\frac{F}{S} = \\frac{600}{0.04} = 1.5 \\times 10^4 \\, \\text{Pa}" }
+        ],
+        "keyKnowledge": "压强的计算"
+      },
+      "trapPoints": [
+        {
+          "description": "面积单位换算出错",
+          "correctApproach": "$1 \\, \\text{m}^2 = 10^4 \\, \\text{cm}^2$，$200 \\, \\text{cm}^2 = 0.02 \\, \\text{m}^2$",
+          "commonMistake": "忘记将 $\\text{cm}^2$ 换算为 $\\text{m}^2$，或换算关系用错"
+        },
+        {
+          "description": "忘记乘以 2（两只脚）",
+          "correctApproach": "双脚站立时受力面积是两只脚的面积之和",
+          "commonMistake": "只用一只脚的面积计算，得到 $3 \\times 10^4$ Pa（选项 B）"
+        }
+      ]
+    },
+    {
+      "id": "phy-g8-ch02-q003",
+      "type": "choice",
+      "stem": "关于液体压强，下列说法正确的是（  ）",
+      "options": [
+        { "label": "A", "text": "液体只对容器底部有压强" },
+        { "label": "B", "text": "液体的压强与液体的深度和密度有关" },
+        { "label": "C", "text": "同一深度，液体向下的压强大于向上的压强" },
+        { "label": "D", "text": "液体压强与容器的形状有关" }
+      ],
+      "answer": "B",
+      "difficulty": 2,
+      "topicId": "phy-g8-ch02-t02",
+      "tags": ["高频考点"],
+      "solution": {
+        "answer": "B",
+        "steps": [
+          { "description": "液体压强公式 $p = \\rho g h$" },
+          { "description": "液体压强只与液体密度 $\\rho$ 和深度 $h$ 有关，与容器形状无关" },
+          { "description": "同一深度各方向压强相等，液体对容器底和侧壁都有压强" }
+        ],
+        "keyKnowledge": "液体压强的特点"
+      }
+    },
+    {
+      "id": "phy-g8-ch02-q004",
+      "type": "fill",
+      "stem": "一个底面积为 $0.1 \\, \\text{m}^2$、高为 $0.5 \\, \\text{m}$ 的圆柱形容器装满水（$\\rho_\\text{水} = 1.0 \\times 10^3 \\, \\text{kg/m}^3$，$g = 10 \\, \\text{N/kg}$），则水对容器底部的压强为 ______ Pa。",
+      "segments": ["一个底面积为 $0.1 \\, \\text{m}^2$、高为 $0.5 \\, \\text{m}$ 的圆柱形容器装满水，则水对容器底部的压强为 ", " Pa。"],
+      "blanks": [
+        { "index": 0, "answer": "5000", "alternatives": ["5000", "5×10³", "5000"] }
+      ],
+      "difficulty": 2,
+      "topicId": "phy-g8-ch02-t02",
+      "tags": ["中考真题"],
+      "solution": {
+        "answer": "5000 Pa",
+        "steps": [
+          { "description": "液体压强公式", "expression": "p = \\rho g h = 1000 \\times 10 \\times 0.5 = 5000 \\, \\text{Pa}" }
+        ],
+        "keyKnowledge": "液体压强公式的应用"
+      },
+      "trapPoints": [
+        {
+          "description": "液体压强与底面积无关",
+          "correctApproach": "液体压强只与深度和密度有关，$p = \\rho g h$，底面积是干扰条件",
+          "commonMistake": "用底面积参与计算，混淆了压强和压力"
+        }
+      ]
+    },
+    {
+      "id": "phy-g8-ch02-q005",
+      "type": "fill",
+      "stem": "一个体积为 $2 \\times 10^{-3} \\, \\text{m}^3$ 的铁块完全浸没在水中，受到的浮力为 ______ N。（$\\rho_\\text{水} = 1.0 \\times 10^3 \\, \\text{kg/m}^3$，$g = 10 \\, \\text{N/kg}$）",
+      "segments": ["一个体积为 $2 \\times 10^{-3} \\, \\text{m}^3$ 的铁块完全浸没在水中，受到的浮力为 ", " N。"],
+      "blanks": [
+        { "index": 0, "answer": "20", "alternatives": ["20"] }
+      ],
+      "difficulty": 2,
+      "topicId": "phy-g8-ch02-t04",
+      "tags": ["中考真题", "高频考点"],
+      "solution": {
+        "answer": "20 N",
+        "steps": [
+          { "description": "完全浸没时 $V_\\text{排} = V_\\text{物}$" },
+          { "description": "阿基米德原理", "expression": "F_\\text{浮} = \\rho_\\text{水} g V_\\text{排} = 1000 \\times 10 \\times 2 \\times 10^{-3} = 20 \\, \\text{N}" }
+        ],
+        "keyKnowledge": "阿基米德原理"
+      }
+    },
+    {
+      "id": "phy-g8-ch02-q006",
+      "type": "calculation",
+      "stem": "一个底面积为 $200 \\, \\text{cm}^2$ 的圆柱形容器中装有水，水深 30 cm。求：\n\n（1）水对容器底部的压强。\n（2）水对容器底部的压力。（$g = 10 \\, \\text{N/kg}$）",
+      "subQuestions": [
+        { "label": "(1)", "stem": "水对容器底部的压强。", "answer": "3000 Pa" },
+        { "label": "(2)", "stem": "水对容器底部的压力。", "answer": "60 N" }
+      ],
+      "difficulty": 3,
+      "topicId": "phy-g8-ch02-t02",
+      "tags": ["中考真题"],
+      "source": { "type": "zhongkao", "year": 2022, "province": "广东", "questionNumber": "第22题" },
+      "solution": {
+        "answer": "（1）3000 Pa；（2）60 N",
+        "steps": [
+          { "description": "（1）液体压强公式", "expression": "p = \\rho g h = 1000 \\times 10 \\times 0.3 = 3000 \\, \\text{Pa}" },
+          { "description": "（2）底面积换算", "expression": "S = 200 \\, \\text{cm}^2 = 0.02 \\, \\text{m}^2" },
+          { "description": "求压力", "expression": "F = pS = 3000 \\times 0.02 = 60 \\, \\text{N}" }
+        ],
+        "keyKnowledge": "液体压强与压力的计算"
+      },
+      "scorePoints": ["压强公式正确（2分）", "计算正确（1分）", "面积换算正确（1分）", "压力计算正确（1分）"]
+    },
+    {
+      "id": "phy-g8-ch02-q007",
+      "type": "calculation",
+      "stem": "一个质量为 600 g、体积为 $800 \\, \\text{cm}^3$ 的木块放入水中。求：\n\n（1）木块静止时受到的浮力。\n（2）木块浸入水中的体积。（$g = 10 \\, \\text{N/kg}$）",
+      "subQuestions": [
+        { "label": "(1)", "stem": "木块静止时受到的浮力。", "answer": "6 N" },
+        { "label": "(2)", "stem": "木块浸入水中的体积。", "answer": "600 cm³" }
+      ],
+      "difficulty": 3,
+      "topicId": "phy-g8-ch02-t04",
+      "tags": ["中考真题", "综合题", "易错题"],
+      "source": { "type": "zhongkao", "year": 2023, "province": "江苏", "questionNumber": "第23题" },
+      "figure": {
+        "type": "force",
+        "bodies": [
+          { "id": "block", "type": "block", "center": [0, 0], "width": 2, "height": 1.5, "label": "木块" }
+        ],
+        "forces": [
+          { "id": "G", "type": "gravity", "label": "G", "origin": [0, 0], "vector": { "x": 0, "y": -2 } },
+          { "id": "F_f", "type": "buoyancy", "label": "F浮", "origin": [0, 0], "vector": { "x": 0, "y": 2 } }
+        ],
+        "showResultant": false
+      },
+      "solution": {
+        "answer": "（1）6 N；（2）$600 \\, \\text{cm}^3$",
+        "steps": [
+          { "description": "先判断沉浮：木块密度 $< \\rho_\\text{水}$，所以漂浮" },
+          { "description": "（1）漂浮条件：浮力 = 重力", "expression": "F_\\text{浮} = G = mg = 0.6 \\times 10 = 6 \\, \\text{N}" },
+          { "description": "（2）由 $F_\\text{浮} = \\rho_\\text{水} g V_\\text{排}$ 求浸入体积", "expression": "V_\\text{排} = \\frac{F_\\text{浮}}{\\rho_\\text{水} g} = \\frac{6}{1000 \\times 10} = 6 \\times 10^{-4} \\, \\text{m}^3 = 600 \\, \\text{cm}^3" }
+        ],
+        "keyKnowledge": "浮沉条件 + 阿基米德原理"
+      },
+      "trapPoints": [
+        {
+          "description": "误用木块总体积计算浮力",
+          "correctApproach": "木块漂浮，浮力等于重力，不是用总体积代入阿基米德原理",
+          "commonMistake": "用 $V = 800 \\, \\text{cm}^3$ 代入得 $F = 8$ N，忽略了木块是漂浮不是沉没"
+        }
+      ],
+      "scorePoints": ["判断漂浮（1分）", "浮力计算（2分）", "浸入体积计算（2分）"]
+    },
+    {
+      "id": "phy-g8-ch02-q008",
+      "type": "choice",
+      "stem": "如图，一个重 $G = 10\\text{N}$ 的物体浸没在水中，受到的浮力 $F_\\text{浮} = 6\\text{N}$，则物体受到的合力为（  ）",
+      "options": [
+        { "label": "A", "text": "$4\\text{N}$，方向竖直向下" },
+        { "label": "B", "text": "$4\\text{N}$，方向竖直向上" },
+        { "label": "C", "text": "$16\\text{N}$，方向竖直向下" },
+        { "label": "D", "text": "$0\\text{N}$" }
+      ],
+      "answer": "A",
+      "difficulty": 2,
+      "topicId": "phy-g8-ch02-t04",
+      "tags": ["基础题"],
+      "figure": {
+        "type": "force",
+        "bodies": [
+          { "id": "obj", "type": "block", "center": [0, 0], "width": 1.5, "height": 1.5, "label": "物体" }
+        ],
+        "forces": [
+          { "id": "G", "type": "gravity", "label": "G", "origin": [0, 0], "vector": { "x": 0, "y": -3 } },
+          { "id": "F_f", "type": "buoyancy", "label": "F浮", "origin": [0, 0], "vector": { "x": 0, "y": 1.8 } }
+        ],
+        "showResultant": true
+      },
+      "solution": {
+        "answer": "A",
+        "steps": [
+          { "description": "物体受重力 $G = 10\\text{N}$（向下）和浮力 $F_\\text{浮} = 6\\text{N}$（向上）" },
+          { "description": "合力 $F_\\text{合} = G - F_\\text{浮} = 10 - 6 = 4\\text{N}$" },
+          { "description": "方向与较大的力相同，即竖直向下" }
+        ],
+        "keyKnowledge": "浮力与重力的合力"
+      }
+    },
+    {
+      "id": "phy-g8-ch02-q009",
+      "type": "fill",
+      "stem": "如图，一个体积为 $500\\text{cm}^3$ 的物体浸没在水中，受到的浮力为多少？（$\\rho_\\text{水} = 1.0 \\times 10^3\\text{kg/m}^3$，$g = 10\\text{N/kg}$）",
+      "segments": ["浮力为 ", "___1___", " 。"],
+      "blanks": [{ "index": 1, "answer": "$5\\text{N}$" }],
+      "difficulty": 2,
+      "topicId": "phy-g8-ch02-t04",
+      "tags": ["基础题"],
+      "figure": {
+        "type": "force",
+        "bodies": [
+          { "id": "obj", "type": "block", "center": [0, 0], "width": 1.5, "height": 1.5, "label": "物体" }
+        ],
+        "forces": [
+          { "id": "F_f", "type": "buoyancy", "label": "F浮", "origin": [0, 0], "vector": { "x": 0, "y": 2.5 } }
+        ],
+        "showResultant": false
+      },
+      "solution": {
+        "answer": "$F_\\text{浮} = 5\\text{N}$",
+        "steps": [
+          { "description": "由阿基米德原理：$F_\\text{浮} = \\rho_\\text{水} g V_\\text{排}$" },
+          { "description": "浸没时 $V_\\text{排} = V_\\text{物} = 500\\text{cm}^3 = 5 \\times 10^{-4}\\text{m}^3$" },
+          { "description": "$F_\\text{浮} = 1.0 \\times 10^3 \\times 10 \\times 5 \\times 10^{-4} = 5\\text{N}$" }
+        ],
+        "keyKnowledge": "阿基米德原理"
+      }
+    },
+    {
+      "id": "phy-g8-ch02-q010",
+      "type": "choice",
+      "stem": "如图，将一个重 $G = 8\\text{N}$ 的物体用弹簧测力计挂着浸没在水中，弹簧测力计的示数为 $5\\text{N}$，则物体受到的浮力为（  ）",
+      "options": [
+        { "label": "A", "text": "$3\\text{N}$" },
+        { "label": "B", "text": "$5\\text{N}$" },
+        { "label": "C", "text": "$8\\text{N}$" },
+        { "label": "D", "text": "$13\\text{N}$" }
+      ],
+      "answer": "A",
+      "difficulty": 2,
+      "topicId": "phy-g8-ch02-t04",
+      "tags": ["基础题"],
+      "figure": {
+        "type": "force",
+        "bodies": [
+          { "id": "obj", "type": "block", "center": [0, 0], "width": 1.5, "height": 1.5, "label": "物体" }
+        ],
+        "forces": [
+          { "id": "G", "type": "gravity", "label": "G", "origin": [0, 0], "vector": { "x": 0, "y": -2.5 } },
+          { "id": "F_f", "type": "buoyancy", "label": "F浮", "origin": [0, 0], "vector": { "x": 0, "y": 1 } },
+          { "id": "F_t", "type": "tension", "label": "F拉", "origin": [0, 0], "vector": { "x": 0, "y": 1.5 } }
+        ],
+        "showResultant": false
+      },
+      "solution": {
+        "answer": "A",
+        "steps": [
+          { "description": "称重法：$F_\\text{浮} = G - F_\\text{拉}$" },
+          { "description": "$F_\\text{浮} = 8\\text{N} - 5\\text{N} = 3\\text{N}$" }
+        ],
+        "keyKnowledge": "称重法测浮力"
+      }
+    }
+  ]
+}

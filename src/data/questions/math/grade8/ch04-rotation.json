@@ -1,0 +1,200 @@
+{
+  "subject": "math",
+  "grade": 8,
+  "chapterId": "math-g8-ch04",
+  "questions": [
+    {
+      "id": "math-g8-ch04-q001",
+      "type": "choice",
+      "stem": "如图，将点A(3, 0)绕原点O逆时针旋转90°，则旋转后点A'的坐标为（  ）",
+      "options": [
+        { "label": "A", "text": "$(0, 3)$" },
+        { "label": "B", "text": "$(0, -3)$" },
+        { "label": "C", "text": "$(-3, 0)$" },
+        { "label": "D", "text": "$(3, 3)$" }
+      ],
+      "answer": "A",
+      "difficulty": 2,
+      "topicId": "math-g8-ch04-t01",
+      "tags": ["基础题"],
+      "figure": {
+        "type": "construction",
+        "showAxes": true,
+        "padding": 1.5,
+        "construction": [
+          { "op": "point", "id": "O", "at": [0, 0] },
+          { "op": "point", "id": "A", "at": [3, 0] },
+          { "op": "rotate", "id": "A'", "point": "A", "center": "O", "angle": 90 },
+          { "op": "segment", "from": "O", "to": "A", "style": "dashed" },
+          { "op": "segment", "from": "O", "to": "A'", "style": "dashed" },
+          { "op": "arc", "center": "O", "radius": 3, "startAngle": 0, "endAngle": 90 },
+          { "op": "angle_mark", "vertex": "O", "p1": "A", "p2": "A'", "label": "90°" }
+        ]
+      },
+      "solution": {
+        "answer": "A",
+        "steps": [
+          { "description": "点 A(3, 0) 在 x 轴正半轴上" },
+          { "description": "绕原点逆时针旋转 90° 后，A' 在 y 轴正半轴上" },
+          { "description": "旋转不改变距离，$OA' = OA = 3$" },
+          { "description": "所以 $A'(0, 3)$" }
+        ],
+        "keyKnowledge": "旋转的性质：旋转不改变点到旋转中心的距离"
+      }
+    },
+    {
+      "id": "math-g8-ch04-q002",
+      "type": "choice",
+      "stem": "如图，将△ABC绕点O逆时针旋转60°得到△A'B'C'。若OA=4，则OA'的长度为（  ）",
+      "options": [
+        { "label": "A", "text": "$2$" },
+        { "label": "B", "text": "$4$" },
+        { "label": "C", "text": "$4\\sqrt{3}$" },
+        { "label": "D", "text": "$8$" }
+      ],
+      "answer": "B",
+      "difficulty": 2,
+      "topicId": "math-g8-ch04-t01",
+      "tags": ["基础题"],
+      "figure": {
+        "type": "construction",
+        "padding": 1.5,
+        "construction": [
+          { "op": "point", "id": "O", "at": [0, 0] },
+          { "op": "point", "id": "A", "at": [4, 0] },
+          { "op": "point", "id": "B", "at": [5, 3] },
+          { "op": "point", "id": "C", "at": [3, 4] },
+          { "op": "triangle", "points": ["A", "B", "C"], "labels": ["A", "B", "C"] },
+          { "op": "rotate", "id": "A'", "point": "A", "center": "O", "angle": 60 },
+          { "op": "rotate", "id": "B'", "point": "B", "center": "O", "angle": 60 },
+          { "op": "rotate", "id": "C'", "point": "C", "center": "O", "angle": 60 },
+          { "op": "triangle", "points": ["A'", "B'", "C'"], "labels": ["A'", "B'", "C'"] },
+          { "op": "segment", "from": "O", "to": "A", "style": "dashed" },
+          { "op": "segment", "from": "O", "to": "A'", "style": "dashed" },
+          { "op": "angle_mark", "vertex": "O", "p1": "A", "p2": "A'", "label": "60°" }
+        ]
+      },
+      "solution": {
+        "answer": "B",
+        "steps": [
+          { "description": "旋转的性质：旋转前后对应点到旋转中心的距离相等" },
+          { "description": "所以 $OA' = OA = 4$" }
+        ],
+        "keyKnowledge": "旋转的性质：对应点到旋转中心的距离相等"
+      }
+    },
+    {
+      "id": "math-g8-ch04-q003",
+      "type": "choice",
+      "stem": "如图，在平面直角坐标系中，点A(2, 1)关于原点O的对称点A'的坐标为（  ）",
+      "options": [
+        { "label": "A", "text": "$(2, -1)$" },
+        { "label": "B", "text": "$(-2, 1)$" },
+        { "label": "C", "text": "$(-2, -1)$" },
+        { "label": "D", "text": "$(1, 2)$" }
+      ],
+      "answer": "C",
+      "difficulty": 2,
+      "topicId": "math-g8-ch04-t02",
+      "tags": ["基础题"],
+      "figure": {
+        "type": "construction",
+        "showAxes": true,
+        "padding": 1.5,
+        "construction": [
+          { "op": "point", "id": "O", "at": [0, 0] },
+          { "op": "point", "id": "A", "at": [2, 1] },
+          { "op": "rotate", "id": "A'", "point": "A", "center": "O", "angle": 180 },
+          { "op": "segment", "from": "A", "to": "O", "style": "dashed" },
+          { "op": "segment", "from": "O", "to": "A'", "style": "dashed" },
+          { "op": "angle_mark", "vertex": "O", "p1": "A", "p2": "A'", "label": "180°" }
+        ]
+      },
+      "solution": {
+        "answer": "C",
+        "steps": [
+          { "description": "关于原点对称就是绕原点旋转 180°" },
+          { "description": "点 $(x, y)$ 关于原点对称的点为 $(-x, -y)$" },
+          { "description": "所以 $A(2, 1)$ 的对称点为 $A'(-2, -1)$" }
+        ],
+        "keyKnowledge": "中心对称：关于原点对称的点坐标互为相反数"
+      }
+    },
+    {
+      "id": "math-g8-ch04-q004",
+      "type": "fill",
+      "stem": "如图，将点P(1, 2)绕原点O顺时针旋转90°，求旋转后点P'的坐标。",
+      "segments": ["点P'的坐标为 ", "___1___", " 。"],
+      "blanks": [{ "index": 1, "answer": "$(2, -1)$" }],
+      "difficulty": 3,
+      "topicId": "math-g8-ch04-t01",
+      "tags": ["提高题"],
+      "figure": {
+        "type": "construction",
+        "showAxes": true,
+        "padding": 1.5,
+        "construction": [
+          { "op": "point", "id": "O", "at": [0, 0] },
+          { "op": "point", "id": "P", "at": [1, 2] },
+          { "op": "rotate", "id": "P'", "point": "P", "center": "O", "angle": -90 },
+          { "op": "segment", "from": "O", "to": "P", "style": "dashed" },
+          { "op": "segment", "from": "O", "to": "P'", "style": "dashed" },
+          { "op": "arc", "center": "O", "radius": 2.236, "startAngle": 63.43, "endAngle": -26.57 },
+          { "op": "angle_mark", "vertex": "O", "p1": "P", "p2": "P'", "label": "90°" }
+        ]
+      },
+      "solution": {
+        "answer": "$P'(2, -1)$",
+        "steps": [
+          { "description": "点 $(x, y)$ 绕原点顺时针旋转 90° 的公式：$(x, y) \\to (y, -x)$" },
+          { "description": "将 $P(1, 2)$ 代入：$(1, 2) \\to (2, -1)$" },
+          { "description": "所以 $P'(2, -1)$" }
+        ],
+        "keyKnowledge": "旋转公式：顺时针90°变换 $(x,y) \\to (y,-x)$"
+      }
+    },
+    {
+      "id": "math-g8-ch04-q005",
+      "type": "choice",
+      "stem": "如图，正三角形ABC的边长为4，O为其中心。将△ABC绕O旋转120°后，点A的对应点A'的位置是（  ）",
+      "options": [
+        { "label": "A", "text": "与点B重合" },
+        { "label": "B", "text": "与点C重合" },
+        { "label": "C", "text": "在AB的中点" },
+        { "label": "D", "text": "在BC的中点" }
+      ],
+      "answer": "B",
+      "difficulty": 3,
+      "topicId": "math-g8-ch04-t03",
+      "tags": ["提高题"],
+      "figure": {
+        "type": "construction",
+        "padding": 1.5,
+        "construction": [
+          { "op": "point", "id": "A", "at": [0, 2.31] },
+          { "op": "point", "id": "B", "at": [-2, -1.15] },
+          { "op": "point", "id": "C", "at": [2, -1.15] },
+          { "op": "triangle", "points": ["A", "B", "C"], "labels": ["A", "B", "C"] },
+          { "op": "centroid", "id": "O", "triangle": ["A", "B", "C"] },
+          { "op": "rotate", "id": "A'", "point": "A", "center": "O", "angle": 120 },
+          { "op": "segment", "from": "O", "to": "A", "style": "dashed" },
+          { "op": "segment", "from": "O", "to": "A'", "style": "dashed" },
+          { "op": "angle_mark", "vertex": "O", "p1": "A", "p2": "A'", "label": "120°" },
+          { "op": "tick_mark", "segment": ["A", "B"], "count": 1 },
+          { "op": "tick_mark", "segment": ["B", "C"], "count": 1 },
+          { "op": "tick_mark", "segment": ["C", "A"], "count": 1 }
+        ]
+      },
+      "solution": {
+        "answer": "B",
+        "steps": [
+          { "description": "正三角形的中心到三个顶点的距离相等" },
+          { "description": "正三角形绕中心旋转 120° 后与自身重合" },
+          { "description": "旋转 120° 后，A → B → C → A" },
+          { "description": "所以点A旋转120°后与点C重合" }
+        ],
+        "keyKnowledge": "正多边形的旋转对称性"
+      }
+    }
+  ]
+}

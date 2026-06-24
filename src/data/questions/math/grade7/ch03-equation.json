@@ -1,0 +1,312 @@
+{
+  "subject": "math",
+  "grade": 7,
+  "chapterId": "math-g7-ch03",
+  "questions": [
+    {
+      "id": "math-g7-ch03-q001",
+      "type": "choice",
+      "stem": "下列方程中，是一元一次方程的是（  ）",
+      "options": [
+        { "label": "A", "text": "$x^2 + 1 = 0$" },
+        { "label": "B", "text": "$3x - 5 = 2x + 1$" },
+        { "label": "C", "text": "$xy = 6$" },
+        { "label": "D", "text": "$\\dfrac{1}{x} = 2$" }
+      ],
+      "answer": "B",
+      "difficulty": 1,
+      "topicId": "math-g7-ch03-t01",
+      "tags": ["基础题"],
+      "solution": {
+        "answer": "B",
+        "steps": [
+          { "description": "一元一次方程的条件：只含一个未知数，未知数的次数是 1，等号两边都是整式" },
+          { "description": "A 中未知数次数为 2，C 中有两个未知数，D 中分母含未知数，只有 B 满足条件" }
+        ],
+        "keyKnowledge": "一元一次方程的定义"
+      }
+    },
+    {
+      "id": "math-g7-ch03-q002",
+      "type": "choice",
+      "stem": "方程 $2x + 3 = 7$ 的解是（  ）",
+      "options": [
+        { "label": "A", "text": "$x = 1$" },
+        { "label": "B", "text": "$x = 2$" },
+        { "label": "C", "text": "$x = 3$" },
+        { "label": "D", "text": "$x = 5$" }
+      ],
+      "answer": "B",
+      "difficulty": 1,
+      "topicId": "math-g7-ch03-t02",
+      "tags": ["基础题", "中考真题"],
+      "source": { "type": "zhongkao", "year": 2023, "city": "北京", "questionNumber": "第2题" },
+      "solution": {
+        "answer": "B",
+        "steps": [
+          { "description": "移项：$2x = 7 - 3$", "expression": "2x = 4" },
+          { "description": "系数化为 1：$x = 2$", "expression": "x = \\frac{4}{2} = 2" }
+        ],
+        "keyKnowledge": "解一元一次方程的基本步骤"
+      }
+    },
+    {
+      "id": "math-g7-ch03-q003",
+      "type": "choice",
+      "stem": "小明比小红大 3 岁，两人年龄之和为 27 岁。设小红的年龄为 $x$ 岁，下列方程正确的是（  ）",
+      "options": [
+        { "label": "A", "text": "$x + (x+3) = 27$" },
+        { "label": "B", "text": "$x + (x-3) = 27$" },
+        { "label": "C", "text": "$x + 3 = 27$" },
+        { "label": "D", "text": "$(x+3) - x = 27$" }
+      ],
+      "answer": "A",
+      "difficulty": 2,
+      "topicId": "math-g7-ch03-t03",
+      "tags": ["中考真题", "高频考点"],
+      "solution": {
+        "answer": "A",
+        "steps": [
+          { "description": "设小红年龄为 $x$ 岁，则小明年龄为 $(x+3)$ 岁" },
+          { "description": "两人年龄之和为 27 岁，列方程：$x + (x+3) = 27$" }
+        ],
+        "keyKnowledge": "列方程解应用题——年龄问题"
+      },
+      "trapPoints": [
+        {
+          "description": "容易把\"小明比小红大 3 岁\"的关系搞反",
+          "correctApproach": "小明大，所以小明的年龄 = 小红的年龄 + 3",
+          "commonMistake": "误写为 $x + (x-3) = 27$，把大小关系弄反"
+        }
+      ]
+    },
+    {
+      "id": "math-g7-ch03-q004",
+      "type": "fill",
+      "stem": "方程 $3(x - 2) = 2(x + 1)$ 的解是 $x =$ ______。",
+      "segments": ["方程 $3(x - 2) = 2(x + 1)$ 的解是 $x =$ ", "。"],
+      "blanks": [
+        { "index": 0, "answer": "8", "alternatives": ["8"] }
+      ],
+      "difficulty": 2,
+      "topicId": "math-g7-ch03-t02",
+      "tags": ["中考真题"],
+      "source": { "type": "zhongkao", "year": 2022, "province": "浙江", "questionNumber": "第5题" },
+      "solution": {
+        "answer": "$x = 8$",
+        "steps": [
+          { "description": "去括号", "expression": "3x - 6 = 2x + 2" },
+          { "description": "移项", "expression": "3x - 2x = 2 + 6" },
+          { "description": "合并同类项", "expression": "x = 8" }
+        ],
+        "keyKnowledge": "解含括号的一元一次方程"
+      },
+      "trapPoints": [
+        {
+          "description": "去括号时容易漏乘或符号出错",
+          "correctApproach": "括号前是正数直接去括号，每一项都要乘",
+          "commonMistake": "$3(x-2)$ 误写为 $3x-2$，漏乘了括号内的第二项"
+        }
+      ]
+    },
+    {
+      "id": "math-g7-ch03-q005",
+      "type": "fill",
+      "stem": "一件商品打八折后售价为 240 元，则该商品的原价为 ______ 元。",
+      "segments": ["一件商品打八折后售价为 240 元，则该商品的原价为 ", " 元。"],
+      "blanks": [
+        { "index": 0, "answer": "300", "alternatives": ["300"] }
+      ],
+      "difficulty": 2,
+      "topicId": "math-g7-ch03-t03",
+      "tags": ["高频考点", "易错题"],
+      "solution": {
+        "answer": "300 元",
+        "steps": [
+          { "description": "设原价为 $x$ 元，打八折即 $0.8x$" },
+          { "description": "列方程并求解", "expression": "0.8x = 240 \\implies x = 300" }
+        ],
+        "keyKnowledge": "列方程解决打折问题"
+      },
+      "trapPoints": [
+        {
+          "description": "容易用 240 乘以 0.8 而不是除以 0.8",
+          "correctApproach": "打八折是原价的 80%，即 $0.8x = 240$，$x = 240 \\div 0.8$",
+          "commonMistake": "误算为 $240 \\times 0.8 = 192$ 元"
+        }
+      ]
+    },
+    {
+      "id": "math-g7-ch03-q006",
+      "type": "calculation",
+      "stem": "解下列方程：\n$$\\frac{2x-1}{3} - \\frac{x+2}{4} = 1$$",
+      "difficulty": 3,
+      "topicId": "math-g7-ch03-t02",
+      "tags": ["中考真题", "易错题", "高频考点"],
+      "source": { "type": "zhongkao", "year": 2023, "province": "江苏", "questionNumber": "第16题" },
+      "solution": {
+        "answer": "$x = \\dfrac{14}{5}$",
+        "steps": [
+          { "description": "去分母（两边同乘 12）", "expression": "4(2x-1) - 3(x+2) = 12" },
+          { "description": "去括号", "expression": "8x - 4 - 3x - 6 = 12" },
+          { "description": "移项合并", "expression": "5x - 10 = 12" },
+          { "description": "解出 x", "expression": "5x = 22 \\implies x = \\frac{22}{5}" }
+        ],
+        "keyKnowledge": "解含分母的一元一次方程"
+      },
+      "trapPoints": [
+        {
+          "description": "去分母时常数项 1 忘记乘公分母",
+          "correctApproach": "方程两边每一项都要乘以公分母 12，包括常数项",
+          "commonMistake": "右边写成 1 而非 12，导致结果错误"
+        },
+        {
+          "description": "去括号时 $-3(x+2)$ 的负号容易漏乘",
+          "correctApproach": "注意负号分配到括号内每一项：$-3x - 6$",
+          "commonMistake": "误写为 $-3x + 6$"
+        }
+      ],
+      "scorePoints": ["去分母正确（2分）", "去括号正确（1分）", "移项合并正确（1分）", "最终结果正确（1分）"]
+    },
+    {
+      "id": "math-g7-ch03-q007",
+      "type": "calculation",
+      "stem": "甲乙两地相距 360 km，一辆汽车从甲地出发，速度为 60 km/h。同时一辆汽车从乙地出发，速度为 40 km/h，两车相向而行。\n\n（1）几小时后两车相遇？\n（2）若从甲地出发的车先开 1 小时，乙车开出几小时后两车相遇？",
+      "subQuestions": [
+        { "label": "(1)", "stem": "几小时后两车相遇？", "answer": "3.6 小时" },
+        { "label": "(2)", "stem": "若从甲地出发的车先开 1 小时，乙车开出几小时后两车相遇？", "answer": "3 小时" }
+      ],
+      "difficulty": 3,
+      "topicId": "math-g7-ch03-t03",
+      "tags": ["中考真题", "综合题"],
+      "solution": {
+        "answer": "（1）3.6 小时后相遇；（2）乙车开出 3 小时后相遇",
+        "steps": [
+          { "description": "（1）设 $x$ 小时后相遇，两车路程之和等于总距离", "expression": "60x + 40x = 360" },
+          { "description": "合并并求解", "expression": "100x = 360 \\implies x = 3.6" },
+          { "description": "（2）设乙车开出 $y$ 小时后相遇，甲车行驶了 $(y+1)$ 小时", "expression": "60(y+1) + 40y = 360" },
+          { "description": "展开并求解", "expression": "60y + 60 + 40y = 360 \\implies 100y = 300 \\implies y = 3" }
+        ],
+        "keyKnowledge": "行程问题——相遇问题"
+      },
+      "scorePoints": ["设未知数正确（1分）", "列方程正确（2分）", "解方程正确（1分）", "第二问正确（2分）"]
+    },
+    {
+      "id": "math-g7-ch03-q008",
+      "type": "choice",
+      "stem": "方程 $2x - 3 = 3x + 1$ 的解是（  ）",
+      "options": [
+        { "label": "A", "text": "$x = 4$" },
+        { "label": "B", "text": "$x = -4$" },
+        { "label": "C", "text": "$x = 2$" },
+        { "label": "D", "text": "$x = -2$" }
+      ],
+      "answer": "B",
+      "difficulty": 2,
+      "topicId": "math-g7-ch03-t02",
+      "tags": ["基础题"],
+      "solution": {
+        "answer": "B",
+        "steps": [
+          { "description": "移项：$2x - 3x = 1 + 3$" },
+          { "description": "合并：$-x = 4$" },
+          { "description": "系数化为1：$x = -4$" }
+        ],
+        "keyKnowledge": "解一元一次方程——移项"
+      }
+    },
+    {
+      "id": "math-g7-ch03-q009",
+      "type": "fill",
+      "stem": "解方程 $\\dfrac{x-1}{2} = \\dfrac{x+2}{3}$，求 $x$ 的值。",
+      "segments": ["$x = $", "___1___", " 。"],
+      "blanks": [{ "index": 1, "answer": "7" }],
+      "difficulty": 3,
+      "topicId": "math-g7-ch03-t02",
+      "tags": ["提高题"],
+      "solution": {
+        "answer": "$x = 7$",
+        "steps": [
+          { "description": "去分母（两边乘 6）：$3(x-1) = 2(x+2)$" },
+          { "description": "去括号：$3x - 3 = 2x + 4$" },
+          { "description": "移项：$3x - 2x = 4 + 3$" },
+          { "description": "解得：$x = 7$" }
+        ],
+        "keyKnowledge": "解一元一次方程——去分母"
+      }
+    },
+    {
+      "id": "math-g7-ch03-q010",
+      "type": "choice",
+      "stem": "若 $x = 2$ 是方程 $ax - 3 = 5$ 的解，则 $a$ 的值为（  ）",
+      "options": [
+        { "label": "A", "text": "$1$" },
+        { "label": "B", "text": "$2$" },
+        { "label": "C", "text": "$3$" },
+        { "label": "D", "text": "$4$" }
+      ],
+      "answer": "D",
+      "difficulty": 2,
+      "topicId": "math-g7-ch03-t02",
+      "tags": ["基础题"],
+      "solution": {
+        "answer": "D",
+        "steps": [
+          { "description": "将 $x = 2$ 代入方程：$2a - 3 = 5$" },
+          { "description": "解得：$2a = 8$，$a = 4$" }
+        ],
+        "keyKnowledge": "方程的解的定义"
+      }
+    },
+    {
+      "id": "math-g7-ch03-q011",
+      "type": "choice",
+      "stem": "某商品原价 100 元，连续两次降价后售价为 81 元，求平均每次降价的百分率。设平均每次降价的百分率为 $x$，则方程为（  ）",
+      "options": [
+        { "label": "A", "text": "$100(1-x)^2 = 81$" },
+        { "label": "B", "text": "$100(1-2x) = 81$" },
+        { "label": "C", "text": "$100 - 2 \\times 100x = 81$" },
+        { "label": "D", "text": "$100(1+x)^2 = 81$" }
+      ],
+      "answer": "A",
+      "difficulty": 3,
+      "topicId": "math-g7-ch03-t03",
+      "tags": ["提高题"],
+      "solution": {
+        "answer": "A",
+        "steps": [
+          { "description": "第一次降价后价格：$100(1-x)$" },
+          { "description": "第二次降价后价格：$100(1-x)(1-x) = 100(1-x)^2$" },
+          { "description": "根据题意：$100(1-x)^2 = 81$" }
+        ],
+        "keyKnowledge": "增长率问题——连续变化模型"
+      }
+    },
+    {
+      "id": "math-g7-ch03-q012",
+      "type": "choice",
+      "stem": "甲、乙两人共有 100 元，甲用去 20 元，乙用去 30 元后，两人剩下的钱数之比为 3:2。则甲、乙原来各有多少元？",
+      "options": [
+        { "label": "A", "text": "甲 50 元，乙 50 元" },
+        { "label": "B", "text": "甲 60 元，乙 40 元" },
+        { "label": "C", "text": "甲 70 元，乙 30 元" },
+        { "label": "D", "text": "甲 80 元，乙 20 元" }
+      ],
+      "answer": "B",
+      "difficulty": 3,
+      "topicId": "math-g7-ch03-t03",
+      "tags": ["提高题"],
+      "solution": {
+        "answer": "B",
+        "steps": [
+          { "description": "设甲原来有 $x$ 元，则乙有 $(100-x)$ 元" },
+          { "description": "甲剩下 $(x-20)$ 元，乙剩下 $(70-x)$ 元" },
+          { "description": "由比例：$\\dfrac{x-20}{70-x} = \\dfrac{3}{2}$" },
+          { "description": "交叉相乘：$2(x-20) = 3(70-x)$" },
+          { "description": "解得：$x = 60$，乙有 $40$ 元" }
+        ],
+        "keyKnowledge": "比例分配问题"
+      }
+    }
+  ]
+}

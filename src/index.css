@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+/* ========================================
+   SuperTest 主题变量 — Apple 简约风（考试蓝）
+   ======================================== */
+
+@theme {
+  /* 主色系 — 考试蓝 */
+  --color-primary: #2563eb;
+  --color-primary-light: #3b82f6;
+  --color-primary-dark: #1d4ed8;
+  --color-primary-bg: #eff6ff;
+
+  /* 功能色 */
+  --color-success: #0d9488;
+  --color-success-bg: #f0fdfa;
+  --color-warning: #d97706;
+  --color-error: #dc2626;
+
+  /* 学科色 */
+  --color-math: #10b981;
+  --color-physics: #3b82f6;
+  --color-chemistry: #e8600c;
+
+  /* 中性色 — Apple 简约白 */
+  --color-bg: #f5f5f7;
+  --color-surface: #ffffff;
+  --color-surface-warm: #faf9f7;
+  --color-border: #e5e5ea;
+  --color-text: #1d1d1f;
+  --color-text-secondary: #6e6e73;
+  --color-text-muted: #a1a1a6;
+
+  /* 间距 */
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+
+  /* 圆角 */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+
+  /* 阴影 — Apple 轻柔风 */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.02);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.06), 0 1px 4px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.08);
+
+  /* 动画 */
+  --animate-slide-up: slide-up 0.4s ease-out;
+  --animate-fade-in: fade-in 0.3s ease-out;
+  --animate-pulse-once: pulse-once 0.5s ease-out;
+  --animate-shake: shake 0.4s ease-in-out;
+  --animate-tab-fade: tab-fade-in 0.25s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes pulse-once {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.04); }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-4px); }
+  40% { transform: translateX(4px); }
+  60% { transform: translateX(-3px); }
+  80% { transform: translateX(3px); }
+}
+
+@keyframes tab-fade-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Apple 系统字体栏 */
+html {
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* JSXGraph 画板基础样式 */
+.jxgbox {
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  touch-action: none;
+}
+
+.JXG_navigation {
+  display: none;
+}

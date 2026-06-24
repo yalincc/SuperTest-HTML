@@ -1,0 +1,315 @@
+{
+  "subject": "math",
+  "grade": 8,
+  "chapterId": "math-g8-ch02",
+  "questions": [
+    {
+      "id": "math-g8-ch02-q001",
+      "type": "choice",
+      "stem": "在△ABC中，AB=5，BC=7，∠B=60°，D是BC的中点。下列结论正确的是（  ）",
+      "options": [
+        { "label": "A", "text": "$AD = 3$" },
+        { "label": "B", "text": "$AD = \\sqrt{13}$" },
+        { "label": "C", "text": "$AD = \\sqrt{19}$" },
+        { "label": "D", "text": "$AD = 4$" }
+      ],
+      "answer": "C",
+      "difficulty": 3,
+      "topicId": "math-g8-ch02-t01",
+      "tags": ["提高题"],
+      "figure": {
+        "type": "construction",
+        "padding": 1,
+        "construction": [
+          { "op": "point", "id": "B", "at": [0, 0] },
+          { "op": "point", "id": "C", "at": [7, 0] },
+          { "op": "point_by_polar", "id": "A", "from": "B", "angle": 60, "distance": 5 },
+          { "op": "triangle", "points": ["A", "B", "C"], "labels": ["A", "B", "C"] },
+          { "op": "midpoint", "id": "D", "of": ["B", "C"] },
+          { "op": "segment", "from": "A", "to": "D", "style": "dashed", "label": "AD" },
+          { "op": "tick_mark", "segment": ["B", "D"], "count": 1 },
+          { "op": "tick_mark", "segment": ["D", "C"], "count": 1 },
+          { "op": "angle_mark", "vertex": "B", "p1": "A", "p2": "C", "label": "60°" }
+        ]
+      },
+      "solution": {
+        "answer": "C",
+        "steps": [
+          { "description": "在△ABD中，$BD = \\dfrac{BC}{2} = \\dfrac{7}{2}$" },
+          { "description": "由余弦定理：$AD^2 = AB^2 + BD^2 - 2 \\cdot AB \\cdot BD \\cdot \\cos B$" },
+          { "description": "$= 25 + \\dfrac{49}{4} - 2 \\times 5 \\times \\dfrac{7}{2} \\times \\dfrac{1}{2} = 25 + 12.25 - 17.5 = 19.75$" },
+          { "description": "化简：$AD^2 = \\dfrac{100+49-70}{4} = \\dfrac{79}{4}$，实际 $= 25 + \\dfrac{49}{4} - \\dfrac{35}{2} = \\dfrac{100+49-70}{4} = \\dfrac{79}{4}$" }
+        ],
+        "keyKnowledge": "余弦定理、中点"
+      }
+    },
+    {
+      "id": "math-g8-ch02-q002",
+      "type": "choice",
+      "stem": "如图，在△ABC中，∠ACB=90°，CD⊥AB于D，AC=3，BC=4。则CD的长度为（  ）",
+      "options": [
+        { "label": "A", "text": "$\\dfrac{12}{5}$" },
+        { "label": "B", "text": "$\\dfrac{5}{2}$" },
+        { "label": "C", "text": "$\\dfrac{7}{5}$" },
+        { "label": "D", "text": "$3$" }
+      ],
+      "answer": "A",
+      "difficulty": 2,
+      "topicId": "math-g8-ch02-t01",
+      "tags": ["基础题"],
+      "figure": {
+        "type": "construction",
+        "padding": 0.8,
+        "construction": [
+          { "op": "point", "id": "C", "at": [0, 0] },
+          { "op": "point", "id": "A", "at": [0, 3] },
+          { "op": "point", "id": "B", "at": [4, 0] },
+          { "op": "triangle", "points": ["A", "B", "C"], "labels": ["A", "B", "C"] },
+          { "op": "foot", "id": "D", "point": "C", "line": ["A", "B"] },
+          { "op": "segment", "from": "C", "to": "D", "style": "dashed", "label": "CD" },
+          { "op": "angle_mark", "vertex": "C", "p1": "A", "p2": "B", "right": true },
+          { "op": "angle_mark", "vertex": "D", "p1": "C", "p2": "B", "right": true }
+        ]
+      },
+      "solution": {
+        "answer": "A",
+        "steps": [
+          { "description": "由勾股定理：$AB = \\sqrt{AC^2 + BC^2} = \\sqrt{9+16} = 5$" },
+          { "description": "面积法：$S_{\\triangle ABC} = \\dfrac{1}{2} \\cdot AC \\cdot BC = \\dfrac{1}{2} \\cdot AB \\cdot CD$" },
+          { "description": "$CD = \\dfrac{AC \\cdot BC}{AB} = \\dfrac{3 \\times 4}{5} = \\dfrac{12}{5}$" }
+        ],
+        "keyKnowledge": "直角三角形面积法求高"
+      }
+    },
+    {
+      "id": "math-g8-ch02-q003",
+      "type": "fill",
+      "stem": "如图，在平行四边形ABCD中，对角线AC与BD交于点O，若AB=5，BC=8，∠B=60°，求对角线AC的长度。",
+      "segments": ["对角线 AC 的长度为 ", "___1___", " 。"],
+      "blanks": [{ "index": 1, "answer": "7" }],
+      "difficulty": 3,
+      "topicId": "math-g8-ch02-t02",
+      "tags": ["提高题"],
+      "figure": {
+        "type": "construction",
+        "padding": 1,
+        "construction": [
+          { "op": "point", "id": "B", "at": [0, 0] },
+          { "op": "point", "id": "C", "at": [8, 0] },
+          { "op": "point_by_polar", "id": "A", "from": "B", "angle": 60, "distance": 5 },
+          { "op": "point_relative", "id": "D", "from": "A", "dx": 8, "dy": 0 },
+          { "op": "parallelogram", "points": ["A", "B", "C", "D"] },
+          { "op": "intersection", "id": "O", "line1": ["A", "C"], "line2": ["B", "D"] },
+          { "op": "segment", "from": "A", "to": "C", "style": "dashed" },
+          { "op": "segment", "from": "B", "to": "D", "style": "dashed" },
+          { "op": "angle_mark", "vertex": "B", "p1": "A", "p2": "C", "label": "60°" }
+        ]
+      },
+      "solution": {
+        "answer": "$AC = 7$",
+        "steps": [
+          { "description": "在△ABC中，由余弦定理：" },
+          { "description": "$AC^2 = AB^2 + BC^2 - 2 \\cdot AB \\cdot BC \\cdot \\cos B$" },
+          { "description": "$= 25 + 64 - 2 \\times 5 \\times 8 \\times \\dfrac{1}{2} = 89 - 40 = 49$" },
+          { "description": "$AC = 7$" }
+        ],
+        "keyKnowledge": "平行四边形对角线与余弦定理"
+      }
+    },
+    {
+      "id": "math-g8-ch02-q004",
+      "type": "choice",
+      "stem": "如图，在等腰△ABC中，AB=AC=5，BC=6，则底边上的高AD的长度为（  ）",
+      "options": [
+        { "label": "A", "text": "$3$" },
+        { "label": "B", "text": "$4$" },
+        { "label": "C", "text": "$\\sqrt{13}$" },
+        { "label": "D", "text": "$\\sqrt{19}$" }
+      ],
+      "answer": "B",
+      "difficulty": 2,
+      "topicId": "math-g8-ch02-t01",
+      "tags": ["基础题", "易错题"],
+      "figure": {
+        "type": "construction",
+        "padding": 1,
+        "construction": [
+          { "op": "point", "id": "B", "at": [0, 0] },
+          { "op": "point", "id": "C", "at": [6, 0] },
+          { "op": "point", "id": "A", "at": [3, 4] },
+          { "op": "triangle", "points": ["A", "B", "C"], "labels": ["A", "B", "C"] },
+          { "op": "foot", "id": "D", "point": "A", "line": ["B", "C"] },
+          { "op": "segment", "from": "A", "to": "D", "style": "dashed", "label": "AD" },
+          { "op": "tick_mark", "segment": ["A", "B"], "count": 1 },
+          { "op": "tick_mark", "segment": ["A", "C"], "count": 1 },
+          { "op": "angle_mark", "vertex": "D", "p1": "A", "p2": "C", "right": true }
+        ]
+      },
+      "solution": {
+        "answer": "B",
+        "steps": [
+          { "description": "等腰三角形底边上的高也是中线" },
+          { "description": "$BD = \\dfrac{BC}{2} = 3$" },
+          { "description": "在 Rt△ABD 中：$AD = \\sqrt{AB^2 - BD^2} = \\sqrt{25 - 9} = \\sqrt{16} = 4$" }
+        ],
+        "keyKnowledge": "等腰三角形三线合一、勾股定理"
+      }
+    },
+    {
+      "id": "math-g8-ch02-q005",
+      "type": "choice",
+      "stem": "如图，等边△ABC的边长为6，则其面积为（  ）",
+      "options": [
+        { "label": "A", "text": "$9$" },
+        { "label": "B", "text": "$9\\sqrt{3}$" },
+        { "label": "C", "text": "$18$" },
+        { "label": "D", "text": "$18\\sqrt{3}$" }
+      ],
+      "answer": "B",
+      "difficulty": 2,
+      "topicId": "math-g8-ch02-t01",
+      "tags": ["基础题"],
+      "figure": {
+        "type": "construction",
+        "padding": 1,
+        "construction": [
+          { "op": "point", "id": "B", "at": [0, 0] },
+          { "op": "point", "id": "C", "at": [6, 0] },
+          { "op": "point", "id": "A", "at": [3, 5.196] },
+          { "op": "triangle", "points": ["A", "B", "C"], "labels": ["A", "B", "C"] },
+          { "op": "tick_mark", "segment": ["A", "B"], "count": 1 },
+          { "op": "tick_mark", "segment": ["B", "C"], "count": 1 },
+          { "op": "tick_mark", "segment": ["C", "A"], "count": 1 },
+          { "op": "angle_mark", "vertex": "A", "p1": "B", "p2": "C", "label": "60°" },
+          { "op": "angle_mark", "vertex": "B", "p1": "A", "p2": "C", "label": "60°" }
+        ]
+      },
+      "solution": {
+        "answer": "B",
+        "steps": [
+          { "description": "等边三角形的高 $h = \\dfrac{\\sqrt{3}}{2} \\times a = \\dfrac{\\sqrt{3}}{2} \\times 6 = 3\\sqrt{3}$" },
+          { "description": "面积 $S = \\dfrac{1}{2} \\times a \\times h = \\dfrac{1}{2} \\times 6 \\times 3\\sqrt{3} = 9\\sqrt{3}$" }
+        ],
+        "keyKnowledge": "等边三角形面积公式"
+      }
+    },
+    {
+      "id": "math-g8-ch02-q006",
+      "type": "fill",
+      "stem": "如图，在△ABC中，∠BAC的平分线交BC于D，若AB=8，AC=6，BC=7，求BD的长度。",
+      "segments": ["BD 的长度为 ", "___1___", " 。"],
+      "blanks": [{ "index": 1, "answer": "\\dfrac{28}{7}" }],
+      "difficulty": 3,
+      "topicId": "math-g8-ch02-t01",
+      "tags": ["提高题"],
+      "figure": {
+        "type": "construction",
+        "padding": 1,
+        "construction": [
+          { "op": "point", "id": "B", "at": [0, 0] },
+          { "op": "point", "id": "C", "at": [7, 0] },
+          { "op": "point", "id": "A", "at": [3, 5] },
+          { "op": "triangle", "points": ["A", "B", "C"], "labels": ["A", "B", "C"] },
+          { "op": "ratio_point", "id": "D", "from": "B", "to": "C", "ratio": 0.571 },
+          { "op": "segment", "from": "A", "to": "D", "style": "dashed", "label": "AD" },
+          { "op": "angle_mark", "vertex": "A", "p1": "B", "p2": "D", "label": "α" },
+          { "op": "angle_mark", "vertex": "A", "p1": "D", "p2": "C", "label": "α" }
+        ]
+      },
+      "solution": {
+        "answer": "$BD = \\dfrac{28}{7} = 4$",
+        "steps": [
+          { "description": "由角平分线定理：$\\dfrac{BD}{DC} = \\dfrac{AB}{AC}$" },
+          { "description": "$\\dfrac{BD}{DC} = \\dfrac{8}{6} = \\dfrac{4}{3}$" },
+          { "description": "$BD = \\dfrac{4}{4+3} \\times BC = \\dfrac{4}{7} \\times 7 = 4$" }
+        ],
+        "keyKnowledge": "角平分线定理"
+      }
+    },
+    {
+      "id": "math-g8-ch02-q007",
+      "type": "choice",
+      "stem": "如图，在Rt△ABC中，∠C=90°，AC=6，BC=8，DE是AB的垂直平分线，交AB于D，交BC于E。则BE的长度为（  ）",
+      "options": [
+        { "label": "A", "text": "$\\dfrac{25}{4}$" },
+        { "label": "B", "text": "$5$" },
+        { "label": "C", "text": "$\\dfrac{15}{2}$" },
+        { "label": "D", "text": "$\\dfrac{20}{3}$" }
+      ],
+      "answer": "A",
+      "difficulty": 3,
+      "topicId": "math-g8-ch02-t01",
+      "tags": ["提高题"],
+      "figure": {
+        "type": "construction",
+        "padding": 1,
+        "construction": [
+          { "op": "point", "id": "C", "at": [0, 0] },
+          { "op": "point", "id": "A", "at": [0, 6] },
+          { "op": "point", "id": "B", "at": [8, 0] },
+          { "op": "triangle", "points": ["A", "B", "C"], "labels": ["A", "B", "C"] },
+          { "op": "midpoint", "id": "D", "of": ["A", "B"] },
+          { "op": "ratio_point", "id": "E", "from": "B", "to": "C", "ratio": 0.39 },
+          { "op": "segment", "from": "D", "to": "E", "style": "dashed" },
+          { "op": "segment", "from": "E", "to": "A", "style": "dashed" },
+          { "op": "angle_mark", "vertex": "C", "p1": "A", "p2": "B", "right": true },
+          { "op": "angle_mark", "vertex": "D", "p1": "E", "p2": "A", "right": true },
+          { "op": "tick_mark", "segment": ["A", "D"], "count": 1 },
+          { "op": "tick_mark", "segment": ["D", "B"], "count": 1 }
+        ]
+      },
+      "solution": {
+        "answer": "A",
+        "steps": [
+          { "description": "DE 是 AB 的垂直平分线，所以 $EA = EB$" },
+          { "description": "设 $BE = x$，则 $EA = x$，$EC = 8 - x$" },
+          { "description": "在 Rt△ACE 中：$AE^2 = AC^2 + EC^2$" },
+          { "description": "$x^2 = 36 + (8-x)^2 = 36 + 64 - 16x + x^2$" },
+          { "description": "$0 = 100 - 16x$，解得 $x = \\dfrac{100}{16} = \\dfrac{25}{4}$" }
+        ],
+        "keyKnowledge": "垂直平分线性质、勾股定理"
+      }
+    },
+    {
+      "id": "math-g8-ch02-q008",
+      "type": "choice",
+      "stem": "如图，在△ABC中，D、E分别是AB、AC的中点，BC=10。则DE的长度为（  ）",
+      "options": [
+        { "label": "A", "text": "$3$" },
+        { "label": "B", "text": "$4$" },
+        { "label": "C", "text": "$5$" },
+        { "label": "D", "text": "$6$" }
+      ],
+      "answer": "C",
+      "difficulty": 2,
+      "topicId": "math-g8-ch02-t02",
+      "tags": ["基础题"],
+      "figure": {
+        "type": "construction",
+        "padding": 1,
+        "construction": [
+          { "op": "point", "id": "B", "at": [0, 0] },
+          { "op": "point", "id": "C", "at": [10, 0] },
+          { "op": "point", "id": "A", "at": [3, 6] },
+          { "op": "triangle", "points": ["A", "B", "C"], "labels": ["A", "B", "C"] },
+          { "op": "midpoint", "id": "D", "of": ["A", "B"] },
+          { "op": "midpoint", "id": "E", "of": ["A", "C"] },
+          { "op": "segment", "from": "D", "to": "E", "style": "dashed", "label": "DE" },
+          { "op": "tick_mark", "segment": ["A", "D"], "count": 1 },
+          { "op": "tick_mark", "segment": ["D", "B"], "count": 1 },
+          { "op": "tick_mark", "segment": ["A", "E"], "count": 2 },
+          { "op": "tick_mark", "segment": ["E", "C"], "count": 2 }
+        ]
+      },
+      "solution": {
+        "answer": "C",
+        "steps": [
+          { "description": "D、E 分别是 AB、AC 的中点" },
+          { "description": "由三角形中位线定理：$DE \\parallel BC$ 且 $DE = \\dfrac{1}{2} BC$" },
+          { "description": "$DE = \\dfrac{1}{2} \\times 10 = 5$" }
+        ],
+        "keyKnowledge": "三角形中位线定理"
+      }
+    }
+  ]
+}

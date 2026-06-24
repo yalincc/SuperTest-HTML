@@ -1,0 +1,68 @@
+{
+  "subject": "physics",
+  "subjectName": "物理",
+  "icon": "⚡",
+  "color": "#3b82f6",
+  "grades": [
+    {
+      "grade": 8,
+      "gradeLabel": "八年级",
+      "chapters": [
+        {
+          "id": "phy-g8-ch01",
+          "title": "力与运动",
+          "topics": [
+            { "id": "phy-g8-ch01-t01", "title": "力的概念" },
+            { "id": "phy-g8-ch01-t02", "title": "牛顿第一定律" },
+            { "id": "phy-g8-ch01-t03", "title": "二力平衡" },
+            { "id": "phy-g8-ch01-t04", "title": "摩擦力" }
+          ]
+        },
+        {
+          "id": "phy-g8-ch02",
+          "title": "压强与浮力",
+          "topics": [
+            { "id": "phy-g8-ch02-t01", "title": "压强" },
+            { "id": "phy-g8-ch02-t02", "title": "液体压强" },
+            { "id": "phy-g8-ch02-t03", "title": "大气压强" },
+            { "id": "phy-g8-ch02-t04", "title": "浮力" }
+          ]
+        },
+        {
+          "id": "phy-g8-ch03",
+          "title": "光学",
+          "topics": [
+            { "id": "phy-g8-ch03-t01", "title": "光的直线传播" },
+            { "id": "phy-g8-ch03-t02", "title": "光的反射" },
+            { "id": "phy-g8-ch03-t03", "title": "平面镜成像" },
+            { "id": "phy-g8-ch03-t04", "title": "光的折射" }
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 9,
+      "gradeLabel": "九年级",
+      "chapters": [
+        {
+          "id": "phy-g9-ch01",
+          "title": "电学基础",
+          "topics": [
+            { "id": "phy-g9-ch01-t01", "title": "电荷与电流" },
+            { "id": "phy-g9-ch01-t02", "title": "电路" },
+            { "id": "phy-g9-ch01-t03", "title": "欧姆定律" },
+            { "id": "phy-g9-ch01-t04", "title": "电功率" }
+          ]
+        },
+        {
+          "id": "phy-g9-ch02",
+          "title": "电与磁",
+          "topics": [
+            { "id": "phy-g9-ch02-t01", "title": "磁现象" },
+            { "id": "phy-g9-ch02-t02", "title": "电磁感应" }
+          ]
+        }
+      ]
+    }
+  ]
+}

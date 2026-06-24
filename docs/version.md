@@ -4,6 +4,87 @@
 
 --
 
+## v1.2 (2026-06-25)
+
+> 新增物理画图引擎（力学图、电路图、光学图）+ 数学题库扩充 + 几何引擎优化
+
+### ✨ 新增 — 物理画图引擎
+- 力学图引擎：力的合成/分解/平衡计算，支持 8 种力类型（`src/engines/physics/force/`）
+- 力学图渲染：JSXGraph 绘制力的箭头、标签、物体（`src/engines/physics/force/renderer.ts`）
+- 力学图场景模板：水平面、悬挂、斜面、电梯（`src/engines/physics/force/scenes.ts`）
+- 电路图引擎：SVG 渲染电路元件（电池、开关、灯泡、电表）（`src/engines/physics/circuit/`）
+- 电路图构建器：快速创建串联、并联电路（`src/engines/physics/circuit/builder.ts`）
+- 光学图引擎：反射定律、折射定律、斯涅尔定律计算（`src/engines/physics/optics/`）
+- 光学图渲染：平面镜、透镜、光线、角度圆弧（`src/engines/physics/optics/renderer.tsx`）
+- React 组件：ForceBoard、CircuitBoard、OpticsBoard（`src/components/physics/`）
+
+### ✨ 新增 — 数学题库扩充
+- 7年级 ch02 整式的加减：12 题（新建 `ch02-polynomial.json`）
+- 7年级 ch03 一元一次方程：+5 题
+- 8年级 ch01 一次函数：+4 题
+- 8年级 ch02 全等三角形：+5 题（等腰三角形、等边三角形、角平分线、垂直平分线、中位线）
+- 8年级 ch03 四边形：+2 题（菱形、等腰梯形）
+- 8年级 ch04 旋转：5 题（新建 `ch04-rotation.json`，含 rotate 操作）
+- 9年级 ch02 圆：+2 题（内切圆、圆周角）
+
+### ✨ 新增 — 物理题库
+- 8年级 ch01 力与运动：+7 题（含力学图）
+- 8年级 ch02 压强浮力：+3 题（含力学图）
+- 8年级 ch03 光学：8 题（新建 `ch03-optics.json`，含光学图）
+- 9年级 ch01 电学：+3 题（含电路图）
+
+### ✨ 新增 — 几何引擎扩展
+- 新增 `rotate` 旋转操作（`src/utils/geoEngine.ts`）
+- 新增 `showAxes` 坐标系显示功能（Y 轴向上，无刻度数字）
+- 新增 ForceFigure、CircuitFigure、OpticsFigure 类型（`src/types/figure.ts`）
+
+### 🔧 改造 — 几何引擎优化
+- 修复 tick marks（等号标记）：改用 polygon 绘制小垂直线段
+- 修复 buildTriangle 重复标签：复用已有点，不再重复创建
+- 修复圆边界裁剪：computeBounds 新增圆的范围计算
+- 修复坐标系 Y 轴方向：boundingbox 改为 `[left, bottom, right, top]`
+
+### 🔧 改造 — 电路图规范
+- 开关符号：closed=false 时闸片向上翘起 30°，closed=true 时水平连接
+- 开关接线柱：实心=固定端，空心=枢轴点
+- 元件延伸线：灯泡/电表/电动机添加左右延伸线，确保无缝连接
+- 标注位置：电源左侧，其他元件右上方，避免与导线重叠
+
+### 🔧 改造 — 光学图规范
+- 界面：严格水平，3px 粗实线
+- 法线：严格垂直，虚线，标注 N/N'
+- 入射点：6px 实心黑点 O
+- 光线箭头：入射光线箭头指向 O，反射/折射箭头远离 O
+- 角度圆弧：光线与法线之间，不同颜色区分
+
+### 🐛 修复
+- 物理力标签：移除 KaTeX 语法，改为纯文本（G、N、f、F）
+- 物体旋转：支持 rotation 字段，计算旋转后四角坐标
+- 斜面场景：修正物体位置，贴着斜面
+
+### 📦 题库统计
+| 学科 | 题数 |
+|------|:----:|
+| 数学 | 85 |
+| 物理 | 43 |
+| 化学 | 20 |
+| **合计** | **148** |
+
+### 🎨 改造文件
+| 文件 | 改动 |
+|------|------|
+| `src/engines/physics/` | **新建**：物理画图引擎完整模块 |
+| `src/components/physics/` | **新建**：ForceBoard、CircuitBoard、OpticsBoard |
+| `src/types/figure.ts` | 新增 ForceFigure、CircuitFigure、OpticsFigure 类型 |
+| `src/components/figure/FigureRenderer.tsx` | 支持 force、circuit、optics 图形分发 |
+| `src/utils/geoEngine.ts` | 新增 rotate 操作，修复 computeBounds |
+| `src/components/figure/figureBuilders.ts` | 修复 tick marks、重复标签 |
+| `src/data/questions/math/grade7/ch02-polynomial.json` | **新建**：12 题 |
+| `src/data/questions/math/grade8/ch04-rotation.json` | **新建**：5 题 |
+| `src/data/questions/physics/grade8/ch03-optics.json` | **新建**：8 题 |
+
+---
+
 ## v1.1 (2026-06-21)
 
 > 新增几何构造引擎模块 — 数据驱动的几何图形绘制系统（JSXGraph），支持三角形、四边形、圆等初中几何场景。
